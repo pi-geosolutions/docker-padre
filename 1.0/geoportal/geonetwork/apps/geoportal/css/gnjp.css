@@ -1,0 +1,660 @@
+/* Override other styles --- JP interface */
+
+#loading-mask {
+	background-color:#DDD;
+}
+#loading {
+	display:block;
+	position : absolute;
+	width:500px;
+	position:relative;
+  	margin-left: auto;
+  	margin-right: auto;
+  	top:50px;
+}
+#loading .loading-indicator {
+	display:block;
+	border : 1px solid black;
+	width : 350px;
+	height:auto;
+	padding : 20px;
+	background : url("../../images/default/spinner.gif") no-repeat scroll 5px 50% white;
+	padding-left : 50px;
+	
+}
+#loading .loading-indicator p {
+	margin : 20px;
+}
+
+
+#header {
+    border-bottom-width: 0px;
+    height: 40px;
+    background : url(../../images/bandeau2.jpg) repeat-x;
+}
+
+#header #title{
+	color:white;
+	line-height: 16px;
+}
+#shortcut {
+	overflow-y:auto;
+}
+
+#mn-top #help-link a{
+	color:white;
+	font-size: 14pt;
+	font-weight:bold;
+	padding-left : 30px;
+}
+#mn-top #help-link a:hover{
+	border : 1px dotted white;
+}
+#mn-top a.help_link {
+	color:white;
+}
+#mn-top img.help_picture {
+	width : 60px;
+}
+
+#mn-top .pipe {
+	border-left : 0px;
+}
+#mn-top #login-form {
+	
+}
+
+#mn-top #login-form form,
+#mn-top #lang-form form {
+	background-color:transparent;
+}
+
+.x-layout-collapsed-west {
+  width : 20px;
+}
+
+#west .x-tool-collapse-west {
+	float:right;
+}
+
+.x-menu li.x-menu-sep-li span.x-menu-sep{
+	height:1px;
+}
+
+#toctree .x-panel-header {
+	display:none;
+}
+
+.x-tool {
+    float: right !important;
+}
+
+.Go {
+    background : url(../../images/default/cog.png);
+}
+
+.catLogo {
+	height : 33px;
+	width:33px;	
+	margin:1px;
+}
+
+.bigger {
+	font-size:12pt;
+	font-weight:bold;
+	padding-left : 10px;
+}
+.smaller {
+	font-size:8pt;
+	padding-left : 100px;
+}
+
+.infoTabPanel .pratiquesGDT .greyed .x-panel-body{
+	background-color : #EEE !important;
+}
+
+ul.doc li {
+	margin-bottom : 20px;
+}
+
+#legal {
+	z-index:500;
+	position : absolute;
+	top : 70px;
+	right : 5px;
+	background-color : transparent;
+	width: 130px;
+	font-size:x-small;
+	text-align:right;
+}
+/************************************************************
+		Styles pour les fiches de pratique GDT
+************************************************************/
+.tab_subwin {
+  background-color : #EEE;
+  margin : 5px;
+  padding : 5px;
+  float : left;
+  width : 400px;
+}
+ .tab_subwin p {
+  font-weight : bold;
+}
+ .tab_subwin .title {
+	font-size : 100%;
+	padding : 0px;
+	margin-bottom : 5px;
+}
+.tab_subwin .resul_encadre {
+padding : 5px;
+  padding-left : 20px;
+  background-color : #fafafa;
+}
+
+.tab_subwin .resul_encadre table tr td {
+  padding : 0px 5px;
+}
+
+.tab_subwin .resul_encadre table.titre_gras tr td {
+  padding : 5px 10px;
+}
+.tab_subwin .resul_encadre table.compact tr td {
+  padding : 0px 10px;
+}
+.tab_subwin .resul_encadre table.titre_gras tr td:first-child {
+  font-weight : bold;
+}
+
+.tab_subwin .resul_encadre table tr th {
+  border-bottom : 1px dashed black;
+  font-weight:bold;
+}
+
+.tab_subwin .tabulation {
+  padding : 40px;
+}
+
+.tab_subwin .highlight_1 {
+  font-weight : bold;
+  color:red;
+}
+.tab_subwin .highlight_2{
+  color:blue;
+}
+
+.x-tab-strip-top {
+	background-color: white !important;
+}
+
+.fichePratiquesTabs table.form {
+	width:100%;	
+	height:100%;
+}
+.fichePratiquesTabs td {
+	vertical-align:top;
+	padding:5px;
+}
+.fichePratiquesTabs td.title {
+	width : 140px;
+	margin:0px;
+	font-size : 100%;
+}
+.fichePratiquesTabs td.value {
+	border : 1px solid black;
+	background-color : #FAFAFA;
+	padding:Opx;
+}
+.fichePratiquesTabs td.largecell {
+	height : 60px;
+}
+
+/*
+ * Styles for the animation window
+ */
+ 
+#Anim_contentPanel .ext-el-mask {
+	background-color:#f4f4f4;
+	opacity : 1;
+}
+
+/************************************************************
+		Bricolages sur l'affichage des résultats
+		 (bricolages sur templates à peine modifiés
+************************************************************/
+.md-view ul li {
+	float:right !important;
+	width:95% !important;
+}
+
+li.md div.thumb {
+	float:right;
+	max-width :55px;
+	max-height:55px;
+}
+
+li.md div.thumb .rating {
+	display:none;
+}
+
+li.md div.thumb div.thumbnail {
+	width : auto !important;
+}
+li.md div.thumb div.thumbnail img {
+	max-width : 50px;
+	max-height: 50px;
+}
+
+li.md h1 a {
+	font-size:x-small;
+}
+
+li.md .subject{
+	text-transform:none !important; 
+	color : #666666;
+	font-style:italic;
+	font-size : 90%;
+	margin-bottom : 0px;
+}
+
+.md-links{
+	display:none;
+}
+
+/*li.md .icon {
+	border-width : 0px !important;
+	border-right-style : solid !important;
+	border-right-width : 3px !important;
+}*/
+li.md-thumbnail{
+	max-width :45%;
+	width : 160px !important;
+	height : 160px !important;
+}
+li.md-thumbnail div.thumbnail {
+	max-width :100px;
+	max-height:100px;
+	float:left;
+}
+li.md-thumbnail div.thumbnail img {
+	max-width :95px;
+	max-height:95px;
+}
+p.abstract {
+	margin-bottom : 0px;
+	font-size : 90%;
+}
+.md-contact {
+	font-size : 80%;
+	padding-bottom : 5px;
+	border-bottom : 1px solid #eeeeee;
+}
+.md-action-menu a{
+	color :brown !important;
+	font-style:italic;
+}
+.links-download {
+	background-image: url("../../images/default/folder_page_white.png");
+	width : 20px;
+	height: 20px;
+}
+.links-http {
+	background-image: url("../../images/default/link.png");
+	width : 20px;
+	height: 20px;
+}
+.links-wms {
+	background-image: url("../../images/default/map/map_go.png");
+	width : 20px;
+	height: 20px;
+}
+.links-ge {
+	display:none;
+	background-image: url("../../images/default/google-earth-link.png");
+	width : 20px;
+	height: 20px;
+}
+.md-thumbnail div.md-wrap {
+	width : 100% !important;
+}
+.md-mn-links {
+	float:right;
+	clear:right;
+	padding-left : 0px !important;
+}
+
+.x-tree-node-icon.emptyFolder {
+    background-image: url("../../images/default/folder.png") !important;
+}
+.emptyFolder+a span {
+	color:#999999 !important;
+}
+
+.x-tree-node-icon-wms {
+	background-image: url("../../images/default/map/map_go.png") !important;
+	display: inline  !important;
+}
+.x-tree-node-icon-chart {
+	background-image: url("../images/chart.png") !important;
+	display: inline  !important;
+}
+
+.x-tree-node .ilwac,
+.x-tree-node .ilwac + ul .x-tree-node{
+	font-weight:bold !important;
+	background-color:yellow !important;
+}
+.x-tree-node .important {
+	font-weight:bold !important;
+	/*fix some style collisions in the admin section : */
+	border : none;
+	margin : 0;
+	padding : 0;
+}
+.x-tree-node .grey a span{
+	color:#999999 !important;
+}
+
+.piesvisible {
+	display:block;
+}
+
+.pieshidden {
+	display:none;
+}
+
+path:hover {
+  //fill: red;
+  fill-opacity: .5;
+}
+
+.selextentBTN {
+	float:left;
+	margin : 10px;
+}
+.selextentBTNicon {
+	background-image: url("../../images/default/map/icon_selextent.png") !important;
+}
+
+.delextentBTN {
+	margin : 10px;
+	width:20px !important;
+}
+.delextentBTNicon {
+	background-image: url("../../images/default/map/draw_polygon_clear_off.png") !important;
+}
+
+.geometryWKT {
+	color:#bbbbbb;
+	display:none;
+}
+
+.metadata img.logo {
+	display:none;
+}
+
+.related td.main span.icon {
+	padding-bottom:5px;
+}
+
+
+/****************************************************************
+		CSS des widgets / plugins
+*****************************************************************/
+.gx_legend_trigger {
+	width:14px;
+	height:14px;
+	background-image:url("../../images/default/down.gif");
+	background-repeat: no-repeat;
+	background-position: center bottom;
+}
+.gx_legend_trigger.legendVisible {
+	background-image:url("../../images/default/up.gif");
+}
+
+.ext-ux-treenode-legend img {
+	max-width : 300px;
+}
+
+.legendImg {
+	max-width : 500px;
+}
+
+.olControlScaleLine {
+    top: 0px !important;
+    margin:0px !important;
+    margin-top:0px !important;
+}
+.olControlMousePosition {
+	position:absolute;
+	right:10px!important;
+	bottom : 40px!important;
+	color:white;
+	font-size:100%!important;
+}
+.addMenu {
+	background-image: url("../../images/default/map/map_go.png") !important;
+}
+.removeMenu {
+	background-image: url("../../images/default/map/delete_layer.png") !important;
+}
+.metadataMenu {
+	background-image:url("../images/icon_metadata_16px.png") !important;
+}
+.opacityMenu {
+	background-image: url("../../images/default/map/opacity.png") !important;
+}
+
+.horizCurtainMenu {
+	background-image: url("../../images/slice.png") !important;
+}
+.vertCurtainMenu {
+	background-image: url("../../images/vslice.png") !important;
+}
+.loadanimation {
+	background-image: url("../images/animation.png") !important;
+}
+.anim_loopforward {
+	background-image: url("../images/anim_loop_forward.png") !important;
+}
+.anim_loopbackward {
+	background-image: url("../images/anim_loop_backward.png") !important;
+}
+
+.geonamesComboList h1 {
+	font-size: 100%;
+	font-weight : bold;
+	margin: 0px !important;
+	padding : 3px;
+}
+.geonamesComboList p {
+	font-size: 100%;
+	font-style:italic;
+	margin:0px;
+	padding : 3px;
+	padding-top : 0px;
+}
+h1.soberH1 {
+	font-size:  120%;
+	text-transform:none;
+	margin-bottom : 5px;
+}
+
+.pratiquesBtns {
+	float:left;
+	margin : 4px;
+}
+
+/*FeatureInfo rendering*/
+.olFeatureInfoTable td.olFeatureInfoColumn {
+	padding-right:10px;
+}
+
+
+.treenodeIconsPlugin_hasMtd {
+	float:right;
+	width:16px;
+	height:16px;
+	background-image:url("../images/icon_metadata_16px.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	margin-right:4px;
+}
+
+button.wmsInfo {
+	background-image:url("../images/icon_metadata_16px.png") !important;
+}
+.treenodeIconsPlugin_isPQueryable {
+	float:right;
+	width:16px;
+	height:16px;
+	background-image:url("../images/polygon_query_16px.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	margin-right:4px;
+}
+.treenodeIconsPlugin_isQueryable {
+	float:right;
+	width:16px;
+	height:16px;
+	background-image:url("../images/icon_featureinfo_16px.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	margin-right:4px;
+}
+.treenodeIconsPlugin_none {
+	float:right;
+	width:16px;
+	height:16px;
+	margin-right:4px;
+}
+
+
+.icon-pquery {
+	background-image: url("../images/polygon_query_22px.png") !important;
+    height: 20px !important;
+    padding-left: 22px !important;
+}
+
+
+.pqwindow  p {
+    margin : 5px;
+}
+.pqwindow .pqTarget .pqTargetName {
+    background-color:yellow;
+    font-size:larger;
+    font-weight:bold;
+    padding:5px;
+	margin:0px;
+}
+
+.pqwindow h3 {
+	margin:15px;
+}
+
+.pqwindow .loading-indicator {
+	margin:15px;
+}
+
+.pqwindow .statsResults .stats {
+	margin:10px 0 10px 30px;
+}
+/************************************************************
+		Customization of the map
+************************************************************/
+/* Set the overviewmap on the top-left corner*/
+.olControlOverviewMapContainer {
+	position : absolute !important;
+	top:0 !important;
+	left:0 !important;
+	bottom:auto !important;
+	right:auto !important;
+}
+.olControlOverviewMapMaximizeButton,
+.olControlOverviewMapMinimizeButton {
+	top:0 !important;
+	left:0 !important;
+	bottom:auto !important;
+	right:auto !important;
+}
+.olControlOverviewMapElement {
+	padding-right:10px !important;
+	padding-left : 18px !important;
+	padding-top : 10px !important;
+	padding-bottom : 10px !important;
+    /*background-color: #D38D42 !important;*/
+    background-color: #EFEBE7 !important;
+    border-bottom-right-radius: 1em !important;
+    border-top-left-radius: 0 !important;
+}
+
+.olControlGetCoordsAtClickPointActive {
+    cursor : help;
+}
+.olControlDragPanActive {
+    cursor : move;
+}
+.olControlZoomInActive,
+.olControlZoomOutActive {
+    cursor : crosshair;
+}
+
+.dashboard {
+	background-image: url("../../images/dashboard.png") !important;
+    height: 20px !important;
+ /*   width: 20px !important;*/
+    padding-left: 22px !important;
+}
+/************************************************************
+		Bricolages par-dessus les themes
+************************************************************/
+/*** Olive theme ***/
+.x-window-plain .x-window-mc {
+    color: black;
+}
+/*** human theme ***/
+/*.x-accordion-hd,
+#printPanel .x-panel-header {
+	color:#fff;
+    font-weight:bold;
+    background-image: url(../../js/ext/resources/images/human/panel/accordion-hd.gif);
+}
+*/
+.gx-tree-layer-icon,
+.gx-tree-baselayer-icon {
+	display:none;
+}
+
+#printPanelTab label {
+	font-weight:bold;
+	color:#666;
+}
+/****************************************************************
+*		IE fixes
+*****************************************************************/
+.md-view UL LI * .md-logo IMG {
+	width:30px;	
+}
+
+/*
+ * d3 dedicated styles (d3 graphs)
+ */
+.d3_axis path,
+.d3_axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.d3_bar {
+  fill: #00FF66;
+}
+.d3_bar2 {
+  fill: #00F058;
+}
+.d3_bar3 {
+  fill: #00EE55;
+}
+
+.x.d3_axis path {
+  display: none;
+}

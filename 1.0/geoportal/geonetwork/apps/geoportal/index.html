@@ -1,0 +1,170 @@
+<!DOCTYPE html SYSTEM "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title></title>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+      <meta http-equiv="X-UA-Compatible" content="IE=9,chrome=1"/>
+      <link rel="icon" type="image/gif" href="../../images/logos/favicon.gif" />
+      <link href="../../srv/en/rss.latest?georss=gml" rel="alternate" type="application/rss+xml" title="GeoNetwork opensource GeoRSS | Recent Changes"/>
+      <link href="../../srv/en/portal.opensearch" rel="search" type="application/opensearchdescription+xml" title="GeoNetwork"/>
+      
+      <link rel="stylesheet" type="text/css" href="../js/ext/resources/css/ext-all.css"/>
+      <link rel="stylesheet" type="text/css" href="../js/ext/resources/css/xtheme-gray.css"/>
+      <link rel="stylesheet" type="text/css" href="../js/ext-ux/css/ext-ux.css"/>
+      <link rel="stylesheet" type="text/css" href="../js/OpenLayers/theme/default/style.css"/>
+      <link rel="stylesheet" type="text/css" href="../css/geonetwork.css"/>
+    	<link rel="stylesheet" type="text/css" href="css/gnjp.css"/>
+  </head>
+  <body>
+    <div id="loading-mask"></div>
+    <div id="loading">
+      <div class="loading-indicator">
+	      <p><b>Géoportail de la Gestion des Risques au Sénégal </b><br />
+	      Chargement en cours...</p>
+	      <hr />
+	      <p><b>Risk Management Geoportal for Senegal </b><br />
+	      Loading...</p>
+      </div>
+      Optimized for / optimisé pour : <br />Firefox (version 17 and +), Chrome (version 29 and +), Internet Explorer 9 and 10.
+    </div>
+    
+    <div id="header">
+      <div id="title" class="mn-main"></div>
+    </div>
+    <div id="mn-top">
+      <div class="pipe" id="help-link"><a href="#" onclick="Ext.getDom('shortcut').style.display='block';" class="help_link"><img src="images/help.png" title="Help" alt="Help" class="help_picture"/></a></div>
+      <div class="pipe" id="lang-form"></div>
+      <div class="pipe" id="login-form"></div>
+      <div class="pipe first" id="mode-form"></div>
+    </div>
+    
+    
+    <div id="infoContent">
+      
+    </div>
+    <div id="tag">
+      
+    </div>
+    <div id="shortcut" style="display:none;">
+     
+    </div>
+    
+    
+    <script type="text/javascript" src="../js/ext/adapter/ext/ext-base.js"></script>
+    <script type="text/javascript" src="../js/ext/ext-all.js"></script>
+    <!--[if lte IE 8]><script src="../js/r2d3.min.js"></script><![endif]-->
+    <!--[if gte IE 9]><!-->
+    	<script src="../js/d3.v3.min.js"></script>
+    <!--<![endif]-->
+	<script src="../js/queue.v1.min.js"></script>
+    <script type="text/javascript">
+	window.Geoportal = {
+			online				: true, //if set to false, it will shortcut Bing and Google layers
+			withBingLayers		: true, //defaults to only Bing Aerial, as the other seem to suck
+			withBingHybrid		: false, //defaults to only Bing Aerial, as the other seem to suck
+			withBingRoads		: false, //defaults to only Bing Aerial, as the other seem to suck
+			withGoogleLayers	: false,
+			EXTENT                  :[-1951740.11,1380068.70,-1265694.95,1884841.18],
+			portalHeader            :'<img class="catLogo" src="../images/logos/88px-Coat_of_arms_of_Senegal.svg.png"/><span class="bigger"> Gestion des Risques au Sénégal </span><br /><span class="smaller"></span>',
+            overviewWmsUrl          : 'http://sn-risk.pigeo.fr/geoserver-prod/wms',
+            overviewWmsLayers       : 'sn_fond_carto',
+            overviewWmsFormat       : 'image/jpeg',
+            plainMapTitle           : "Low resolution base map",
+            plainMapWmsUrl          : "http://sn-risk.pigeo.fr/geoserver-prod/wms",
+            plainMapWmsLayers       :'sn_fond_carto',
+            plainMapWmsFormat       :'image/jpeg',
+            geonamesSearch          : {
+                    countryString:'country=SN',
+                    zoom : 11
+            },
+            toolsPanelConfig        : {
+                    linkedLayers : [""],
+                    disableLayersOnDeactivate : false       
+            },
+			shortcutsCombo 		: {
+				entete : 'shortcutsAdminTitle',
+				title : 'searchTools',
+				items : 
+					[{
+						nom:'Régions...',
+						url:'http://sn-risk.pigeo.fr/sigdt-config/services-senegal/getRegions.php'
+					},{
+						nom:'Départements...',
+						url:'http://sn-risk.pigeo.fr/sigdt-config/services-senegal/getDepartements.php'
+					}
+				],
+				options: {
+					header:true
+				}
+			},
+			geodash	: {
+				url : 'http://sn-risk.pigeo.fr/geodash/dashboard/public/index.html?',
+				destinationWindow : "_geodash",
+				newWindowParams : "toolbar=yes,scrollbars=yes,resizable=yes,top=100,left=100"
+			}/*,
+			//Allows to point the Animations service to an external geoportal
+			animations	: {
+				baseUrl : "http://sn-risk.pigeo.fr/sn-risk-gn2_10"
+			}*/
+	};
+
+    </script>
+    <script type="text/javascript" src="http://sn-risk.pigeo.fr/sigdt-config/config-senegal-gn2_10/infotree.js"></script>
+    <script type="text/javascript" src="js/App-mini.js"></script>
+   <script type="text/javascript">
+    //Last minute translation fixes
+    OpenLayers.Util.extend(OpenLayers.Lang.fr, {
+    	//Quick and dirty fixes : MD_ScopeCode codelist translations (duplications XML translation in 
+    	//data/config/schema-plugins/iso19139/loc/???/codelists.xml)
+        'attribute': "Attribut",
+        'attributeType': "Type d'attribut",
+        'collectionHardware': "Collection matérielle",
+        'collectionSession': "Collection de session",
+        'dataset': "Jeu de données",
+        'series': "Collection de données",
+        'nonGeographicDataset': "Données non géographiques",
+        'dimensionGroup': "Dimension d'un groupe",
+        'feature': "Entité",
+        'featureType': "Type d’entité",
+        'propertyType': "Type de propriété",
+        'fieldSession': "Champ de session",
+        'software': "Logiciel",
+        'service': "Service",
+        'model': "Modèle",
+        'tile': "Tuile"
+        });
+    OpenLayers.Util.extend(OpenLayers.Lang.en, {
+    	//Quick and dirty fixes : MD_ScopeCode codelist translations (duplications XML translation in 
+    	//data/config/schema-plugins/iso19139/loc/???/codelists.xml)
+        'attribute': "Attribute",
+        'attributeType': "Attribute type",
+        'collectionHardware': "Collection hardware",
+        'collectionSession': "Collection session",
+        'dataset': "Dataset",
+        'series': "Series",
+        'nonGeographicDataset': "Non geographic dataset",
+        'dimensionGroup': "Dimension group",
+        'feature': "Feature",
+        'featureType': "Feature type",
+        'propertyType': "Property type",
+        'fieldSession': "Field session",
+        'software': "Software",
+        'service': "Service",
+        'model': "Model",
+        'tile': "Tile"
+        });
+    </script>
+<!--    <script>//google analytics
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-51445585-1', 'pigeo.fr');
+  ga('send', 'pageview');
+
+</script> --> 
+
+    
+  </body>
+</html>

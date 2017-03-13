@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<strings>
+	<notfound>Record di metadati non trovati</notfound>
+	<notowner>Record di metadati non cancellati perchè non ne sei il proprietario</notowner>
+	<updated>Record di metadati cancellati</updated>
+</strings>

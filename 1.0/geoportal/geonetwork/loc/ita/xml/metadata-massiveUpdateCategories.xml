@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<strings>
+	<notfound>Record di metadati non trovati</notfound>
+    <notowner>Record di metadati le cui categorie non sono state aggiornate perchè non ne sei proprietario</notowner>
+    <updated>Record di metadati le cui categorie sono state aggiornate</updated>
+    <resultstitle>Risultati aggiornamento categorie</resultstitle>
+</strings>

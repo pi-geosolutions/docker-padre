@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- <!DOCTYPE html SYSTEM "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title></title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+      <meta http-equiv="X-UA-Compatible" content="IE=9,chrome=1"/>
+    <link rel="icon" type="image/gif" href="../../images/logos/favicon.gif" />
+    <link href="../../srv/en/rss.latest?georss=gml" rel="alternate" type="application/rss+xml"
+      title="GeoNetwork opensource GeoRSS | Recent Changes"/>
+    <link href="../../srv/en/portal.opensearch" rel="search"
+      type="application/opensearchdescription+xml" title="GeoNetwork"/>
+
+    
+    <link rel="stylesheet" type="text/css" href="../js/ext/resources/css/ext-all.css"/>
+    <link rel="stylesheet" type="text/css" href="../js/ext/resources/css/xtheme-gray.css"/>
+    <link rel="stylesheet" type="text/css" href="../js/ext-ux/Rating/rating.css"/>
+    <link rel="stylesheet" type="text/css" href="../js/ext-ux/SuperBoxSelect/superboxselect.css" />
+    <link rel="stylesheet" type="text/css" href="../js/ext-ux/LightBox/lightbox.css"/>
+    <link rel="stylesheet" type="text/css" href="../js/ext-ux/FileUploadField/file-upload.css"/>
+    <link rel="stylesheet" type="text/css" href="../js/ext-ux/MultiselectItemSelector-3.0/Multiselect.css"/>
+    <link rel="stylesheet" type="text/css" href="../js/OpenLayers/theme/default/style.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/gndefault.css"/>
+    <link rel="stylesheet" type="text/css" href="css/gnjp.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/gnmapdefault.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/gnmetadatadefault.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/metadata-view.css"/>
+    <style>
+
+		.map { 
+			width: 768px;
+		    height: 512px;
+		    border: 1px solid #ccc;
+		}
+	</style>
+  </head>
+  <body>
+    
+    
+    <div id="infoContent">
+     
+    </div>
+    <div id="tag">
+      
+    </div>
+    
+    <div id="map" class="map"></div>
+    <input size="4" type='text' id='year' value="2005" onchange="update_date()"/>-<input size="2" type="text" id="month" value="08" onchange="update_date()"/>-<input size="2" type="text" id="day" value="29" onchange="update_date()" />T<input type="text" size="2" id="hour" value="13" onchange="update_date()" />:<input type="text" size="2" id="minute" value="00" onchange="update_date()" />:00
+    <button id="PlayButton" class="Button" onClick="animationStart(true)">Play animation</button>
+   <button id="StopButton" class="Button" onClick="animationStart(false)">Stop animation</button>
+   
+    
+    <script type="text/javascript" src="../js/ext/adapter/ext/ext-base.js"></script>
+    <script type="text/javascript" src="../js/ext/ext-all.js"></script>
+    
+    
+    <script type="text/javascript" src="../js/proj4js-compressed.js"></script>
+    <script type="text/javascript" src="../js/OpenLayers/lib/OpenLayers.js"></script>
+    <script type="text/javascript" src="../js/GeoExt/lib/overrides/override-ext-ajax.js"></script>
+    <script type="text/javascript" src="../js/GeoExt/lib/GeoExt.js"></script>
+    <script type="text/javascript" src="../jean/Ext/Fixes.js"></script>
+    
+    <script type="text/javascript">
+        var map, ia_wms;
+        var play = false;
+        function init(){
+            map = new OpenLayers.Map('map');
+
+            var ol_wms = new OpenLayers.Layer.WMS( "OpenLayers WMS",
+                "http://vmap0.tiles.osgeo.org/wms/vmap0?", {layers: 'basic'} );
+
+            var jpl_wms = new OpenLayers.Layer.WMS( "NASA Global Mosaic",
+                "http://t1.hypercube.telascience.org/cgi-bin/landsat7", 
+                {layers: "landsat7"});
+
+            ia_wms = new OpenLayers.Layer.WMS("Nexrad","http://mesonet.agron.iastate.edu/cgi-bin/wms/nexrad/n0r-t.cgi?",{layers:"nexrad-n0r-wmst",transparent:true,format:'image/png',time:"2005-08-29T13:00:00Z"});
+
+            jpl_wms.setVisibility(false);
+
+            map.addLayers([ol_wms, jpl_wms, ia_wms]);
+            map.addControl(new OpenLayers.Control.LayerSwitcher());
+            map.zoomToExtent(new OpenLayers.Bounds(-100.898437,22.148438,-78.398437,39.726563));
+            console.log("done");
+        }
+        function update_date() {
+            var string = OpenLayers.Util.getElement('year').value + "-" +
+                         OpenLayers.Util.getElement('month').value + "-" +
+                         OpenLayers.Util.getElement('day').value + "T" +
+                         OpenLayers.Util.getElement('hour').value + ":" +
+                         OpenLayers.Util.getElement('minute').value + ":00";
+            ia_wms.mergeNewParams({'time':string});
+
+        }
+        function animationStart(p) {
+        	if (p) {
+            	play=true;
+            	animationPlay();
+        	} else {
+        		play=false;
+        	}
+        }
+        function animationPlay() {
+        	if (play) {
+        		OpenLayers.Util.getElement('day').value = 1+parseInt(OpenLayers.Util.getElement('day').value);
+            	update_date();
+            	setTimeout(function(){
+            			animationPlay()
+           			}, 3000);
+        	} 
+        }
+        
+        Ext.onReady(function () {
+            init();
+        });
+    </script>
+  </body>
+</html>

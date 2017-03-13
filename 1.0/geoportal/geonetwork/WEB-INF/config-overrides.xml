@@ -1,0 +1,5 @@
+<overrides>
+	<override></override>
+	<override>/WEB-INF/config-overrides-prod.xml</override>
+	<override></override>
+</overrides>

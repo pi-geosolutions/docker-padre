@@ -1,0 +1,2650 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/LAND SUBSIDENCE">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Abaissement du terrain</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Land subsidence</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Hundimiento del suelo</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/ACCIDENTS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Accident</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Accidents</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Accidente</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/COMMUNITY ACTION">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Action communautaire</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Community action</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Acción comunitaria</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/ADOLESCENCE">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Adolescence</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Adolescence</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Adolescencia</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/ADULTS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Adulte</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Adults</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Adulto</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/FARMERS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Agriculteur</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Farmers</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Agricultor</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/MT_6.35 AGRICULTURE">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Agriculture</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Agriculture</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Agricultura</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/SUBSISTENCE AGRICULTURE">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Agriculture de subsistance</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Subsistence agriculture</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Agricultura de subsistencia</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/AGRICULTURAL ECONOMICS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Agroéconomie</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Agricultural economics</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Economía agraria</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/AGROFORESTRY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Agroforesterie</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Agroforestry</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Agrosilvicultura</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/AGRONOMY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Agronomie</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Agronomy</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Agronomía</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/WATER SUPPLY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Alimentation en eau</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Water supply</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Abastecimiento de agua</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/RURAL PLANNING">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Aménagement rural</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Rural planning</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Planificación rural</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/URBAN PLANNING">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Aménagement urbain</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Urban planning</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Planificación urbana</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/WATER ANALYSIS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Analyse de l'eau</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Water analysis</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Análisis del agua</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/ANIMALS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Animal</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Animals</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Animal</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/AQUATIC ANIMALS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Animal aquatique</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Aquatic animals</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Animal acuático</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/LABORATORY ANIMALS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Animal de laboratoire</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Laboratory animals</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Animal de laboratorio</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/DOMESTIC ANIMALS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Animal domestique</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Domestic animals</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Animal doméstico</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/WILD ANIMALS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Animal sauvage</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Wild animals</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Animal salvaje</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/COMMUNITY LEADERS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Animateur communautaire</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Community leaders</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Animador comunitario</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/YOUTH LEADERS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Animateur de jeunesse</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Youth leaders</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Animador de jovenes</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/ANTHROPOLOGY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Anthropologie</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Anthropology</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Antropología</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/AQUACULTURE">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Aquaculture</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Aquaculture</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Acuicultura</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/MARINE AQUACULTURE">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Aquaculture marine</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Marine aquaculture</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Acuicultura marina</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/LANDSCAPE DESIGN">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Architecture paysagère</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Landscape design</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Diseño del paisaje</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/DRY FARMING">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Aridoculture</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Dry farming</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Cultivo en tierras áridas</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/SANITATION">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Assainissement</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Sanitation</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Saneamiento</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/SELF HELP">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Autoassistance</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Self help</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Esfuerzo propio</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/AVALANCHES">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Avalanche</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Avalanches</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Alude</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/SUBURBS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Banlieue</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Suburbs</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Suburbio</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/DAMS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Barrage</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Dams</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Represa</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/DRAINAGE BASINS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Bassin de drainage</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Drainage basins</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Cuenca de drenaje</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/SLUMS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Bidonville</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Slums</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Barrio de tugurios</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/ENERGY BALANCE">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Bilan énergétique</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Energy balance</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Balance energético</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/WATER BALANCE">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Bilan hydrique</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Water balance</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Equilibrio acuático</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/BIOCLIMATOLOGY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Bioclimatologie</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Bioclimatology</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Bioclimatología</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/BIOGAS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Biogaz</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Biogas</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Biogas</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/BIOGEOCHEMISTRY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Biogéochimie</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Biogeochemistry</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Biogeoquímica</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/BIOGEOGRAPHY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Biogéographie</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Biogeography</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Biogeografía</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/AGRICULTURAL BIOLOGY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Biologie agricole</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Agricultural biology</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Biología agrícola</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/BIOMASS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Biomasse</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Biomass</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Biomasa</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/BIOMES">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Biome</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Biomes</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Bioma</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/BOTANY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Botanique</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Botany</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Botánica</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/CLIMATIC MAPS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Carte climatique</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Climatic maps</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Mapa climático</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/HYDROGEOLOGICAL MAPS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Carte hydrogéologique</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Hydrogeological maps</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Mapa hidrogeológico</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/SOIL MAPS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Carte pédologique</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Soil maps</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Mapa edafológico</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/CARTOGRAPHY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Cartographie</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Cartography</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Cartografía</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/DISASTERS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Catastrophe</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Disasters</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Desastre</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/MANMADE DISASTERS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Catastrophe d'origine humaine</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Manmade disasters</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Desastre causado por el hombre</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/NATURAL DISASTERS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Catastrophe naturelle</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Natural disasters</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Desastre natural</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/COMMUNITY CENTRES">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Centre communautaire</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Community centres</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Centro comunitario</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/TERRESTRIAL HEAT">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Chaleur terrestre</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Terrestrial heat</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Calor terrestre</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/CLIMATIC CHANGE">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Changement climatique</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Climatic change</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Cambio climático</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/SOCIAL CHANGE">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Changement social</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Social change</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Cambio social</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/AGRICULTURAL CHEMISTRY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Chimie agricole</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Agricultural chemistry</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Química agrícola</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/ENVIRONMENTAL CHEMISTRY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Chimie de l'environnement</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Environmental chemistry</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Química ambiental</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/WATER CHEMISTRY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Chimie des eaux</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Water chemistry</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Química del agua</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/ATMOSPHERIC CIRCULATION">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Circulation atmosphérique</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Atmospheric circulation</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Circulación atmosférica</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/OCEAN CIRCULATION">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Circulation océanique</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Ocean circulation</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Circulación oceánica</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/MIDDLE CLASS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Classe moyenne</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Middle class</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Clase media</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/WORKING CLASS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Classe ouvrière</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Working class</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Clase obrera</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/PEASANTRY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Classe paysanne</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Peasantry</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Clase campesina</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/UPPER CLASS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Classe privilégiée</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Upper class</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Clase alta</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/SOCIAL CLASS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Classe sociale</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Social class</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Clase social</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/CLIMATE">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Climat</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Climate</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Clima</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/CLIMATOLOGY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Climatologie</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Climatology</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Climatología</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/COMMUNITIES">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Communauté</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Communities</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Comunidad</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/ANIMAL BEHAVIOUR">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Comportement animal</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Animal behaviour</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Comportamiento animal</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/INNOVATION BEHAVIOUR">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Comportement innovateur</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Innovation behaviour</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Comportamiento de innovación</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/URBAN DESIGN">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Conception urbanistique</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Urban design</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Diseño urbano</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/WEATHER">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Conditions atmosphériques</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Weather</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Condiciones atmosféricas</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/NATURE CONSERVATION">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Conservation de la nature</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Nature conservation</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Conservación de la naturaleza</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/WILDLIFE CONSERVATION">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Conservation de la vie sauvage</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Wildlife conservation</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Conservación de la fauna y flora silvestre</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/WATER CONSERVATION">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Conservation de l'eau</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Water conservation</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Conservación del agua</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/ENVIRONMENTAL CONSERVATION">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Conservation de l'environnement</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Environmental conservation</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Conservación ambiental</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/FOOD PRESERVATION">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Conservation des aliments</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Food preservation</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Conservación de los alimentos</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/RESOURCES CONSERVATION">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Conservation des ressources</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Resources conservation</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Conservación de recursos</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/SOIL CONSERVATION">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Conservation du sol</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Soil conservation</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Conservación del suelo</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/FOOD CONSUMPTION">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Consommation alimentaire</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Food consumption</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Consumo alimentario</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/WATER CONSUMPTION">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Consommation d'eau</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Water consumption</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Consumo de agua</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/ENERGY CONSUMPTION">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Consommation d'énergie</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Energy consumption</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Consumo de energía</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/HOUSING CONSTRUCTION">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Construction de logements</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Housing construction</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Construcción de viviendas</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/WEATHER MODIFICATION">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Contrôle météorologique</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Weather modification</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Modificación meteorológica</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/OCEAN CURRENTS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Courant océanique</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Ocean currents</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Corriente oceánica</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/RIVERS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Cours d'eau</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Rivers</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Río</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/AGRICULTURAL CREDIT">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Crédit agricole</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Agricultural credit</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Crédito agrícola</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/ECOLOGICAL CRISIS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Crise écologique</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Ecological crisis</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Crisis ecológica</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/POPULATION INCREASE">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Croissance démographique</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Population increase</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Crecimiento demográfico</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/CULTIVATION">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Culture du sol</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Cultivation</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Cultivo</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/SHIFTING CULTIVATION">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Culture itinérante</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Shifting cultivation</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Cultivo migratorio</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/HYDROLOGICAL CYCLE">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Cycle hydrologique</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Hydrological cycle</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Ciclo hidrológico</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/DEFORESTATION">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Déboisement</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Deforestation</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Deforestación</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/URBAN DECENTRALIZATION">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Décentralisation urbaine</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Urban decentralization</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Descentralización urbana</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/WASTES">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Déchet</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Wastes</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Desperdicio</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/AGRICULTURAL WASTES">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Déchet agricole</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Agricultural wastes</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Desperdicio agrícola</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/RADIOACTIVE WASTES">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Déchet radioactif</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Radioactive wastes</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Desperdicio radiactivo</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/DAMAGE">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Dégât</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Damage</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Daño y perjuicio</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/ENVIRONMENTAL DEGRADATION">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Dégradation de l'environnement</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Environmental degradation</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Deterioro ambiental</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/SOIL DEGRADATION">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Dégradation du sol</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Soil degradation</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Degradación de suelos</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/DEMOCRATIZATION">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Démocratisation</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Democratization</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Democratización</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/DEMOGRAPHY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Démographie</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Demography</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Demografía</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/POPULATION DENSITY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Densité de population</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Population density</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Densidad de población</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/POPULATION DECREASE">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Dépopulation</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Population decrease</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Disminución de la población</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/SALT DEPOSITS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Dépôt de sel</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Salt deposits</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Depósito de sal</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/METALLIC DEPOSITS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Dépôt métallique</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Metallic deposits</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Yacimiento metálico</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/CONTINENTAL DRIFT">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Dérive des continents</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Continental drift</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Deriva de los continentos</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/AGRICULTURAL DEVELOPMENT">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Développement agricole</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Agricultural development</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Desarrollo agrícola</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/COMMUNITY DEVELOPMENT">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Développement communautaire</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Community development</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Desarrollo comunitario</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/REGIONAL DEVELOPMENT">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Développement régional</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Regional development</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Desarrollo regional</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/RURAL DEVELOPMENT">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Développement rural</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Rural development</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Desarrollo rural</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/URBAN DEVELOPMENT">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Développement urbain</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Urban development</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Tráfico urbano</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/WATER DISCHARGE">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Déversement des eaux</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Water discharge</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Caudal de agua</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/FARM SIZE">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Dimension de la ferme</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Farm size</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Tamaño de la granja</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/REGIONAL DISPARITIES">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Disparité régionale</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Regional disparities</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Desequilibrio regional</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/FOOD SUPPLY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Disponibilités alimentaires</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Food supply</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Suministro de alimentos</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/BIOLOGICAL DIVERSITY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Diversité biologique</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Biological diversity</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Diversidad biológica</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/CLIMATIC DATA">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Donnée climatique</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Climatic data</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Dato climático</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/GEOLOGICAL DATA">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Donnée géologique</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Geological data</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Dato geológico</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/HYDROLOGICAL DATA">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Donnée hydrologique</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Hydrological data</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Dato hidrológico</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/METEOROLOGICAL DATA">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Donnée météorologique</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Meteorological data</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Dato meteorológico</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/DRAINAGE">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Drainage</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Drainage</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Drenaje</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/MIGRATION LAW">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Droit de migration</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Migration law</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Derecho de migración</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/POPULATION DYNAMICS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Dynamique de la population</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Population dynamics</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Dinámica de la población</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/WATER">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Eau</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Water</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Agua</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/SEA WATER">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Eau de mer</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Sea water</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Agua de mar</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/SURFACE WATER">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Eau de surface</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Surface water</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Agua de superficie</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/FRESHWATER">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Eau douce</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Freshwater</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Agua dulce</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/SOIL WATER">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Eau du sol</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Soil water</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Agua del suelo</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/DRINKING WATER">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Eau potable</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Drinking water</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Agua potable</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/SALINE WATER">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Eau salée</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Saline water</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Agua salada</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/BRACKISH WATER">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Eau saumâtre</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Brackish water</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Agua salobre</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/GROUNDWATER">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Eau souterraine</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Groundwater</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Agua subterránea</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/TERRESTRIAL ECOSYSTEMS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Ecosystème terrestre</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Terrestrial ecosystems</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Ecosistema terrestre</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/HUMAN ACTIVITIES EFFECTS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Effet des activités humaines</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Human activities effects</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Efecto de las actividades humanas</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/EMIGRATION">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Emigration</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Emigration</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Emigración</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/CHILDHOOD">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Enfance</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Childhood</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Infancia</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/SOIL SURVEYS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Enquête pédologique</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Soil surveys</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Levantamiento de terrenos</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/ENTOMOLOGY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Entomologie</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Entomology</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Entomología</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/ENVIRONMENT">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Environnement</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Environment</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Medio ambiente</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/AQUATIC ENVIRONMENT">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Environnement aquatique</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Aquatic environment</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Medio ambiente acuático</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/HUMAN ENVIRONMENT">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Environnement humain</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Human environment</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Medio humano</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/NATURAL ENVIRONMENT">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Environnement naturel</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Natural environment</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Medio ambiente natural</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/TERRESTRIAL ENVIRONMENT">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Environnement terrestre</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Terrestrial environment</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Medio ambiente terrestre</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/EROSION">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Erosion</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Erosion</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Erosion</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/COASTAL EROSION">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Erosion côtière</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Coastal erosion</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Erosión costera</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/SOIL EROSION">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Erosion du sol</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Soil erosion</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Erosión del suelo</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/OPEN SPACES">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Espace ouvert</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Open spaces</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Espacio abierto</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/URBAN SPACES">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Espace urbain</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Urban spaces</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Espacio urbano</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/SPECIES">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Espèce</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Species</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Especie</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/ENDANGERED SPECIES">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Espèce en danger</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Endangered species</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Especie en peligro de extinción</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/ETHNOLOGY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Ethnologie</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Ethnology</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Etnología</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/ETHNOPSYCHOLOGY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Ethnopsychologie</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Ethnopsychology</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Etnopsicología</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/EVAPOTRANSPIRATION">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Evapotranspiration</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Evapotranspiration</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Evapotranspiración</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/SOCIAL EXCLUSION">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Exclusion sociale</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Social exclusion</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Exclusión social</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/EXILES">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Exilé</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Exiles</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Exilado</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/BRAIN DRAIN">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Exode des compétences</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Brain drain</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Exodo intelectual</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/RESOURCES EXPLORATION">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Exploration des ressources</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Resources exploration</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Exploración de recursos</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/GEOGRAPHICAL EXPLORATION">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Exploration géographique</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Geographical exploration</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Exploración geográfica</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/NUCLEAR EXPLOSIONS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Explosion nucléaire</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Nuclear explosions</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Explosión nuclear</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/FAUNA">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Faune</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Fauna</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Fauna</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/WOMEN">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Femme</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Women</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Mujer</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/RURAL WOMEN">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Femme rurale</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Rural women</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Mujer rural</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/SOIL FERTILITY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Fertilité du sol</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Soil fertility</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Fertilidad del suelo</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/FIRES">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Feu</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Fires</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Incendio</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/HOUSING FINANCE">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Financement du logement</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Housing finance</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Financiación de la vivienda</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/FLORA">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Flore</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Flora</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Flora</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/FORESTRY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Foresterie</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Forestry</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Ciencias forestales</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/FORESTS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Forêt</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Forests</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Bosque</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/LAND FORMS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Forme terrestre</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Land forms</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Forma terrestre</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/AGRICULTURAL GENETICS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Génétique agricole</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Agricultural genetics</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Genética agrícola</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/ANIMAL GENETICS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Génétique animale</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Animal genetics</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Genética animal</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/PLANT GENETICS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Génétique végétale</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Plant genetics</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Genética vegetal</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/AGRICULTURAL ENGINEERING">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Génie agricole</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Agricultural engineering</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Ingeniería agrícola</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/ENGINEERING GEOLOGY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Génie géologique</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Engineering geology</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Ingeniería geológica</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/GEOCHEMISTRY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Géochimie</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Geochemistry</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Geoquímica</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/GEOCHRONOLOGY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Géochronologie</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Geochronology</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Geocronología</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/GEODESY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Géodésie</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Geodesy</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Geodesia</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/GEODYNAMICS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Géodynamique</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Geodynamics</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Geodinámica</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/GEOGRAPHY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Géographie</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Geography</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Geografía</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/ECONOMIC GEOGRAPHY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Géographie économique</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Economic geography</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Geografía económica</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/HISTORICAL GEOGRAPHY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Géographie historique</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Historical geography</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Geografía histórica</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/HUMAN GEOGRAPHY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Géographie humaine</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Human geography</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Geografía humana</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/PHYSICAL GEOGRAPHY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Géographie physique</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Physical geography</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Geografía física</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/POLITICAL GEOGRAPHY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Géographie politique</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Political geography</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Geografía política</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/REGIONAL GEOGRAPHY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Géographie régionale</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Regional geography</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Geografía regional</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/GEOLOGY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Géologie</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Geology</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Geología</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/MARINE GEOLOGY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Géologie marine</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Marine geology</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Geología marina</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/GEOMAGNETISM">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Géomagnétisme</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Geomagnetism</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Geomagnetismo</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/GEOMORPHOLOGY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Géomorphologie</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Geomorphology</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Geomorfología</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/GEOPHYSICS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Géophysique</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Geophysics</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Geofísica</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/MARINE GEOPHYSICS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Géophysique marine</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Marine geophysics</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Geofísica marina</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/ENVIRONMENTAL MANAGEMENT">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Gestion de l'environnement</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Environmental management</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Gestión ambiental</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/WATER RESOURCES MANAGEMENT">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Gestion des ressources en eau</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Water resources management</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Gestión de los recursos hídricos</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/FOREST MANAGEMENT">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Gestion forestière</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Forest management</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Ordenación forestal</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/LANDSLIDES">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Glissement de terrain</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Landslides</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Deslizamiento de tierra</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/AGE GROUPS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Groupe d'âge</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Age groups</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Grupo de edad</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/HABITATS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Habitat</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Habitats</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Habitat</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/NATURAL HISTORY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Histoire naturelle</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Natural history</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Historia natural</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/MEN">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Homme</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Men</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Hombre</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/PREHISTORIC MAN">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Homme préhistorique</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Prehistoric man</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Hombre prehistórico</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/HORTICULTURE">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Horticulture</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Horticulture</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Horticultura</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/HYDROGEOLOGY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Hydrogéologie</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Hydrogeology</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Hidrogeología</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/HYDROLOGY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Hydrologie</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Hydrology</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Hidrología</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/HYDROMETEOROLOGY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Hydrométéorologie</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Hydrometeorology</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Hidrometeorología</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/IMMIGRANTS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Immigrant</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Immigrants</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Inmigrante</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/IMMIGRATION">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Immigration</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Immigration</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Inmigración</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/ILLEGAL IMMIGRATION">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Immigration illégale</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Illegal immigration</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Inmigración ilegal</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/FISHING INDUSTRY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Industrie de la pêche</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Fishing industry</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Industria pesquera</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/SOCIAL INEQUALITY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Inégalité sociale</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Social inequality</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Desigualdad social</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/FLOODS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Inondation</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Floods</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Inundación</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/INSECTS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Insecte</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Insects</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Insecto</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/IRRIGATION">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Irrigation</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Irrigation</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Riego</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/RURAL YOUTH">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Jeune rural</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Rural youth</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Joven rural</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/URBAN YOUTH">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Jeune urbain</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Urban youth</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Joven urbano</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/LAKES">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Lac</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Lakes</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Lago</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/ENVIRONMENTAL LEGISLATION">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Législation de l'environnement</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Environmental legislation</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Legislación ambiental</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/GEOLOGICAL SURVEYING">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Levé géologique</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Geological surveying</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Levantamiento geológico</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/HYDROGRAPHIC SURVEYING">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Levé hydrographique</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Hydrographic surveying</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Estudio hidrográfico</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/SURVEYING">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Levé topographique</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Surveying</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Levantamiento topográfico</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/WATERSHEDS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Ligne de partage des eaux</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Watersheds</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Vertiente</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/HOUSING">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Logement</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Housing</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Vivienda</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/POPULATION PROBLEMS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Logement en location</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Population problems</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Vivienda alquilada</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/SQUATTER SETTLEMENTS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Lotissement spontané</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Squatter settlements</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Asentamiento de precaristas</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/NOISE CONTROL">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Lutte anti-bruit</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Noise control</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Lucha contra el ruido</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/PEST CONTROL">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Lutte anti-parasite</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Pest control</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Control de plagas</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/POLLUTION CONTROL">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Lutte anti-pollution</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Pollution control</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Lucha contra la contaminación</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/BIOLOGICAL CONTROL">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Lutte biologique</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Biological control</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Control biológico</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/DROUGHT CONTROL">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Lutte contre la sécheresse</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Drought control</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Lucha contra la sequía</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/WEED CONTROL">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Lutte contre les plantes adventices</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Weed control</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Lucha contra las malezas</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/HOUSES">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Maison</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Houses</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Casa</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/ANIMAL DISEASES">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Maladie animale</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Animal diseases</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Enfermedad animal</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/PLANT DISEASES">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Maladie des plantes</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Plant diseases</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Enfermedad de las plantas</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/MAMMALS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Mammifère</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Mammals</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Mamífero</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/AGRICULTURAL MARKETS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Marché agricole</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Agricultural markets</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Mercado agrícola</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/TIDES">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Marée</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Tides</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Marea</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/SOIL MECHANICS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Mécanique des sols</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Soil mechanics</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Mecánica de los suelos</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/SAFETY MEASURES">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Mesure de sécurité</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Safety measures</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Medida de seguridad</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/HYDROLOGICAL MEASUREMENT">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Mesure hydrologique</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Hydrological measurement</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Medición hidrológica</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/MT_2.45 METEOROLOGY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Météorologie</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Meteorology</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Meteorología</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/MIGRANTS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Migrant</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Migrants</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Migrante</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/MIGRATION">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Migration</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Migration</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Migración</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/COMMUTING">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Migration alternante</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Commuting</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Migración pendular</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/ANIMAL MIGRATION">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Migration animale</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Animal migration</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Migración animal</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/RETURN MIGRATION">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Migration de retour</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Return migration</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Migración de retorno</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/INTERNAL MIGRATION">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Migration interne</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Internal migration</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Migración interna</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/RURAL MIGRATION">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Migration rurale</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Rural migration</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Migración rural</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/RURAL ENVIRONMENT">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Milieu rural</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Rural environment</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Medio rural</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/URBAN ENVIRONMENT">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Milieu urbain</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Urban environment</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Medio urbano</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/IRON ORES">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Minerai de fer</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Iron ores</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Mineral de hierro</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/MINERALOGY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Minéralogie</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Mineralogy</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Mineralogía</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/RESOURCES DEVELOPMENT">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Mise en valeur des ressources</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Resources development</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Fomento de recursos</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/SOCIAL MOBILITY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Mobilité sociale</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Social mobility</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Movilidad social</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/MODERNIZATION">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Modernisation</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Modernization</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Modernización</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/MORBIDITY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Morbidité</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Morbidity</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Morbilidad</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/MORTALITY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Mortalité</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Mortality</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Mortalidad</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/CHILD MORTALITY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Mortalité infantile</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Child mortality</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Mortalidad infantil</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/AQUIFERS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Nappe aquifère</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Aquifers</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Capa acuífera</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/SEA LEVEL">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Niveau de la mer</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Sea level</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Nivel del mar</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/WATER LEVEL">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Niveau d'eau</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Water level</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Nivel del agua</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/NOMADS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Nomade</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Nomads</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Nómada</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/NOMADISM">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Nomadisme</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Nomadism</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Nomadismo</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/NUPTIALITY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Nuptialité</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Nuptiality</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Nupcialidad</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/ANIMAL NUTRITION">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Nutrition animale</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Animal nutrition</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Nutrición animal</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/PLANT NUTRITION">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Nutrition des plantes</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Plant nutrition</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Nutrición de las plantas</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/OCEANOGRAPHY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Océanographie</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Oceanography</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Oceanografía</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/DYNAMIC OCEANOGRAPHY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Océanographie dynamique</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Dynamic oceanography</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Oceanografía dinámica</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/PHYSICAL OCEANOGRAPHY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Océanographie physique</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Physical oceanography</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Oceanografía física</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/BIRDS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Oiseau</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Birds</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Ave</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/PESTS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Organisme nuisible</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Pests</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Plaga</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/ORNITHOLOGY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Ornithologie</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Ornithology</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Ornitología</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/PALAEOCLIMATOLOGY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Paléoclimatologie</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Palaeoclimatology</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Paleoclimatología</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/PALAEOGEOLOGY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Paléogéologie</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Palaeogeology</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Paleogeología</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/PALAEONTOLOGY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Paléontologie</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Palaeontology</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Paleontología</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/PARKS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Parc</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Parks</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Parque</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/COMMUNITY PARTICIPATION">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Participation communautaire</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Community participation</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Participación comunitaria</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/NATURAL HERITAGE">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Patrimoine naturel</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Natural heritage</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Patrimonio natural</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/LANDSCAPE">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Paysage</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Landscape</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Paisaje</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/CULTURAL LANDSCAPES">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Paysage culturel</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Cultural landscapes</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Paisaje cultural</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/FISHERIES">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Pêche</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Fisheries</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Pesquería</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/FOOD SHORTAGES">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Pénurie alimentaire</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Food shortages</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Escasez de alimentos</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/DISPLACED PERSONS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Personne déplacée</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Displaced persons</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Persona desplazada</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/SMALL TOWNS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Petite ville</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Small towns</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Ciudad pequeña</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/PETROLOGY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Pétrologie</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Petrology</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Petrología</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/PHOTOGRAMMETRY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Photogrammétrie</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Photogrammetry</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Fotogrametría</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/PLANT PHYSIOLOGY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Physiologie végétale</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Plant physiology</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Fisiología vegetal</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/PLANT ECOLOGY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Phytoécologie</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Plant ecology</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Fitoecología</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/PHYTOGEOGRAPHY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Phytogéographie</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Phytogeography</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Fitogeografía</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/GEMS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Pierre précieuse</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Gems</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Piedra preciosa</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/AGRICULTURAL PLANNING">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Planification agricole</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Agricultural planning</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Planificación agrícola</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/REGIONAL PLANNING">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Planification régionale</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Regional planning</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Planificación regional</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/CONTINENTAL SHELF">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Plateforme continentale</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Continental shelf</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Plataforma continental</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/RAIN">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Pluie</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Rain</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Lluvia</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/AGRICULTURAL POLICY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Politique agricole</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Agricultural policy</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Política agraria</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/HOUSING POLICY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Politique du logement</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Housing policy</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Política de la vivienda</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/ENERGY POLICY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Politique énergétique</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Energy policy</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Política energética</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/MIGRATION POLICY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Politique migratoire</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Migration policy</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Política migratoria</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/POLLUTANTS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Polluant</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Pollutants</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Contaminante</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/POLLUTION">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Pollution</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Pollution</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Contaminación</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/AIR POLLUTION">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Pollution de l'air</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Air pollution</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Contaminación atmosférica</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/WATER POLLUTION">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Pollution de l'eau</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Water pollution</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Contaminación del agua</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/SOIL POLLUTION">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Pollution du sol</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Soil pollution</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Contaminación del suelo</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/INDUSTRIAL POLLUTION">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Pollution industrielle</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Industrial pollution</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Contaminación industrial</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/RADIOACTIVE POLLUTION">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Pollution radioactive</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Radioactive pollution</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Contaminación radiactiva</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/NOISE POLLUTION">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Pollution sonore</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Noise pollution</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Contaminación sonora</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/RURAL POPULATION">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Population rurale</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Rural population</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Población rural</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/URBAN POPULATION">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Population urbaine</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Urban population</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Población urbana</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/PRECAMBRIAN">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Précambrien</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Precambrian</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Precámbrico</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/ATMOSPHERIC PRESSURE">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Pression atmosphérique</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Atmospheric pressure</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Presión atmosférica</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/EARTHQUAKE PREDICTION">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Prévention antisismique</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Earthquake prediction</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Prevención antisísmica</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/ACCIDENT PREVENTION">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Prévention des accidents</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Accident prevention</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Prevención de accidentes</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/DISASTER PREVENTION">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Prévention des catastrophes</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Disaster prevention</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Prevención de desastres</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/POPULATION PROJECTIONS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Prévision en matière de population</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Population projections</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Proyección demográfica</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/HYDROLOGICAL FORECASTING">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Prévision hydrologique</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Hydrological forecasting</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Predicción hidrológica</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/WEATHER FORECASTING">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Prévision météorologique</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Weather forecasting</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Pronóstico meteorológico</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/AGRICULTURAL PRICES">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Prix agricole</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Agricultural prices</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Precio agrícola</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/AGRICULTURAL PRODUCTION">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Production agricole</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Agricultural production</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Producción agrícola</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/FOOD PRODUCTION">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Production alimentaire</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Food production</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Producción alimentaria</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/GEOPHYSICAL PROSPECTING">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Prospection géophysique</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Geophysical prospecting</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Prospección geofísica</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/FIRE PROTECTION">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Protection contre le feu</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Fire protection</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Protección contra incendios</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/RADIATION PROTECTION">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Protection contre les rayonnements</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Radiation protection</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Protección contra la radiación</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/LANDSCAPE PROTECTION">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Protection du paysage</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Landscape protection</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Protección del paisaje</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/SOCIAL PSYCHOLOGY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Psychologie sociale</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Social psychology</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Psicología social</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/WATER QUALITY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Qualité de l'eau</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Water quality</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Calidad del agua</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/ENVIRONMENTAL QUALITY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Qualité de l'environnement</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Environmental quality</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Calidad ambiental</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/QUATERNARY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Quaternaire</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Quaternary</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Cuaternario</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/POPULATION CENSUSES">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Recensement de population</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Population censuses</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Censo de población</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/AGRICULTURAL RESEARCH">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Recherche agricole</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Agricultural research</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Investigación agrícola</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/POPULATION RESEARCH">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Recherche démographique</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Population research</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Investigación demográfica</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/ECOLOGICAL RESEARCH">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Recherche écologique</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Ecological research</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Investigación ecológica</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/HYDROLOGICAL RESEARCH">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Recherche hydrologique</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Hydrological research</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Investigación hidrológica</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/HARVESTING">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Récolte</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Harvesting</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Cosecha</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/LAND RECLAMATION">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Récupération des terres</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Land reclamation</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Recuperación de tierras</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/OZONE DEPLETION">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Réduction de la couche d'ozone</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Ozone depletion</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Reducción de la capa de ozono</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/REFUGEES">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Réfugié</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Refugees</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Refugiado</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/REGIME OF WATERS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Régime des eaux</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Regime of waters</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Régimen de las aguas</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/LAND TENURE">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Régime foncier</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Land tenure</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Tenencia de la tierra</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/RIVER CONTROL">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Régulation des cours d'eau</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">River control</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Regulación fluvial</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/URBAN RENEWAL">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Rénovation urbaine</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Urban renewal</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Renovación urbana</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/POPULATION DISTRIBUTION">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Répartition de la population</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Population distribution</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Distribución de la población</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/AGE DISTRIBUTION">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Répartition par âge</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Age distribution</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Distribución por edad</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/SEX DISTRIBUTION">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Répartition par sexe</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Sex distribution</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Distribución por sexo</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/REPTILES">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Reptile</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Reptiles</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Reptile</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/NATURE RESERVES">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Réserve naturelle</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Nature reserves</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Reserva natural</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/BIOSPHERE RESERVES">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Réserves de la biosphère</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Biosphere reserves</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Reservas de la biosfera</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/RESERVOIRS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Réservoir</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Reservoirs</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Embalse</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/RESISTANCE TO CHANGE">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Résistance au changement</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Resistance to change</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Resistencia al cambio</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/FOOD RESOURCES">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Ressources alimentaires</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Food resources</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Recursos alimentarios</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/ANIMAL RESOURCES">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Ressources animales</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Animal resources</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Recursos animales</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/MARINE RESOURCES">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Ressources de la mer</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Marine resources</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Recursos marinos</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/FUEL RESOURCES">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Ressources en combustibles</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Fuel resources</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Recursos de combustibles</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/WATER RESOURCES">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Ressources en eau</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Water resources</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Recursos hídricos</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/SOIL RESOURCES">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Ressources en sol</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Soil resources</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Recursos de suelos</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/ENERGY RESOURCES">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Ressources énergétiques</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Energy resources</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Recursos energéticos</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/FOREST RESOURCES">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Ressources forestières</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Forest resources</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Recursos forestales</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/FISHERY RESOURCES">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Ressources halieutiques</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Fishery resources</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Recursos pesqueros</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/MINERAL RESOURCES">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Ressources minérales</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Mineral resources</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Recursos minerales</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/NATURAL RESOURCES">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Ressources naturelles</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Natural resources</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Recursos naturales</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/NONRENEWABLE RESOURCES">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Ressources non renouvelables</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Nonrenewable resources</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Recursos no renovables</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/PETROLEUM RESOURCES">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Ressources pétrolières</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Petroleum resources</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Recursos petrolíferos</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/RENEWABLE RESOURCES">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Ressources renouvelables</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Renewable resources</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Recursos renovables</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/PLANT RESOURCES">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Ressources végétales</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Plant resources</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Recursos vegetales</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/ROCKS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Roche</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Rocks</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Roca</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/IGNEOUS ROCKS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Roche ignée</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Igneous rocks</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Roca ígnea</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/METAMORPHIC ROCKS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Roche métamorphique</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Metamorphic rocks</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Roca metamórfica</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/SEDIMENTARY ROCKS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Roche sédimentaire</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Sedimentary rocks</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Roca sedimentaria</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/SOCIAL ROLES">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Rôle social</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Social roles</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Papel social</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/SALINITY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Salinité</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Salinity</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Salinidad</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/LIFE SCIENCES">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Sciences de la vie</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Life sciences</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Ciencias de la vida</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/ENVIRONMENTAL SCIENCES">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Sciences de l'environnement</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Environmental sciences</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Ciencias ambientales</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/SOIL SCIENCES">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Sciences du sol</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Soil sciences</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Edafología de los suelos</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/NATURAL SCIENCES">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Sciences naturelles</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Natural sciences</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Ciencias naturales</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/DROUGHT">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Sécheresse</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Drought</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Sequía</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/SAFETY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Sécurité</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Safety</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Seguridad</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/FOOD SECURITY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Sécurité alimentaire</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Food security</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Seguridad alimentaria</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/TRANSPORT SAFETY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Sécurité des transports</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Transport safety</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Seguridad del transporte</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/EARTHQUAKES">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Séisme</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Earthquakes</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Sismo</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/ENVIRONMENTAL AWARENESS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Sensibilisation à l'environnement</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Environmental awareness</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Sensibilización ambiental</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/SEX">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Sexe</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Sex</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Sexo</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/SEISMICITY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Sismicité</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Seismicity</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Frecuencia de sismos</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/SEISMOLOGY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Sismologie</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Seismology</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Sismología</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/SOCIOLOGY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Sociologie</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Sociology</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Sociología</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/SOCIOLOGY OF CHANGE">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Sociologie du changement</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Sociology of change</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Sociología del cambio</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/RURAL SOCIOLOGY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Sociologie rurale</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Rural sociology</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Sociología rural</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/URBAN SOCIOLOGY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Sociologie urbaine</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Urban sociology</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Sociología urbana</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/SOILS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Sol</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Soils</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Suelo</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/DESERT SOILS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Sol désertique</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Desert soils</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Suelo desértico</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/SALINE SOILS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Sol salin</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Saline soils</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Suelo salino</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/VOLCANIC SOILS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Sol volcanique</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Volcanic soils</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Suelo volcánico</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/RENEWABLE ENERGY SOURCES">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Source d'énergie renouvelable</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Renewable energy sources</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Fuente de energía renovable</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/THERMAL SPRINGS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Source thermale</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Thermal springs</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Manantial de agua termal</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/AGRICULTURAL STATISTICS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Statistique agricole</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Agricultural statistics</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Estadística agrícola</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/FOOD STATISTICS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Statistique alimentaire</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Food statistics</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Estadística alimentaria</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/DEMOGRAPHIC STATISTICS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Statistique démographique</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Demographic statistics</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Estadística demográfica</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/SOCIAL STRATIFICATION">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Stratification sociale</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Social stratification</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Estratificación social</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/STRATIGRAPHY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Stratigraphie</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Stratigraphy</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Estratigrafía</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/AGRARIAN STRUCTURE">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Structure agraire</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Agrarian structure</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Estructura agraria</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/HYDRAULIC STRUCTURES">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Structure hydraulique</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Hydraulic structures</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Estructura hidráulica</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/OVERPOPULATION">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Surpopulation</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Overpopulation</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Superpoblación</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/ENVIRONMENTAL MONITORING">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Surveillance de l'environnement</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Environmental monitoring</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Vigilancia ambiental</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/SILVICULTURE">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Sylviculture</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Silviculture</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Silvicultura</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/BIRTH RATE">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Taux de natalité</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Birth rate</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Tasa de natalidad</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/ANIMAL TAXONOMY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Taxonomie animale</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Animal taxonomy</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Taxonomía animal</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/PLANT TAXONOMY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Taxonomie botanique</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Plant taxonomy</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Taxonomía botánica</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/FOOD TECHNOLOGY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Technologie alimentaire</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Food technology</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Tecnología alimentaria</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/ENVIRONMENTAL ENGINEERING">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Technologie de l'environnement</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Environmental engineering</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Ingeniería ambiental</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/DRAINAGE ENGINEERING">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Technologie du drainage</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Drainage engineering</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Ingeniería de drenaje</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/RIVER AND LAKE ENGINEERING">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Technologie fluviale et lacustre</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">River and lake engineering</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Ingeniería fluvial y lacustre</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/HYDRAULIC ENGINEERING">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Technologie hydraulique</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Hydraulic engineering</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Ingeniería hidráulica</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/TECTONICS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Tectonique</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Tectonics</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Tectónica</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/AGRICULTURAL LAND">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Terre agricole</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Agricultural land</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Tierra agricola</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/GRAZING LAND">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Terre de pâturage</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Grazing land</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Tierra de pastoreo</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/WETLANDS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Terre marécageuse</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Wetlands</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Tierra pantanosa</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/TOPOGRAPHY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Topographie</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Topography</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Topografía</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/WATER TREATMENT">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Traitement de l'eau</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Water treatment</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Tratamiento del agua</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/FOOD PROCESSING">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Traitement des aliments</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Food processing</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Procesamiento de alimentos</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/PLANT TRANSPIRATION">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Transpiration des plantes</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Plant transpiration</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Transpiración vegetal</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/MIGRANT WORKERS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Travailleur migrant</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Migrant workers</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Trabajador migratorio</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/TSUNAMI">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Tsunami</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Tsunami</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Tsunami</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/URBANIZATION">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Urbanisation</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Urbanization</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Urbanización</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/LAND USE">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Utilisation des terres</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Land use</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Uso de la tierra</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/OCEAN WAVES">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Vague marine</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Ocean waves</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Ola marina</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/LAND VALUE">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Valeur des terres</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Land value</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Valor de la tierra</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/WATER VAPOUR">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Vapeur d'eau</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Water vapour</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Vapor de agua</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/WINDS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Vent</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Winds</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Viento</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/OLD AGE">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Vieillesse</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Old age</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Vejez</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/AGEING POPULATION">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Vieillissement de la population</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Ageing population</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Envejecimiento de la población</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/HISTORIC CITIES">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Ville historique</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Historic cities</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Ciudad histórica</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/INDUSTRIAL TOWNS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Ville industrielle</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Industrial towns</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Ciudad industrial</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/NEW TOWNS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Ville nouvelle</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">New towns</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Ciudad nueva</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/VOLCANOES">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Volcan</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Volcanoes</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Volcan</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/VOLCANOLOGY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Vulcanologie</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Volcanology</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Vulcanología</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/RURAL EXTENSION">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Vulgarisation en milieu rural</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Rural extension</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Extensión en medio rural</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/INDUSTRIAL AREAS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Zone industrielle</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Industrial areas</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Zona industrial</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/METROPOLITAN AREAS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Zone métropolitaine</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Metropolitan areas</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Zona metropolitana</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/RURAL AREAS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Zone rurale</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Rural areas</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Zona rural</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/SEISMIC AREAS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Zone sismique</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Seismic areas</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Zona sísmica</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/URBAN AREAS">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Zone urbaine</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Urban areas</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Zona urbana</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/ZOOGEOGRAPHY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Zoogéographie</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Zoogeography</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Zoogeografía</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/ZOOLOGY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Zoologie</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Zoology</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Zoología</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://iaaa.cps.unizar.es/thesaurus/ANIMAL HUSBANDRY">
+    <skos:inScheme rdf:resource="http://ntbf.ige.fr/UnescoExtract" />
+    <skos:prefLabel xml:lang="fr">Zootechnie</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Animal husbandry</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Zootecnia</skos:prefLabel>
+  </skos:Concept>
+</rdf:RDF>
+

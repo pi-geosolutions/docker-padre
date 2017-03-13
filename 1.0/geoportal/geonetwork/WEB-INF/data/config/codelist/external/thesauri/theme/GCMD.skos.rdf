@@ -1,0 +1,2158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#EARTH SCIENCE">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:prefLabel xml:lang="fr">SCIENCE DE LA TERRE</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">EARTH SCIENCE</skos:prefLabel>
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Agriculture" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Land Surface" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Hydrosphere" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Human Dimensions" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Biosphere" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Atmosphere" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Solid Earth" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Oceans" />
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Agriculture">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:prefLabel xml:lang="fr">Agriculture</skos:prefLabel>
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#EARTH SCIENCE" />
+    <skos:prefLabel xml:lang="en">Agriculture</skos:prefLabel>
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Agricultural Plant Science" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Forest Science" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Agricultural Engineering" />
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Human Dimensions">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:prefLabel xml:lang="fr">Aspects humains</skos:prefLabel>
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#EARTH SCIENCE" />
+    <skos:prefLabel xml:lang="en">Human Dimensions</skos:prefLabel>
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Population" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Natural Hazards" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Boundaries" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Land Use - Land Cover" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Human Health" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Environmental Impacts" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Economic Resources" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Attitudes" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Infrastructure" />
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Oceans">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:prefLabel xml:lang="fr">Oceans</skos:prefLabel>
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#EARTH SCIENCE" />
+    <skos:prefLabel xml:lang="en">Oceans</skos:prefLabel>
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Coastal Processes" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Aquatic Sciences" />
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Biosphere">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:prefLabel xml:lang="fr">Biosphere</skos:prefLabel>
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#EARTH SCIENCE" />
+    <skos:prefLabel xml:lang="en">Biosphere</skos:prefLabel>
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Terrestrial Ecosystems" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Wetlands" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Vegetation" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Ecological Dynamics" />
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Solid Earth">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:prefLabel xml:lang="fr">Physique du globe</skos:prefLabel>
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#EARTH SCIENCE" />
+    <skos:prefLabel xml:lang="en">Solid Earth</skos:prefLabel>
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Geomorphology" />
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Land Surface">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:prefLabel xml:lang="fr">Surface terrestre</skos:prefLabel>
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#EARTH SCIENCE" />
+    <skos:prefLabel xml:lang="en">Land Surface</skos:prefLabel>
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Land Use - Land Cover" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Topography" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Surface Radiative Properties" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Land Temperature" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Landscape" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Geomorphology" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Erosion - Sedimentation" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Soils" />
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Hydrosphere">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:prefLabel xml:lang="fr">Hydrosphere</skos:prefLabel>
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#EARTH SCIENCE" />
+    <skos:prefLabel xml:lang="en">Hydrosphere</skos:prefLabel>
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Surface Water" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Ground Water" />
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Atmosphere">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:prefLabel xml:lang="fr">Atmosphere</skos:prefLabel>
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#EARTH SCIENCE" />
+    <skos:prefLabel xml:lang="en">Atmosphere</skos:prefLabel>
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Atmospheric Water Vapor" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Atmospheric Temperature" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Atmospheric Winds" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Atmospheric Phenomena" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Precipitation" />
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Agricultural Engineering">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:prefLabel xml:lang="fr">Ingenierie agricole</skos:prefLabel>
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Agriculture" />
+    <skos:prefLabel xml:lang="en">Agricultural Engineering</skos:prefLabel>
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Farm Structures" />
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Agricultural Plant Science">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:prefLabel xml:lang="fr">Phytotechnie</skos:prefLabel>
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Agriculture" />
+    <skos:prefLabel xml:lang="en">Agricultural Plant Science</skos:prefLabel>
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Crop - Plant Yields" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Cropping Systems" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Irrigation" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Plant Diseases - Disorders - Pests" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Reclamation - Revegetation - Restoration" />
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Forest Science">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:prefLabel xml:lang="fr">Science forestiere</skos:prefLabel>
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Agriculture" />
+    <skos:prefLabel xml:lang="en">Forest Science</skos:prefLabel>
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Afforestation - Reforestation" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Forest Conservation" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Forest Fire Science" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Forest Harvesting And Engineering" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Forest Management" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Forest Mensuration" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Forest Protection" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Forest Yields" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Reforestation" />
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Atmospheric Phenomena">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:prefLabel xml:lang="fr">Phenomenes atmospheriques</skos:prefLabel>
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Atmosphere" />
+    <skos:prefLabel xml:lang="en">Atmospheric Phenomena</skos:prefLabel>
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Drought" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Freeze" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Frost" />
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Atmospheric Temperature">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:prefLabel xml:lang="fr">Temperature atmospherique</skos:prefLabel>
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Atmosphere" />
+    <skos:prefLabel xml:lang="en">Atmospheric Temperature</skos:prefLabel>
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Air Temperature" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Maximum - Minimum Temperature" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Surface Air Temperature" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Temperature Anomalies" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Temperature Profiles" />
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Atmospheric Water Vapor">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:prefLabel xml:lang="fr">Vapeur d eau atmospherique</skos:prefLabel>
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Atmosphere" />
+    <skos:prefLabel xml:lang="en">Atmospheric Water Vapor</skos:prefLabel>
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Evaporation" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Evapotranspiration" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Humidity" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Precipitable Water" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Water Vapor" />
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Atmospheric Winds">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:prefLabel xml:lang="fr">Vent atmospherique</skos:prefLabel>
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Atmosphere" />
+    <skos:prefLabel xml:lang="en">Atmospheric Winds</skos:prefLabel>
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Surface Winds" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Wind Profiles" />
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Precipitation">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:prefLabel xml:lang="fr">Precipitation</skos:prefLabel>
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Atmosphere" />
+    <skos:prefLabel xml:lang="en">Precipitation</skos:prefLabel>
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Precipitation Amount" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Precipitation Anomalies" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Precipitation Rate" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Rain" />
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Ecological Dynamics">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:prefLabel xml:lang="fr">Dynamiques ecologiques</skos:prefLabel>
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Biosphere" />
+    <skos:prefLabel xml:lang="en">Ecological Dynamics</skos:prefLabel>
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Biomass" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Endangered Species" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Fire Characteristics" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Fire Occurrence" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Photosynthesis" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Population Dynamics" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Primary Production" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Range Changes" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Secondary Production" />
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Terrestrial Ecosystems">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:prefLabel xml:lang="fr">Ecosystemes terrestres</skos:prefLabel>
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Biosphere" />
+    <skos:prefLabel xml:lang="en">Terrestrial Ecosystems</skos:prefLabel>
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Agricultural Lands" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Alpine - Tundra" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Beaches" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Deserts" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Dunes" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Forests" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Grasslands" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Islands" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Karst Landscape" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Montane Habitats" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Savannas" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Shrubland - Scrub" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Urban Lands" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Wetlands" />
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Vegetation">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:prefLabel xml:lang="fr">Vegetation</skos:prefLabel>
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Biosphere" />
+    <skos:prefLabel xml:lang="en">Vegetation</skos:prefLabel>
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Afforestation - Reforestation" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Biomass" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Canopy Characteristics" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Carbon" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Chlorophyll" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Crown" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Deciduous Vegetation" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Dominant Species" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Evergreen Vegetation" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Exotic Vegetation" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Forest Composition - Structure" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Herbivory" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Importance Value" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Indigenous Vegetation" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Leaf Characteristics" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Litter Characteristics" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Macrophytes" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Nitrogen" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Nutrients" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Phosphorus" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Photosynthetically Active Radiation" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Pigments" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Plant Characteristics" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Pollen" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Reclamation - Revegetation - Restoration" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Reforestation" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Tree Rings" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Vegetation Cover" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Vegetation Index" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Vegetation Species" />
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Wetlands">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:prefLabel xml:lang="fr">Zones humides</skos:prefLabel>
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Biosphere" />
+    <skos:prefLabel xml:lang="en">Wetlands</skos:prefLabel>
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Estuarine Wetlands" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Lacustrine Wetlands" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Marine" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Marshes" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Palustrine Wetlands" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Peatlands" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Riparian Wetlands" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Swamps" />
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Attitudes">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:prefLabel xml:lang="fr">Attitudes</skos:prefLabel>
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Human Dimensions" />
+    <skos:prefLabel xml:lang="en">Attitudes</skos:prefLabel>
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Consumer behavior" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Recreation behavior" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Social behavior" />
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Boundaries">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:prefLabel xml:lang="fr">Frontieres</skos:prefLabel>
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Human Dimensions" />
+    <skos:prefLabel xml:lang="en">Boundaries</skos:prefLabel>
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Administrative Divisions" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Political Divisions" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Surveys" />
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Economic Resources">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:prefLabel xml:lang="fr">Ressources economiques</skos:prefLabel>
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Human Dimensions" />
+    <skos:prefLabel xml:lang="en">Economic Resources</skos:prefLabel>
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Agricultural Economics" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Oil - Gas Production" />
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Environmental Impacts">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:prefLabel xml:lang="fr">Impacts environnementaux</skos:prefLabel>
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Human Dimensions" />
+    <skos:prefLabel xml:lang="en">Environmental Impacts</skos:prefLabel>
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Acid Deposition" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Agricultural Expansion" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Biochemical Release" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Biomass Burning" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Chemical Spills" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Civil Disturbance" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Conservation" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Contaminants" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Deforestation" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Desertification" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Environmental Assessments" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Eutrophication" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Fossil Fuel Burning" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Gas Explosions - Leaks" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Gas Flaring" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Heavy Metals" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Industrial Emissions" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Industrialization" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Irrigation" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Mine Drainage" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Nuclear Radiation" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Oil Spill" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Reclamation - Revegetation - Restoration" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Reforestation" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Sewage" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Urbanization" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Water Management" />
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Human Health">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:prefLabel xml:lang="fr">Sante humaine</skos:prefLabel>
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Human Dimensions" />
+    <skos:prefLabel xml:lang="en">Human Health</skos:prefLabel>
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Anatomical Parameters" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Diseases - Epidemics" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Physiological Parameters" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Psychological Parameters" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Public Health" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Radiation Exposure" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Vital Statistics" />
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Infrastructure">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:prefLabel xml:lang="fr">Infrastructure</skos:prefLabel>
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Human Dimensions" />
+    <skos:prefLabel xml:lang="en">Infrastructure</skos:prefLabel>
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Buildings" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Communications" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Cultural Features" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Electricity" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Pipelines" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Transportation" />
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Land Use - Land Cover">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:prefLabel xml:lang="fr">Usage du sol - Occupation du sol</skos:prefLabel>
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Human Dimensions" />
+    <skos:prefLabel xml:lang="en">Land Use - Land Cover</skos:prefLabel>
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Land Management" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Land Tenure" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Land Use Classes" />
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Natural Hazards">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:prefLabel xml:lang="fr">Risques naturels</skos:prefLabel>
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Human Dimensions" />
+    <skos:prefLabel xml:lang="en">Natural Hazards</skos:prefLabel>
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Biological Hazards" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Fires" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Geological Hazards" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Hydrological Hazards" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Meteorological Hazards" />
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Population">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:prefLabel xml:lang="fr">Population</skos:prefLabel>
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Human Dimensions" />
+    <skos:prefLabel xml:lang="en">Population</skos:prefLabel>
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Population Distribution" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Population Size" />
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Ground Water">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:prefLabel xml:lang="fr">Eau souterraine</skos:prefLabel>
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Hydrosphere" />
+    <skos:prefLabel xml:lang="en">Ground Water</skos:prefLabel>
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Aquifers" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Drainage" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Saltwater Intrusion" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Springs" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Water Table" />
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Surface Water">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:prefLabel xml:lang="fr">Eau superficielle</skos:prefLabel>
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Hydrosphere" />
+    <skos:prefLabel xml:lang="en">Surface Water</skos:prefLabel>
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Aquifer Recharge" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Drainage" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Floods" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Inundation" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Lakes" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Rivers - Streams" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Runoff" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Watershed characteristics" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Wetlands" />
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Erosion - Sedimentation">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:prefLabel xml:lang="fr">Erosion-Sedimentation</skos:prefLabel>
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Land Surface" />
+    <skos:prefLabel xml:lang="en">Erosion - Sedimentation</skos:prefLabel>
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Degradation" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Entrainment" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Erosion" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Landslides" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Sediment Chemistry" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Sediment Composition" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Sediment Transport" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Sedimentation" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Sediments" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Stratigraphic Sequence" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Suspended Solids" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Weathering" />
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Geomorphology">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:prefLabel xml:lang="fr">Geomorphologie</skos:prefLabel>
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Land Surface" />
+    <skos:prefLabel xml:lang="en">Geomorphology</skos:prefLabel>
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Coastal Landforms - Processes" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Eolian Landforms - Processes" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Fluvial Landforms - Processes" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Glacial Landforms - Processes" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Karst Landforms - Processes" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Tectonic Landforms - Processes" />
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Land Temperature">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:prefLabel xml:lang="fr">Temperature des terres</skos:prefLabel>
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Land Surface" />
+    <skos:prefLabel xml:lang="en">Land Temperature</skos:prefLabel>
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Land Heat Capacity" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Land Surface Temperature" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Skin Temperature" />
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Land Use - Land Cover">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:prefLabel xml:lang="fr">Usage du sol - Occupation du sol</skos:prefLabel>
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Land Surface" />
+    <skos:prefLabel xml:lang="en">Land Use - Land Cover</skos:prefLabel>
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Land Cover" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Land Productivity" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Land Resources" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Land Use Classes" />
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Landscape">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:prefLabel xml:lang="fr">Paysages</skos:prefLabel>
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Land Surface" />
+    <skos:prefLabel xml:lang="en">Landscape</skos:prefLabel>
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Landscape Ecology" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Landscape Management" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Landscape Pattern" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Reclamation - Revegetation - Restoration" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Reforestation" />
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Soils">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:prefLabel xml:lang="fr">Sols</skos:prefLabel>
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Land Surface" />
+    <skos:prefLabel xml:lang="en">Soils</skos:prefLabel>
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Nitrogen" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Organic Matter" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Phosphorus" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Potassium" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Reclamation - Revegetation - Restoration" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Sodium" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Soil Absorption" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Soil Chemistry" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Soil Classification" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Soil Color" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Soil Compaction" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Soil Consistence" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Soil Depth" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Soil Fertility" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Soil Horizons - Profile" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Soil Moisture - Water Content" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Soil pH" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Soil Productivity" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Soil Salinity" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Soil Temperature" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Soil Texture" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Soil Water Holding Capacity" />
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Surface Radiative Properties">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:prefLabel xml:lang="fr">Propriete de la surface radiative</skos:prefLabel>
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Land Surface" />
+    <skos:prefLabel xml:lang="en">Surface Radiative Properties</skos:prefLabel>
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Albedo" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Anisotropy" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Emissivity" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Reflectance" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Thermal Properties" />
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Topography">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:prefLabel xml:lang="fr">Topographie</skos:prefLabel>
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Land Surface" />
+    <skos:prefLabel xml:lang="en">Topography</skos:prefLabel>
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Contours" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Landforms" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Relief" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Surface Roughness" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Terrain Elevation" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Topographic Effects" />
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Aquatic Sciences">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:prefLabel xml:lang="fr">Sciences aquatiques</skos:prefLabel>
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Oceans" />
+    <skos:prefLabel xml:lang="en">Aquatic Sciences</skos:prefLabel>
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Aquaculture" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Fisheries" />
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Coastal Processes">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:prefLabel xml:lang="fr">Processus cotiers</skos:prefLabel>
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Oceans" />
+    <skos:prefLabel xml:lang="en">Coastal Processes</skos:prefLabel>
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Barrier Islands" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Beaches" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Coastal Elevation" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Coral Reefs" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Deltas" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Dunes" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Erosion" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Estuaries" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Fjords" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Inlets" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Intertidal Zone" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Lagoons" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Local Subsidence Trends" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Longshore Currents" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Mangroves" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Marshes" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Rocky Coasts" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Saltwater Intrusion" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Sea Level Rise" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Sea Surface Height" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Sediment Transport" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Sedimentation" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Shoals" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Shoreline Displacement" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Shorelines" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Storm Surge" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Tidal Height" />
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Geomorphology">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:prefLabel xml:lang="fr">Geomorphologie</skos:prefLabel>
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Solid Earth" />
+    <skos:prefLabel xml:lang="en">Geomorphology</skos:prefLabel>
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Coastal Landforms - Processes" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Eolian Landforms - Processes" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Fluvial Landforms - Processes" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Glacial Landforms - Processes" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Karst Landforms - Processes" />
+    <skos:narrower rdf:resource="http://geoaquifer.ige.fr/GCMD#Tectonic Landforms - Processes" />
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Farm Structures">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Agricultural Engineering" />
+    <skos:prefLabel xml:lang="fr">Structures d'exploitation</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Farm Structures</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Crop - Plant Yields">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Agricultural Plant Science" />
+    <skos:prefLabel xml:lang="fr">Recoltes - rendements des cultures</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Crop - Plant Yields</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Cropping Systems">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Agricultural Plant Science" />
+    <skos:prefLabel xml:lang="fr">Systemes de culture</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Cropping Systems</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Irrigation">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Agricultural Plant Science" />
+    <skos:prefLabel xml:lang="fr">Irrigation</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Irrigation</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Plant Diseases - Disorders - Pests">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Agricultural Plant Science" />
+    <skos:prefLabel xml:lang="fr">Ennemis - desordres - maladies des cultures</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Plant Diseases - Disorders - Pests</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Reclamation - Revegetation - Restoration">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Agricultural Plant Science" />
+    <skos:prefLabel xml:lang="fr">Regeneration - revegetation - restoration</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Reclamation - Revegetation - Restoration</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Afforestation - Reforestation">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Forest Science" />
+    <skos:prefLabel xml:lang="fr">Boisement - Reforestation</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Afforestation - Reforestation</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Forest Conservation">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Forest Science" />
+    <skos:prefLabel xml:lang="fr">Conservation de la forêt</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Forest Conservation</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Forest Fire Science">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Forest Science" />
+    <skos:prefLabel xml:lang="fr">Science des feux de forêts</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Forest Fire Science</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Forest Harvesting And Engineering">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Forest Science" />
+    <skos:prefLabel xml:lang="fr">Ingenierie et production forestieres</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Forest Harvesting And Engineering</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Forest Management">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Forest Science" />
+    <skos:prefLabel xml:lang="fr">Gestion forestiere</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Forest Management</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Forest Mensuration">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Forest Science" />
+    <skos:prefLabel xml:lang="fr">Mesures forestieres</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Forest Mensuration</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Forest Protection">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Forest Science" />
+    <skos:prefLabel xml:lang="fr">Protection des forêts</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Forest Protection</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Forest Yields">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Forest Science" />
+    <skos:prefLabel xml:lang="fr">Rendements forestiers</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Forest Yields</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Reforestation">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Forest Science" />
+    <skos:prefLabel xml:lang="fr">Reforestation</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Reforestation</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Drought">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Atmospheric Phenomena" />
+    <skos:prefLabel xml:lang="fr">Secheresse</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Drought</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Freeze">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Atmospheric Phenomena" />
+    <skos:prefLabel xml:lang="fr">Gel</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Freeze</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Frost">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Atmospheric Phenomena" />
+    <skos:prefLabel xml:lang="fr">Givre</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Frost</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Air Temperature">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Atmospheric Temperature" />
+    <skos:prefLabel xml:lang="fr">Temperature de l'air</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Air Temperature</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Maximum - Minimum Temperature">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Atmospheric Temperature" />
+    <skos:prefLabel xml:lang="fr">Temperature minimum - maximum</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Maximum - Minimum Temperature</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Surface Air Temperature">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Atmospheric Temperature" />
+    <skos:prefLabel xml:lang="fr">Temperature superficielle de l'air</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Surface Air Temperature</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Temperature Anomalies">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Atmospheric Temperature" />
+    <skos:prefLabel xml:lang="fr">Anomalies de la temperature</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Temperature Anomalies</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Temperature Profiles">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Atmospheric Temperature" />
+    <skos:prefLabel xml:lang="fr">Profils de temperature</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Temperature Profiles</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Evaporation">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Atmospheric Water Vapor" />
+    <skos:prefLabel xml:lang="fr">Evaporation</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Evaporation</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Evapotranspiration">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Atmospheric Water Vapor" />
+    <skos:prefLabel xml:lang="fr">Evapotranspiration</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Evapotranspiration</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Humidity">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Atmospheric Water Vapor" />
+    <skos:prefLabel xml:lang="fr">Humidite</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Humidity</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Precipitable Water">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Atmospheric Water Vapor" />
+    <skos:prefLabel xml:lang="fr">Eau precipitable</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Precipitable Water</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Water Vapor">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Atmospheric Water Vapor" />
+    <skos:prefLabel xml:lang="fr">Vapeur d'eau</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Water Vapor</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Surface Winds">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Atmospheric Winds" />
+    <skos:prefLabel xml:lang="fr">Vents de surface</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Surface Winds</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Wind Profiles">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Atmospheric Winds" />
+    <skos:prefLabel xml:lang="fr">Profils de vent</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Wind Profiles</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Precipitation Amount">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Precipitation" />
+    <skos:prefLabel xml:lang="fr">Volume des precipitations</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Precipitation Amount</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Precipitation Anomalies">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Precipitation" />
+    <skos:prefLabel xml:lang="fr">Anomalies des precipitations</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Precipitation Anomalies</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Precipitation Rate">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Precipitation" />
+    <skos:prefLabel xml:lang="fr">Taux de precipitation</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Precipitation Rate</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Rain">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Precipitation" />
+    <skos:prefLabel xml:lang="fr">Pluie</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Rain</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Biomass">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Ecological Dynamics" />
+    <skos:prefLabel xml:lang="fr">Biomasse</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Biomass</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Endangered Species">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Ecological Dynamics" />
+    <skos:prefLabel xml:lang="fr">Especes menacees</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Endangered Species</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Fire Characteristics">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Ecological Dynamics" />
+    <skos:prefLabel xml:lang="fr">Caracteristiques des feux</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Fire Characteristics</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Fire Occurrence">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Ecological Dynamics" />
+    <skos:prefLabel xml:lang="fr">Occurrence des feux</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Fire Occurrence</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Photosynthesis">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Ecological Dynamics" />
+    <skos:prefLabel xml:lang="fr">Photosynthese</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Photosynthesis</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Population Dynamics">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Ecological Dynamics" />
+    <skos:prefLabel xml:lang="fr">Dynamiques des populations</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Population Dynamics</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Primary Production">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Ecological Dynamics" />
+    <skos:prefLabel xml:lang="fr">Production primaire</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Primary Production</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Range Changes">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Ecological Dynamics" />
+    <skos:prefLabel xml:lang="fr">Taux de changement</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Range Changes</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Secondary Production">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Ecological Dynamics" />
+    <skos:prefLabel xml:lang="fr">Production secondaire</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Secondary Production</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Agricultural Lands">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Terrestrial Ecosystems" />
+    <skos:prefLabel xml:lang="fr">Terres agricoles</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Agricultural Lands</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Alpine - Tundra">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Terrestrial Ecosystems" />
+    <skos:prefLabel xml:lang="fr">Tondra et milieux alpins</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Alpine - Tundra</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Beaches">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Terrestrial Ecosystems" />
+    <skos:prefLabel xml:lang="fr">Plages</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Beaches</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Deserts">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Terrestrial Ecosystems" />
+    <skos:prefLabel xml:lang="fr">Deserts</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Deserts</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Dunes">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Terrestrial Ecosystems" />
+    <skos:prefLabel xml:lang="fr">Dunes</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Dunes</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Forests">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Terrestrial Ecosystems" />
+    <skos:prefLabel xml:lang="fr">Forets</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Forests</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Grasslands">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Terrestrial Ecosystems" />
+    <skos:prefLabel xml:lang="fr">Prairies</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Grasslands</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Islands">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Terrestrial Ecosystems" />
+    <skos:prefLabel xml:lang="fr">Iles</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Islands</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Karst Landscape">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Terrestrial Ecosystems" />
+    <skos:prefLabel xml:lang="fr">Paysages karstiques</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Karst Landscape</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Montane Habitats">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Terrestrial Ecosystems" />
+    <skos:prefLabel xml:lang="fr">Habitats de montagne</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Montane Habitats</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Savannas">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Terrestrial Ecosystems" />
+    <skos:prefLabel xml:lang="fr">Savannes</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Savannas</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Shrubland - Scrub">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Terrestrial Ecosystems" />
+    <skos:prefLabel xml:lang="fr">Milieux a buissons et touffes</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Shrubland - Scrub</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Urban Lands">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Terrestrial Ecosystems" />
+    <skos:prefLabel xml:lang="fr">Terres urbaines</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Urban Lands</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Wetlands">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Terrestrial Ecosystems" />
+    <skos:prefLabel xml:lang="fr">Zones humides</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Wetlands</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Afforestation - Reforestation">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Vegetation" />
+    <skos:prefLabel xml:lang="fr">Boisement - reforestation</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Afforestation - Reforestation</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Biomass">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Vegetation" />
+    <skos:prefLabel xml:lang="fr">Biomasse</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Biomass</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Canopy Characteristics">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Vegetation" />
+    <skos:prefLabel xml:lang="fr">Caracteristiques de la canope</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Canopy Characteristics</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Carbon">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Vegetation" />
+    <skos:prefLabel xml:lang="fr">Carbone</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Carbon</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Chlorophyll">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Vegetation" />
+    <skos:prefLabel xml:lang="fr">Chlorophylle</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Chlorophyll</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Crown">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Vegetation" />
+    <skos:prefLabel xml:lang="fr">Couronne</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Crown</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Deciduous Vegetation">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Vegetation" />
+    <skos:prefLabel xml:lang="fr">Vegetation decidue</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Deciduous Vegetation</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Dominant Species">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Vegetation" />
+    <skos:prefLabel xml:lang="fr">Especes dominantes</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Dominant Species</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Evergreen Vegetation">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Vegetation" />
+    <skos:prefLabel xml:lang="fr">Vegetation toujours verte</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Evergreen Vegetation</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Exotic Vegetation">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Vegetation" />
+    <skos:prefLabel xml:lang="fr">Vegetation exotique</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Exotic Vegetation</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Forest Composition - Structure">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Vegetation" />
+    <skos:prefLabel xml:lang="fr">Structure - composition de la foret</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Forest Composition - Structure</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Herbivory">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Vegetation" />
+    <skos:prefLabel xml:lang="fr">Herbivores</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Herbivory</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Importance Value">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Vegetation" />
+    <skos:prefLabel xml:lang="fr">Valeur importance</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Importance Value</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Indigenous Vegetation">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Vegetation" />
+    <skos:prefLabel xml:lang="fr">Vegetation indigene</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Indigenous Vegetation</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Leaf Characteristics">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Vegetation" />
+    <skos:prefLabel xml:lang="fr">Caracteristiques des feuilles</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Leaf Characteristics</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Litter Characteristics">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Vegetation" />
+    <skos:prefLabel xml:lang="fr">Caracteristiques de l'humus</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Litter Characteristics</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Macrophytes">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Vegetation" />
+    <skos:prefLabel xml:lang="fr">Macrophytes</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Macrophytes</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Nitrogen">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Vegetation" />
+    <skos:prefLabel xml:lang="fr">Azote</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Nitrogen</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Nutrients">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Vegetation" />
+    <skos:prefLabel xml:lang="fr">Nutriments</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Nutrients</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Phosphorus">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Vegetation" />
+    <skos:prefLabel xml:lang="fr">Phosphore</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Phosphorus</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Photosynthetically Active Radiation">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Vegetation" />
+    <skos:prefLabel xml:lang="fr">Radiation photosynthetiquement active</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Photosynthetically Active Radiation</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Pigments">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Vegetation" />
+    <skos:prefLabel xml:lang="fr">Pigments</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Pigments</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Plant Characteristics">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Vegetation" />
+    <skos:prefLabel xml:lang="fr">Caracteristiques des plantes</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Plant Characteristics</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Pollen">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Vegetation" />
+    <skos:prefLabel xml:lang="fr">Pollen</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Pollen</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Reclamation - Revegetation - Restoration">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Vegetation" />
+    <skos:prefLabel xml:lang="fr">Regeneration - revegetation - restoration</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Reclamation - Revegetation - Restoration</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Reforestation">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Vegetation" />
+    <skos:prefLabel xml:lang="fr">Reforestation</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Reforestation</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Tree Rings">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Vegetation" />
+    <skos:prefLabel xml:lang="fr">Anneaux d'arbres</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Tree Rings</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Vegetation Cover">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Vegetation" />
+    <skos:prefLabel xml:lang="fr">Couvert vegetal</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Vegetation Cover</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Vegetation Index">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Vegetation" />
+    <skos:prefLabel xml:lang="fr">Indice de vegetation</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Vegetation Index</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Vegetation Species">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Vegetation" />
+    <skos:prefLabel xml:lang="fr">Especes vegetales</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Vegetation Species</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Estuarine Wetlands">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Wetlands" />
+    <skos:prefLabel xml:lang="fr">Zones humides d'estuaire</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Estuarine Wetlands</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Lacustrine Wetlands">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Wetlands" />
+    <skos:prefLabel xml:lang="fr">Zones humides lacustres</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Lacustrine Wetlands</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Marine">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Wetlands" />
+    <skos:prefLabel xml:lang="fr">Mer</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Marine</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Marshes">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Wetlands" />
+    <skos:prefLabel xml:lang="fr">Marecages</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Marshes</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Palustrine Wetlands">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Wetlands" />
+    <skos:prefLabel xml:lang="fr">Zones humides palustres</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Palustrine Wetlands</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Peatlands">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Wetlands" />
+    <skos:prefLabel xml:lang="fr">Tourbieres</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Peatlands</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Riparian Wetlands">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Wetlands" />
+    <skos:prefLabel xml:lang="fr">Zones humides des rives</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Riparian Wetlands</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Swamps">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Wetlands" />
+    <skos:prefLabel xml:lang="fr">Marais</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Swamps</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Consumer behavior">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Attitudes" />
+    <skos:prefLabel xml:lang="fr">Comportement de consommation</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Consumer behavior</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Recreation behavior">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Attitudes" />
+    <skos:prefLabel xml:lang="fr">Comportement de recreation</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Recreation behavior</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Social behavior">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Attitudes" />
+    <skos:prefLabel xml:lang="fr">Comportement social</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Social behavior</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Administrative Divisions">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Boundaries" />
+    <skos:prefLabel xml:lang="fr">Divisions administratives</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Administrative Divisions</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Political Divisions">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Boundaries" />
+    <skos:prefLabel xml:lang="fr">Divisions politiques</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Political Divisions</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Surveys">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Boundaries" />
+    <skos:prefLabel xml:lang="fr">Leves</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Surveys</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Agricultural Economics">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Economic Resources" />
+    <skos:prefLabel xml:lang="fr">Donnees economiques agricoles</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Agricultural Economics</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Oil - Gas Production">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Economic Resources" />
+    <skos:prefLabel xml:lang="fr">Production de petrole - gaz</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Oil - Gas Production</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Acid Deposition">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Environmental Impacts" />
+    <skos:prefLabel xml:lang="fr">Depots d'acide</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Acid Deposition</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Agricultural Expansion">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Environmental Impacts" />
+    <skos:prefLabel xml:lang="fr">Expansion agricole</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Agricultural Expansion</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Biochemical Release">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Environmental Impacts" />
+    <skos:prefLabel xml:lang="fr">Relachement biochimique</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Biochemical Release</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Biomass Burning">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Environmental Impacts" />
+    <skos:prefLabel xml:lang="fr">Combustion de biomasse</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Biomass Burning</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Chemical Spills">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Environmental Impacts" />
+    <skos:prefLabel xml:lang="fr">Decharges chimiques</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Chemical Spills</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Civil Disturbance">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Environmental Impacts" />
+    <skos:prefLabel xml:lang="fr">Troubles civils</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Civil Disturbance</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Conservation">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Environmental Impacts" />
+    <skos:prefLabel xml:lang="fr">Conservation</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Conservation</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Contaminants">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Environmental Impacts" />
+    <skos:prefLabel xml:lang="fr">Contaminants</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Contaminants</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Deforestation">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Environmental Impacts" />
+    <skos:prefLabel xml:lang="fr">Deforestation</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Deforestation</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Desertification">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Environmental Impacts" />
+    <skos:prefLabel xml:lang="fr">Desertification</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Desertification</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Environmental Assessments">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Environmental Impacts" />
+    <skos:prefLabel xml:lang="fr">Evaluation environnementale</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Environmental Assessments</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Eutrophication">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Environmental Impacts" />
+    <skos:prefLabel xml:lang="fr">Eutrophisation</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Eutrophication</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Fossil Fuel Burning">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Environmental Impacts" />
+    <skos:prefLabel xml:lang="fr">Combustion de combustible fossile</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Fossil Fuel Burning</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Gas Explosions - Leaks">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Environmental Impacts" />
+    <skos:prefLabel xml:lang="fr">Fuites - explosions de gaz</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Gas Explosions - Leaks</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Gas Flaring">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Environmental Impacts" />
+    <skos:prefLabel xml:lang="fr">Flamboiements de gaz</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Gas Flaring</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Heavy Metals">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Environmental Impacts" />
+    <skos:prefLabel xml:lang="fr">Metaux lourds</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Heavy Metals</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Industrial Emissions">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Environmental Impacts" />
+    <skos:prefLabel xml:lang="fr">Emissions industrielles</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Industrial Emissions</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Industrialization">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Environmental Impacts" />
+    <skos:prefLabel xml:lang="fr">Industrialisation</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Industrialization</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Irrigation">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Environmental Impacts" />
+    <skos:prefLabel xml:lang="fr">Irrigation</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Irrigation</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Mine Drainage">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Environmental Impacts" />
+    <skos:prefLabel xml:lang="fr">Erosion des terrils</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Mine Drainage</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Nuclear Radiation">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Environmental Impacts" />
+    <skos:prefLabel xml:lang="fr">Radiation nucleaire</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Nuclear Radiation</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Oil Spill">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Environmental Impacts" />
+    <skos:prefLabel xml:lang="fr">Nappes de petrole flottantes</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Oil Spill</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Reclamation - Revegetation - Restoration">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Environmental Impacts" />
+    <skos:prefLabel xml:lang="fr">Regeneration - revegetation - restoration</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Reclamation - Revegetation - Restoration</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Reforestation">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Environmental Impacts" />
+    <skos:prefLabel xml:lang="fr">Reforestation</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Reforestation</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Sewage">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Environmental Impacts" />
+    <skos:prefLabel xml:lang="fr">Assainissement</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Sewage</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Urbanization">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Environmental Impacts" />
+    <skos:prefLabel xml:lang="fr">Urbanisation</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Urbanization</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Water Management">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Environmental Impacts" />
+    <skos:prefLabel xml:lang="fr">Gestion de l'eau</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Water Management</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Anatomical Parameters">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Human Health" />
+    <skos:prefLabel xml:lang="fr">Parametres anatomiques</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Anatomical Parameters</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Diseases - Epidemics">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Human Health" />
+    <skos:prefLabel xml:lang="fr">Epidemies - maladies</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Diseases - Epidemics</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Physiological Parameters">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Human Health" />
+    <skos:prefLabel xml:lang="fr">Parametres physiologiques</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Physiological Parameters</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Psychological Parameters">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Human Health" />
+    <skos:prefLabel xml:lang="fr">Parametres psychologiques</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Psychological Parameters</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Public Health">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Human Health" />
+    <skos:prefLabel xml:lang="fr">Sante publique</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Public Health</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Radiation Exposure">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Human Health" />
+    <skos:prefLabel xml:lang="fr">Exposition aux radiations</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Radiation Exposure</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Vital Statistics">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Human Health" />
+    <skos:prefLabel xml:lang="fr">Statistiques vitales</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Vital Statistics</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Buildings">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Infrastructure" />
+    <skos:prefLabel xml:lang="fr">Batiments</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Buildings</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Communications">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Infrastructure" />
+    <skos:prefLabel xml:lang="fr">Communication</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Communications</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Cultural Features">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Infrastructure" />
+    <skos:prefLabel xml:lang="fr">Elements culturels</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Cultural Features</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Electricity">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Infrastructure" />
+    <skos:prefLabel xml:lang="fr">Electricite</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Electricity</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Pipelines">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Infrastructure" />
+    <skos:prefLabel xml:lang="fr">Pipelines</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Pipelines</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Transportation">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Infrastructure" />
+    <skos:prefLabel xml:lang="fr">Transport</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Transportation</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Land Management">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Land Use - Land Cover" />
+    <skos:prefLabel xml:lang="fr">Gestion des terres</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Land Management</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Land Tenure">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Land Use - Land Cover" />
+    <skos:prefLabel xml:lang="fr">Aspects fonciers</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Land Tenure</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Land Use Classes">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Land Use - Land Cover" />
+    <skos:prefLabel xml:lang="fr">Classes d'utilisation du sol</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Land Use Classes</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Biological Hazards">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Natural Hazards" />
+    <skos:prefLabel xml:lang="fr">Risques biologiques</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Biological Hazards</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Fires">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Natural Hazards" />
+    <skos:prefLabel xml:lang="fr">Feux</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Fires</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Geological Hazards">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Natural Hazards" />
+    <skos:prefLabel xml:lang="fr">Risques geologiques</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Geological Hazards</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Hydrological Hazards">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Natural Hazards" />
+    <skos:prefLabel xml:lang="fr">Risques hydrologiques</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Hydrological Hazards</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Meteorological Hazards">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Natural Hazards" />
+    <skos:prefLabel xml:lang="fr">Risques meteorologiques</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Meteorological Hazards</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Population Distribution">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Population" />
+    <skos:prefLabel xml:lang="fr">Distribution de la population</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Population Distribution</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Population Size">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Population" />
+    <skos:prefLabel xml:lang="fr">Taille de la population</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Population Size</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Aquifers">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Ground Water" />
+    <skos:prefLabel xml:lang="fr">Aquiferes</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Aquifers</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Drainage">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Ground Water" />
+    <skos:prefLabel xml:lang="fr">Ecoulement</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Drainage</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Saltwater Intrusion">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Ground Water" />
+    <skos:prefLabel xml:lang="fr">Intrusion d'eau salee</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Saltwater Intrusion</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Springs">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Ground Water" />
+    <skos:prefLabel xml:lang="fr">Sources</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Springs</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Water Table">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Ground Water" />
+    <skos:prefLabel xml:lang="fr">Nappe d'eau</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Water Table</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Aquifer Recharge">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Surface Water" />
+    <skos:prefLabel xml:lang="fr">Recharge des aquiferes</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Aquifer Recharge</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Drainage">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Surface Water" />
+    <skos:prefLabel xml:lang="fr">Reseau hydrographique</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Drainage</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Floods">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Surface Water" />
+    <skos:prefLabel xml:lang="fr">Crues</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Floods</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Inundation">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Surface Water" />
+    <skos:prefLabel xml:lang="fr">Inondation</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Inundation</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Lakes">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Surface Water" />
+    <skos:prefLabel xml:lang="fr">Lacs</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Lakes</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Rivers - Streams">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Surface Water" />
+    <skos:prefLabel xml:lang="fr">Rivières et fleuves</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Rivers - Streams</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Runoff">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Surface Water" />
+    <skos:prefLabel xml:lang="fr">Ecoulement</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Runoff</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Watershed characteristics">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Surface Water" />
+    <skos:prefLabel xml:lang="fr">Caracteristiques des bassins versants</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Watershed characteristics</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Wetlands">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Surface Water" />
+    <skos:prefLabel xml:lang="fr">Zones humides</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Wetlands</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Degradation">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Erosion - Sedimentation" />
+    <skos:prefLabel xml:lang="fr">Degradation</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Degradation</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Entrainment">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Erosion - Sedimentation" />
+    <skos:prefLabel xml:lang="fr">Mobilisation</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Entrainment</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Erosion">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Erosion - Sedimentation" />
+    <skos:prefLabel xml:lang="fr">Erosion</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Erosion</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Landslides">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Erosion - Sedimentation" />
+    <skos:prefLabel xml:lang="fr">Glissements de terrain</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Landslides</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Sediment Chemistry">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Erosion - Sedimentation" />
+    <skos:prefLabel xml:lang="fr">Chimie des sediments</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Sediment Chemistry</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Sediment Composition">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Erosion - Sedimentation" />
+    <skos:prefLabel xml:lang="fr">Composition des sediments</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Sediment Composition</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Sediment Transport">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Erosion - Sedimentation" />
+    <skos:prefLabel xml:lang="fr">Transport des sediments</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Sediment Transport</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Sedimentation">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Erosion - Sedimentation" />
+    <skos:prefLabel xml:lang="fr">Sedimentation</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Sedimentation</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Sediments">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Erosion - Sedimentation" />
+    <skos:prefLabel xml:lang="fr">Sediments</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Sediments</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Stratigraphic Sequence">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Erosion - Sedimentation" />
+    <skos:prefLabel xml:lang="fr">Sequence stratigraphique</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Stratigraphic Sequence</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Suspended Solids">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Erosion - Sedimentation" />
+    <skos:prefLabel xml:lang="fr">Solides en suspension</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Suspended Solids</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Weathering">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Erosion - Sedimentation" />
+    <skos:prefLabel xml:lang="fr">Vieillissement</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Weathering</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Coastal Landforms - Processes">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Geomorphology" />
+    <skos:prefLabel xml:lang="fr">Processus - paysages cotiers</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Coastal Landforms - Processes</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Eolian Landforms - Processes">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Geomorphology" />
+    <skos:prefLabel xml:lang="fr">Processus - paysages eoliens</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Eolian Landforms - Processes</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Fluvial Landforms - Processes">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Geomorphology" />
+    <skos:prefLabel xml:lang="fr">Processus - paysages fluviaux</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Fluvial Landforms - Processes</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Glacial Landforms - Processes">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Geomorphology" />
+    <skos:prefLabel xml:lang="fr">Processus - paysages glaciaires</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Glacial Landforms - Processes</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Karst Landforms - Processes">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Geomorphology" />
+    <skos:prefLabel xml:lang="fr">Processus - paysages karstiques</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Karst Landforms - Processes</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Tectonic Landforms - Processes">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Geomorphology" />
+    <skos:prefLabel xml:lang="fr">Processus - paysages tectoniques</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Tectonic Landforms - Processes</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Land Heat Capacity">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Land Temperature" />
+    <skos:prefLabel xml:lang="fr">Capacite de chaleur des terres</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Land Heat Capacity</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Land Surface Temperature">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Land Temperature" />
+    <skos:prefLabel xml:lang="fr">Temperature de la surface terrestre</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Land Surface Temperature</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Skin Temperature">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Land Temperature" />
+    <skos:prefLabel xml:lang="fr">Temperature de l'enveloppe</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Skin Temperature</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Land Cover">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Land Use - Land Cover" />
+    <skos:prefLabel xml:lang="fr">Occupation du sol</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Land Cover</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Land Productivity">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Land Use - Land Cover" />
+    <skos:prefLabel xml:lang="fr">Productivite des terres</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Land Productivity</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Land Resources">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Land Use - Land Cover" />
+    <skos:prefLabel xml:lang="fr">Ressources des terres</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Land Resources</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Land Use Classes">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Land Use - Land Cover" />
+    <skos:prefLabel xml:lang="fr">Classes d'utilisation des sols</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Land Use Classes</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Landscape Ecology">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Landscape" />
+    <skos:prefLabel xml:lang="fr">Ecologie des paysages</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Landscape Ecology</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Landscape Management">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Landscape" />
+    <skos:prefLabel xml:lang="fr">Gestion des paysages</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Landscape Management</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Landscape Pattern">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Landscape" />
+    <skos:prefLabel xml:lang="fr">Types de paysage</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Landscape Pattern</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Reclamation - Revegetation - Restoration">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Landscape" />
+    <skos:prefLabel xml:lang="fr">Regeneration - revegetation - restoration</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Reclamation - Revegetation - Restoration</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Reforestation">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Landscape" />
+    <skos:prefLabel xml:lang="fr">Reforestation</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Reforestation</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Nitrogen">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Soils" />
+    <skos:prefLabel xml:lang="fr">Azote</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Nitrogen</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Organic Matter">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Soils" />
+    <skos:prefLabel xml:lang="fr">Matiere organique</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Organic Matter</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Phosphorus">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Soils" />
+    <skos:prefLabel xml:lang="fr">Phosphore</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Phosphorus</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Potassium">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Soils" />
+    <skos:prefLabel xml:lang="fr">Potassium</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Potassium</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Reclamation - Revegetation - Restoration">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Soils" />
+    <skos:prefLabel xml:lang="fr">Regeneration - revegetation - restoration</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Reclamation - Revegetation - Restoration</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Sodium">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Soils" />
+    <skos:prefLabel xml:lang="fr">Sodium</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Sodium</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Soil Absorption">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Soils" />
+    <skos:prefLabel xml:lang="fr">Absorption des sols</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Soil Absorption</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Soil Chemistry">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Soils" />
+    <skos:prefLabel xml:lang="fr">Chimie des sols</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Soil Chemistry</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Soil Classification">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Soils" />
+    <skos:prefLabel xml:lang="fr">Classification des sols</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Soil Classification</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Soil Color">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Soils" />
+    <skos:prefLabel xml:lang="fr">Couleur des sols</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Soil Color</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Soil Compaction">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Soils" />
+    <skos:prefLabel xml:lang="fr">Compactage des sols</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Soil Compaction</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Soil Consistence">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Soils" />
+    <skos:prefLabel xml:lang="fr">Consistence des sols</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Soil Consistence</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Soil Depth">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Soils" />
+    <skos:prefLabel xml:lang="fr">Profondeur des sols</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Soil Depth</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Soil Fertility">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Soils" />
+    <skos:prefLabel xml:lang="fr">Fertilite des sols</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Soil Fertility</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Soil Horizons - Profile">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Soils" />
+    <skos:prefLabel xml:lang="fr">Profils et horizons des sols</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Soil Horizons - Profile</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Soil Moisture - Water Content">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Soils" />
+    <skos:prefLabel xml:lang="fr">Contenu en eau et humidite des sols</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Soil Moisture - Water Content</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Soil pH">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Soils" />
+    <skos:prefLabel xml:lang="fr">pH des sols</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Soil pH</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Soil Productivity">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Soils" />
+    <skos:prefLabel xml:lang="fr">Productivite des sols</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Soil Productivity</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Soil Salinity">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Soils" />
+    <skos:prefLabel xml:lang="fr">Salinite des sols</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Soil Salinity</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Soil Temperature">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Soils" />
+    <skos:prefLabel xml:lang="fr">Temperature des sols</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Soil Temperature</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Soil Texture">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Soils" />
+    <skos:prefLabel xml:lang="fr">Texture des sols</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Soil Texture</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Soil Water Holding Capacity">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Soils" />
+    <skos:prefLabel xml:lang="fr">Capacite de retention en eau des sols</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Soil Water Holding Capacity</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Albedo">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Surface Radiative Properties" />
+    <skos:prefLabel xml:lang="fr">Albedo</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Albedo</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Anisotropy">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Surface Radiative Properties" />
+    <skos:prefLabel xml:lang="fr">Anisotropie</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Anisotropy</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Emissivity">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Surface Radiative Properties" />
+    <skos:prefLabel xml:lang="fr">Emissivite</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Emissivity</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Reflectance">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Surface Radiative Properties" />
+    <skos:prefLabel xml:lang="fr">Reflectance</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Reflectance</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Thermal Properties">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Surface Radiative Properties" />
+    <skos:prefLabel xml:lang="fr">Proprietes thermiques</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Thermal Properties</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Contours">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Topography" />
+    <skos:prefLabel xml:lang="fr">Courbes de niveaux</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Contours</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Landforms">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Topography" />
+    <skos:prefLabel xml:lang="fr">Paysages</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Landforms</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Relief">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Topography" />
+    <skos:prefLabel xml:lang="fr">Relief</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Relief</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Surface Roughness">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Topography" />
+    <skos:prefLabel xml:lang="fr">Rugosite de la surface</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Surface Roughness</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Terrain Elevation">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Topography" />
+    <skos:prefLabel xml:lang="fr">Altitude du terrain</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Terrain Elevation</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Topographic Effects">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Topography" />
+    <skos:prefLabel xml:lang="fr">Effets topographiques</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Topographic Effects</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Aquaculture">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Aquatic Sciences" />
+    <skos:prefLabel xml:lang="fr">Aquaculture</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Aquaculture</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Fisheries">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Aquatic Sciences" />
+    <skos:prefLabel xml:lang="fr">Pisciculture</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Fisheries</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Barrier Islands">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Coastal Processes" />
+    <skos:prefLabel xml:lang="fr">Iles barrieres</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Barrier Islands</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Beaches">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Coastal Processes" />
+    <skos:prefLabel xml:lang="fr">Plages</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Beaches</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Coastal Elevation">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Coastal Processes" />
+    <skos:prefLabel xml:lang="fr">Altitude des cotes</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Coastal Elevation</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Coral Reefs">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Coastal Processes" />
+    <skos:prefLabel xml:lang="fr">Recifs coraliens</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Coral Reefs</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Deltas">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Coastal Processes" />
+    <skos:prefLabel xml:lang="fr">Deltas</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Deltas</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Dunes">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Coastal Processes" />
+    <skos:prefLabel xml:lang="fr">Dunes</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Dunes</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Erosion">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Coastal Processes" />
+    <skos:prefLabel xml:lang="fr">Erosion</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Erosion</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Estuaries">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Coastal Processes" />
+    <skos:prefLabel xml:lang="fr">Estuaires</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Estuaries</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Fjords">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Coastal Processes" />
+    <skos:prefLabel xml:lang="fr">Fjords</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Fjords</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Inlets">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Coastal Processes" />
+    <skos:prefLabel xml:lang="fr">Criques</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Inlets</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Intertidal Zone">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Coastal Processes" />
+    <skos:prefLabel xml:lang="fr">Zone intertidale</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Intertidal Zone</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Lagoons">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Coastal Processes" />
+    <skos:prefLabel xml:lang="fr">Lagons</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Lagoons</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Local Subsidence Trends">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Coastal Processes" />
+    <skos:prefLabel xml:lang="fr">Tendance locale a la subsidence</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Local Subsidence Trends</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Longshore Currents">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Coastal Processes" />
+    <skos:prefLabel xml:lang="fr">Courants cotiers</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Longshore Currents</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Mangroves">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Coastal Processes" />
+    <skos:prefLabel xml:lang="fr">Mangroves</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Mangroves</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Marshes">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Coastal Processes" />
+    <skos:prefLabel xml:lang="fr">Marecages</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Marshes</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Rocky Coasts">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Coastal Processes" />
+    <skos:prefLabel xml:lang="fr">Cotes rocheuses</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Rocky Coasts</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Saltwater Intrusion">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Coastal Processes" />
+    <skos:prefLabel xml:lang="fr">Intrusion d'eau salee</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Saltwater Intrusion</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Sea Level Rise">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Coastal Processes" />
+    <skos:prefLabel xml:lang="fr">Elevation du niveau de la mer</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Sea Level Rise</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Sea Surface Height">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Coastal Processes" />
+    <skos:prefLabel xml:lang="fr">Hauteur de la surface de la mer</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Sea Surface Height</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Sediment Transport">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Coastal Processes" />
+    <skos:prefLabel xml:lang="fr">Transport de sediments</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Sediment Transport</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Sedimentation">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Coastal Processes" />
+    <skos:prefLabel xml:lang="fr">Sedimentation</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Sedimentation</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Shoals">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Coastal Processes" />
+    <skos:prefLabel xml:lang="fr">Hauts-fonds</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Shoals</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Shoreline Displacement">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Coastal Processes" />
+    <skos:prefLabel xml:lang="fr">Deplacement du trait de cote</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Shoreline Displacement</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Shorelines">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Coastal Processes" />
+    <skos:prefLabel xml:lang="fr">Trait de cote</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Shorelines</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Storm Surge">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Coastal Processes" />
+    <skos:prefLabel xml:lang="fr">Houle d'orage</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Storm Surge</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Tidal Height">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Coastal Processes" />
+    <skos:prefLabel xml:lang="fr">Hauteur des marees</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Tidal Height</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Coastal Landforms - Processes">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Geomorphology" />
+    <skos:prefLabel xml:lang="fr">Processus - paysages cotiers</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Coastal Landforms - Processes</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Eolian Landforms - Processes">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Geomorphology" />
+    <skos:prefLabel xml:lang="fr">Processus - paysages eoliens</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Eolian Landforms - Processes</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Fluvial Landforms - Processes">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Geomorphology" />
+    <skos:prefLabel xml:lang="fr">Processus - paysages fluviaux</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Fluvial Landforms - Processes</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Glacial Landforms - Processes">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Geomorphology" />
+    <skos:prefLabel xml:lang="fr">Processus - paysages glaciaires</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Glacial Landforms - Processes</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Karst Landforms - Processes">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Geomorphology" />
+    <skos:prefLabel xml:lang="fr">Processus - paysages karstiques</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Karst Landforms - Processes</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://geoaquifer.ige.fr/GCMD#Tectonic Landforms - Processes">
+    <skos:inScheme rdf:resource="http://geoaquifer.ige.fr/GCMD" />
+    <skos:broader rdf:resource="http://geoaquifer.ige.fr/GCMD#Geomorphology" />
+    <skos:prefLabel xml:lang="fr">Processus - paysages tectoniques</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Tectonic Landforms - Processes</skos:prefLabel>
+  </skos:Concept>
+</rdf:RDF>
+

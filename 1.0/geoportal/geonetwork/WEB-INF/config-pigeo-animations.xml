@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+ Define here parameters specific for animations application (weather animations)
+ <timestampformatter> : javascript function that builds the time stamp out of the file name (use variable 'filename')
+ 						exemple : 	filename 			mpe_140917-1402.png
+ 									timestampformatter  "20"+filename.substr(4,2)+"-"+filename.substr(6,2)+"-"+filename.substr(8,2)+" T "+filename.substr(11,2)+":"+filename.substr(13,2)
+ 									gives timestamp		2014-09-17 T 14:02	 									
+-->
+<animations>
+ <!-- List of the available DBs (connection must be properly defined in config-override-dev/prod.xml -->
+ <datasets>
+ 	<dataset>
+ 		<id>eumetsat</id> <!-- must match the data folder name-->
+ 		<label>Eumetsat meteo</label>
+ 		<SRS>EPSG:4326</SRS>
+ 		<geographicbounds>
+ 			<minlon>-30.0093561</minlon>
+ 			<minlat>-35.0062377</minlat>
+ 			<maxlon>54.9937605</maxlon>
+ 			<maxlat>36.0168419</maxlat>
+ 		</geographicbounds>
+ 		<imagesize>
+ 			<width>1514</width>
+ 			<height>1265</height>
+		</imagesize>
+ 		<timestampformatter>"20"+filename.substr(4,2)+"-"+filename.substr(6,2)+"-"+filename.substr(8,2)+" T "+filename.substr(11,2)+":"+filename.substr(13,2)</timestampformatter>
+ 		<info>©Eumetsat</info>		<!-- not used for now-->
+ 		<timeextent>12</timeextent>	<!-- not used for now-->
+ 		<timeunit>h</timeunit>		<!-- not used for now-->
+ 	</dataset>
+ </datasets>
+</animations>
