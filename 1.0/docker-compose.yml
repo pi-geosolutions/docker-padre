@@ -1,0 +1,21 @@
+geoportal:
+    build: geoportal
+    ports: 
+     - "8080:8080"
+    links:
+     - pg
+    volumes_from:
+     - data
+    environment:
+     - POSTGRES_DB_USERNAME=geonetwork
+     - POSTGRES_DB_PASSWORD=geonetwork
+     - DATA_DIR=/var/padre/geonetwork_datadir
+pg:
+    build: postgresql
+    volumes_from:
+     - data
+    environment:
+     - PGDATA=/var/lib/postgresql/data/pgdata
+data:
+    build: data
+    command: tail -f /dev/null
