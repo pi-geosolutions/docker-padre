@@ -1,21 +1,35 @@
-geoportal:
+version: "3"
+
+services:
+  geoportal:
     build: geoportal
+    depends_on:
+      - pg
     ports: 
-     - "8080:8080"
+      - "8080:8080"
     links:
-     - pg
-    volumes_from:
-     - data
+      - pg
+    volumes:
+      - gndata-volume:/var/padre/geonetwork_datadir
     environment:
-     - POSTGRES_DB_USERNAME=geonetwork
-     - POSTGRES_DB_PASSWORD=geonetwork
-     - DATA_DIR=/var/padre/geonetwork_datadir
-pg:
+      - POSTGRES_DB_USERNAME=geonetwork
+      - POSTGRES_DB_PASSWORD=geonetwork
+      - DATA_DIR=/var/padre/geonetwork_datadir
+  pg:
     build: postgresql
-    volumes_from:
-     - data
+    volumes:
+      - pgdata-volume:/var/lib/postgresql/data/pgdata
     environment:
-     - PGDATA=/var/lib/postgresql/data/pgdata
-data:
-    build: data
-    command: tail -f /dev/null
+      - PGDATA=/var/lib/postgresql/data/pgdata
+  geoserver:
+    build: geoserver
+    ports: 
+      - "8081:8080"
+    volumes:
+      - gsdata-volume:/usr/local/tomcat/webapps/ROOT/data
+    
+volumes:
+  pgdata-volume:
+  gndata-volume:
+  gsdata-volume:
+  wwwdata-volume:
