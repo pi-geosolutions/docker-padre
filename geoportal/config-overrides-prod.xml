@@ -10,7 +10,6 @@
         </properties>
         
         <file name=".*/WEB-INF/config.xml">
-       			<addXML xpath="appHandler"><param name="geonetwork.dir" value="/home/jean/tomcat7/data/bi-risk-gn2_10-datadir" /></addXML>
                 <replaceXML xpath="resources">
                         <resource enabled="true">
                                 <name>main-db</name>
