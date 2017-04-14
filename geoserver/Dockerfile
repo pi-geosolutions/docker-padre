@@ -17,13 +17,13 @@ ENV GEOSERVER_VERSION_NAME ${GEOSERVER_VERSION}.x
 RUN curl -L http://ares.boundlessgeo.com/geoserver/${GEOSERVER_VERSION_NAME}/geoserver-${GEOSERVER_VERSION_NAME}-latest-war.zip > /tmp/geoserver.zip && \
     unzip /tmp/geoserver.zip -d /tmp/geoserver && \
     rm -rf ${CATALINA_HOME}/webapps/* && \
-    unzip /tmp/geoserver/geoserver.war -d $CATALINA_HOME/webapps/ROOT && \
-    (cd $CATALINA_HOME/webapps/ROOT/WEB-INF/lib; rm jai_core-*jar jai_imageio-*.jar jai_codec-*.jar) && \
+    unzip /tmp/geoserver/geoserver.war -d $CATALINA_HOME/webapps/geoserver && \
+    (cd $CATALINA_HOME/webapps/geoserver/WEB-INF/lib; rm jai_core-*jar jai_imageio-*.jar jai_codec-*.jar) && \
     rm -r /tmp/*
 
 # Install plugins (WPS)
 RUN curl -L http://ares.boundlessgeo.com/geoserver/${GEOSERVER_VERSION_NAME}/ext-latest/geoserver-${GEOSERVER_VERSION}-SNAPSHOT-wps-plugin.zip > /tmp/geoserver-wps-plugin.zip && \
-    unzip /tmp/geoserver-wps-plugin.zip -d $CATALINA_HOME/webapps/ROOT/WEB-INF/lib/ && \
+    unzip /tmp/geoserver-wps-plugin.zip -d $CATALINA_HOME/webapps/geoserver/WEB-INF/lib/ && \
     rm /tmp/*
 
 # Instal Marlin

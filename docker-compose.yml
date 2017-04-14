@@ -2,11 +2,12 @@ version: "3"
 
 services:
   geoportal:
-    build: geoportal
+    build: ./geoportal
+    container_name: padre1-gn
     depends_on:
       - pg
     ports: 
-      - "8080:8080"
+      - "8083:8080"
     links:
       - pg
     volumes:
@@ -15,21 +16,67 @@ services:
       - POSTGRES_DB_USERNAME=geonetwork
       - POSTGRES_DB_PASSWORD=geonetwork
       - DATA_DIR=/var/padre/geonetwork_datadir
+    labels:
+      - "fr.pigeo.project=Gabon-mines"
+      - "fr.pigeo.container-type=geoportal (geonetwork)"
+      - "fr.pigeo.product=Padre v1"
   pg:
-    build: postgresql
+    build: ./postgresql
+    container_name: padre1-pg
     volumes:
       - pgdata-volume:/var/lib/postgresql/data/pgdata
     environment:
       - PGDATA=/var/lib/postgresql/data/pgdata
+    labels:
+      - "fr.pigeo.project=Gabon-mines"
+      - "fr.pigeo.container-type=postgreSQL"
+      - "fr.pigeo.product=Padre v1"
+  pgis:
+    build: ./postgis
+    container_name: padre1-postgis
+    volumes:
+      - postgisdata-volume:/var/lib/postgresql/data/pgdata
+    environment:
+      - PGDATA=/var/lib/postgresql/data/pgdata
+    labels:
+      - "fr.pigeo.project=Gabon-mines"
+      - "fr.pigeo.container-type=Postgis"
+      - "fr.pigeo.product=Padre v1"
   geoserver:
-    build: geoserver
+    build: ./geoserver
+    container_name: padre1-gs
+    depends_on:
+      - pgis
     ports: 
-      - "8081:8080"
+      - "8082:8080"
+    links:
+      - pgis
     volumes:
       - gsdata-volume:/usr/local/tomcat/webapps/ROOT/data
+    labels:
+      - "fr.pigeo.project=Gabon-mines"
+      - "fr.pigeo.container-type=GeoServer"
+      - "fr.pigeo.product=Padre v1"
+  httpd:
+    build: ./httpd
+    container_name: padre1-httpd
+    depends_on:
+      - pgis
+    ports:
+      - "82:80"
+    links:
+      - pgis
+    volumes:
+      - wwwdata-volume:/var/www/html/
+    labels:
+      - "fr.pigeo.project=Gabon-mines"
+      - "fr.pigeo.container-type=apache2 httpd"
+      - "fr.pigeo.product=Padre v1"
+    
     
 volumes:
   pgdata-volume:
+  postgisdata-volume:
   gndata-volume:
   gsdata-volume:
   wwwdata-volume:

@@ -99,7 +99,7 @@ docker volume create --name gndata-volume
 
 3) Run a container from this image using the data volume & publishing the service on port 8082 & connecting with PostGIS DB : 
 
-docker run --name gs -p 8082:8080 --link pgis:pgis --rm -v gsdata-volume:/usr/local/tomcat/webapps/ROOT/data padre1-gs
+docker run --name gs -p 8082:8080 --link pgis:pgis --rm -v gsdata-volume:/usr/local/tomcat/webapps/geoserver/data padre1-gs
 
 
 4) Import the geoserver_datadir : 
@@ -128,12 +128,16 @@ Run a container from this image using the data volume & publishing the service o
 
 
 
+Docker compose
+--------------
+
+Stack fonctionnel, utilisable avec docker-compose
+
+
 TODO
 ----
 
 - customize the geoserver image : add extensions, CATALINA_OPTS, postgis database
 - extend the geoserver data volume to a geospatial data volume to include all files from eumetsat etc used in animations, dashboard, etc
-- add apache container to serve static files
 - add User access : ssh, sftp, phppgadmin
-- geodata pgsql image
 - more automation
