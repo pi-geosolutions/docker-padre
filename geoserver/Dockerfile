@@ -26,6 +26,31 @@ RUN curl -L http://ares.boundlessgeo.com/geoserver/${GEOSERVER_VERSION_NAME}/ext
     unzip /tmp/geoserver-wps-plugin.zip -d $CATALINA_HOME/webapps/geoserver/WEB-INF/lib/ && \
     rm /tmp/*
 
+# Install plugins (pyramid)
+RUN curl -L http://ares.boundlessgeo.com/geoserver/${GEOSERVER_VERSION_NAME}/ext-latest/geoserver-${GEOSERVER_VERSION}-SNAPSHOT-pyramid-plugin.zip > /tmp/geoserver-pyramid-plugin.zip && \
+    unzip /tmp/geoserver-pyramid-plugin.zip -d $CATALINA_HOME/webapps/geoserver/WEB-INF/lib/ && \
+    rm /tmp/*
+
+# Install plugins (CSS)
+RUN curl -L http://ares.boundlessgeo.com/geoserver/${GEOSERVER_VERSION_NAME}/ext-latest/geoserver-${GEOSERVER_VERSION}-SNAPSHOT-css-plugin.zip > /tmp/geoserver-css-plugin.zip && \
+    unzip /tmp/geoserver-css-plugin.zip -d $CATALINA_HOME/webapps/geoserver/WEB-INF/lib/ && \
+    rm /tmp/*
+
+# Install plugins (charts)
+RUN curl -L http://ares.boundlessgeo.com/geoserver/${GEOSERVER_VERSION_NAME}/ext-latest/geoserver-${GEOSERVER_VERSION}-SNAPSHOT-charts-plugin.zip > /tmp/geoserver-charts-plugin.zip && \
+    unzip /tmp/geoserver-charts-plugin.zip -d $CATALINA_HOME/webapps/geoserver/WEB-INF/lib/ && \
+    rm /tmp/*
+
+# Install plugins (grib)
+RUN curl -L http://ares.boundlessgeo.com/geoserver/${GEOSERVER_VERSION_NAME}/ext-latest/geoserver-${GEOSERVER_VERSION}-SNAPSHOT-grib-plugin.zip > /tmp/geoserver-grib-plugin.zip && \
+    unzip /tmp/geoserver-grib-plugin.zip -d $CATALINA_HOME/webapps/geoserver/WEB-INF/lib/ && \
+    rm /tmp/*
+
+# Install plugins (netCDF)
+RUN curl -L http://ares.boundlessgeo.com/geoserver/${GEOSERVER_VERSION_NAME}/ext-latest/geoserver-${GEOSERVER_VERSION}-SNAPSHOT-netcdf-plugin.zip > /tmp/geoserver-netcdf-plugin.zip && \
+    unzip /tmp/geoserver-netcdf-plugin.zip -d $CATALINA_HOME/webapps/geoserver/WEB-INF/lib/ && \
+    rm /tmp/*
+
 # Instal Marlin
 #RUN cd /usr/local/tomcat/lib && wget https://github.com/bourgesl/marlin-renderer/releases/download/v0.7.4_2/marlin-0.7.4-Unsafe.jar && \
 #    wget https://github.com/bourgesl/marlin-renderer/releases/download/v0.7.4_2/marlin-0.7.4-Unsafe-sun-java2d.jar
