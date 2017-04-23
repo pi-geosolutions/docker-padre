@@ -127,6 +127,21 @@ Run a container from this image using the data volume & publishing the service o
   docker run --name httpd -p 80:80 --link pgis:pgis --rm -v wwwdata-volume:/var/www/html/ padre1-httpd
 
 
+commandline SSH + geo-tools console client
+----------------------------------
+1) create a named volume to persist users space : 
+
+docker volume create --name sshd-home-volume
+
+2) Build the image : 
+
+	docker build -t padre1-commandlinetools commandlinetools/
+
+3) Run the container :
+
+docker run --name commandlinetools --rm -p 2222:22 -v /home/jean/.ssh/id_rsa.pub:/etc/authorized_keys/jean \
+                                                   -v sshd-home-volume:/home \
+                                                    -e SSH_USERS="jean:1000:1000" padre1-commandlinetools
 
 Docker compose
 --------------
