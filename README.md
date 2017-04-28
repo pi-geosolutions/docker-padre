@@ -91,7 +91,7 @@ GeoServer container
 
 1) create a named volume to persist data : 
 
-docker volume create --name gndata-volume
+docker volume create --name gsdata-volume
 
 2) Build the image : 
 
@@ -124,7 +124,12 @@ We will customize the php:5-apache container:
 
 Run a container from this image using the data volume & publishing the service on port 80 (default, see Dockerfile): 
 
-  docker run --name httpd -p 80:80 --link pgis:pgis --rm -v wwwdata-volume:/var/www/html/ padre1-httpd
+  docker run --name httpd -p 80:80 --link pgis:pgis --rm -v wwwdata-volume:/var/www/html/ \
+			-e APACHE_SERVERNAME=admin.pigeo.fr \
+			-e POSTGRES_HOST=pgis \
+			-e POSTGRES_PORT=5432 \
+			-e POSTGRES_DEFAULTDB=geodata \
+			padre1-httpd
 
 
 commandline SSH + geo-tools console client
@@ -141,6 +146,8 @@ docker volume create --name sshd-home-volume
 
 docker run --name commandlinetools --rm -p 2222:22 -v /home/jean/.ssh/id_rsa.pub:/etc/authorized_keys/jean \
                                                    -v sshd-home-volume:/home \
+                                                   -v gsdata-volume:/padre/geoserver-data \
+                                                   -v wwwdata-volume:/padre/www-data \
                                                     -e SSH_USERS="jean:1000:1000" padre1-commandlinetools
 
 Docker compose
