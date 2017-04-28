@@ -13,12 +13,14 @@ RUN apt-get update && \
               wget \
     && apt-get clean
 
-#install gdal & python tools : numpy, scipy, rasterstats (http://pythonhosted.org/rasterstats/installation.html), statsmodel, 
+#install postgresql/postgis support, gdal & python tools : numpy, scipy, rasterstats (http://pythonhosted.org/rasterstats/installation.html), statsmodel, 
 RUN apt-get update && \
     apt-get install -y \
               gdal-bin \
               libgdal1i \
               libgdal-dev \
+              postgis \
+              postgresql-client \
               python \
               python-gdal \
               python-pil \
