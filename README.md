@@ -150,6 +150,51 @@ docker run --name commandlinetools --rm -p 2222:22 -v /home/jean/.ssh/id_rsa.pub
                                                    -v wwwdata-volume:/padre/www-data \
                                                     -e SSH_USERS="jean:1000:1000" padre1-commandlinetools
 
+Owncloud
+--------
+1) create a named volume to persist owncloud data
+
+	docker volume create --name owncloud-data-volume
+
+2) Build the image : 
+
+	source .env
+	IMAGE_NAME=padre1-owncloudserver
+	docker build   	--build-arg VERSION=${VERSION} \
+					--build-arg TARBALL=${TARBALL} \
+					--build-arg BUILD_DATE=$(date -u +"%Y-%m-%dT%H:%M:%SZ") \
+					--build-arg VCS_REF=$(git rev-parse --short HEAD) \
+						-t ${IMAGE_NAME} owncloud-server/
+	
+3) Run the container : (using default sqlite DB)
+	
+	docker run -ti --rm --name owncloud -p 84:80 padre1-owncloudserver
+	
+	
+ODK Aggregate
+-------------
+
+Build the image : 
+
+	docker build -t padre1-odkaggregate --no-cache odkaggregate/
+	
+Run a container : 
+
+	- start the postgis container to link with odkaggregate
+	- create the schema odk1 inside if necessary
+	- docker run --name aggregate --rm -p 8085:8080 --link pgis:pgis \
+		  -e DB_HOSTNAME=pgis \
+		  -e DB_USER=geonetwork \
+		  -e DB_PASSWORD=geonetwork \
+		  -e DB_DATABASE=geodata \
+		  -e DB_SCHEMA=odk1 \
+		  -e DB_PORT=5432 \
+		  padre1-odkaggregate
+		  
+to use HTTPS, add environment variable ODK_CHANNELTYPE=REQUIRES_SECURE_CHANNEL at first run
+
+**TODO** : find how to use HTTPS (needs certificates, I guess)
+
 Docker compose
 --------------
 
