@@ -206,5 +206,4 @@ TODO
 
 - customize the geoserver image : add extensions, CATALINA_OPTS, postgis database
 - extend the geoserver data volume to a geospatial data volume to include all files from eumetsat etc used in animations, dashboard, etc
-- add User access : ssh, sftp, phppgadmin
 - more automation
