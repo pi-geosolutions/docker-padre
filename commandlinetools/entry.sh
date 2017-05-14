@@ -45,8 +45,8 @@ if [ -n "${SSH_USERS}" ]; then
         fi
 #        addgroup --gid ${_GID} ${_NAME}
 #        adduser --shell /bin/bash --uid ${_UID} --gid ${_GID} --disabled-password ${_NAME}
-		if getent group ${_NAME} | grep &>/dev/null "\b${_NAME}\b"; thengroupadd --gid ${_GID} ${_NAME}
-				useradd --gid ${_GID} --create-home --shell '/bin/bash' --uid ${_UID} ${_NAME}groupadd --gid ${_GID} ${_NAME}
+		if getent group ${_NAME} | grep &>/dev/null "\b${_NAME}\b"; then
+				groupadd --gid ${_GID} ${_NAME}
 				useradd --gid ${_GID} --create-home --shell '/bin/bash' --uid ${_UID} ${_NAME}
 		fi
     done
