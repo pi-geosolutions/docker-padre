@@ -45,9 +45,11 @@ if [ -n "${SSH_USERS}" ]; then
         fi
 #        addgroup --gid ${_GID} ${_NAME}
 #        adduser --shell /bin/bash --uid ${_UID} --gid ${_GID} --disabled-password ${_NAME}
-		if getent group ${_NAME} | grep &>/dev/null "\b${_NAME}\b"; then
-				groupadd --gid ${_GID} ${_NAME}
-				useradd --gid ${_GID} --create-home --shell '/bin/bash' --uid ${_UID} ${_NAME}
+		if getent group ${_NAME} | grep &>/dev/null "${_NAME}"; then
+			echo "Group ${_NAME} already exists. Skipping user creation"
+		else
+			groupadd --gid ${_GID} ${_NAME}
+			useradd --gid ${_GID} --create-home --shell '/bin/bash' --uid ${_UID} ${_NAME}
 		fi
     done
 else

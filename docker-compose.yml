@@ -68,11 +68,35 @@ services:
       - pgis
     volumes:
       - wwwdata-volume:/var/www/html/
+    environment:
+      - APACHE_SERVERNAME=dock1.pigeo.fr
+      - POSTGRES_HOST=pgis
+      - POSTGRES_PORT=5432
+      - POSTGRES_DEFAULTDB=geodata
     labels:
       - "fr.pigeo.project=Gabon-mines"
       - "fr.pigeo.container-type=apache2 httpd"
       - "fr.pigeo.product=Padre v1"
-    
+  commandline:
+    build: ./commandlinetools
+    container_name: padre1-commandlinetools
+    ports:
+      - "2222:22"
+    links:
+      - pg
+      - pgis
+    volumes:
+      - sshd-home-volume:/home
+      - wwwdata-volume:/padre/www-data
+      - gsdata-volume:/padre/geoserver-data
+      - /home/jean/.ssh/id_rsa.pub:/etc/authorized_keys/jean
+    environment:
+      - SSH_USERS=jean:1000:1000
+    labels:
+      - "fr.pigeo.project=Gabon-mines"
+      - "fr.pigeo.container-type=sshd"
+      - "fr.pigeo.product=Padre v1"
+
     
 volumes:
   pgdata-volume:
@@ -80,3 +104,4 @@ volumes:
   gndata-volume:
   gsdata-volume:
   wwwdata-volume:
+  sshd-home-volume:
