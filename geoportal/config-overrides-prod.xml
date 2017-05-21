@@ -1,12 +1,12 @@
 <overrides>
 	<import file="/WEB-INF/server-props-overrides.xml"/>
 		<properties>
-                <db.user>geonetwork</db.user>
-                <db.pass>geonetwork</db.pass>
+                <db.user>padre</db.user>
+                <db.pass>padre</db.pass>
                 <db.dbname>jdbc:postgresql://pg:5432/geonetwork</db.dbname>
                 
-                <charts-db.user>geonetwork</charts-db.user>
-                <charts-db.pass>geonetwork</charts-db.pass>
+                <charts-db.user>padre</charts-db.user>
+                <charts-db.pass>padre</charts-db.pass>
         </properties>
         
         <file name=".*/WEB-INF/config.xml">
@@ -36,19 +36,19 @@
                                 <validationQuery>SELECT 1</validationQuery>
                                 </config>
                         </resource>
-<!--                        <resource enabled="true">
-                                <name>gm_risk_geodata</name>
+                        <resource enabled="true">
+                                <name>geodata</name>
                                 <provider>jeeves.resources.dbms.ApacheDBCPool</provider>
                                 <config>
 									<user>${charts-db.user}</user>
 									<password>${charts-db.pass}</password>
 									<driver>org.postgis.DriverWrapper</driver>
-									<url>jdbc:postgresql://localhost:5432/gm_risk_geodata</url>
+									<url>jdbc:postgresql://pg:5432/geodata</url>
 									<poolSize>10</poolSize>
                                 	<validationQuery>SELECT 1</validationQuery>
                                 </config>
                         </resource>
-    -->                    
+                        
                 </replaceXML>   
         </file>
        	<file name=".*/WEB-INF/config-gui.xml">

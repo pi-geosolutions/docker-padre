@@ -30,7 +30,9 @@ if [ -w /etc/authorized_keys ]; then
     find /etc/authorized_keys/ -type f -exec chmod 644 {} \;
 fi
 
+
 # Add users if SSH_USERS=user:uid:gid set
+echo "SSH_USER: ${SSH_USERS}"
 if [ -n "${SSH_USERS}" ]; then
     USERS=$(echo $SSH_USERS | tr "," "\n")
     for U in $USERS; do
@@ -39,17 +41,20 @@ if [ -n "${SSH_USERS}" ]; then
         _UID=${UA[1]}
         _GID=${UA[2]}
 
+        echo ">> let's go"
         echo ">> Adding user ${_NAME} with uid: ${_UID}, gid: ${_GID}."
         if [ ! -e "/etc/authorized_keys/${_NAME}" ]; then
             echo "WARNING: No SSH authorized_keys found for ${_NAME}!"
         fi
 #        addgroup --gid ${_GID} ${_NAME}
 #        adduser --shell /bin/bash --uid ${_UID} --gid ${_GID} --disabled-password ${_NAME}
+
 		if getent group ${_NAME} | grep &>/dev/null "${_NAME}"; then
 			echo "Group ${_NAME} already exists. Skipping user creation"
 		else
 			groupadd --gid ${_GID} ${_NAME}
 			useradd --gid ${_GID} --create-home --shell '/bin/bash' --uid ${_UID} ${_NAME}
+			echo ">> group & user created"
 		fi
     done
 else

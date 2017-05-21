@@ -23,6 +23,7 @@ COPY config-overrides-prod.xml $CATALINA_HOME/webapps/geonetwork/WEB-INF/config-
 
 #Set geonetwork data dir
 COPY ./docker-entrypoint.sh /entrypoint.sh
+COPY ./wait-for-postgres.sh /wait-for-postgres.sh
 ENTRYPOINT ["/entrypoint.sh"]
 
 CMD ["catalina.sh", "run"]

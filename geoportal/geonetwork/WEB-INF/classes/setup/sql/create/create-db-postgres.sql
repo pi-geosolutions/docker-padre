@@ -580,8 +580,6 @@ CREATE TABLE geoportal."nodesBackups"
   CONSTRAINT nodesbackup_pkey PRIMARY KEY (id)
 )
 ;
-ALTER TABLE geoportal."nodesBackups"
-  OWNER TO geonetwork;
 COMMENT ON COLUMN geoportal."nodesBackups".date IS 'date the backup was made';
 COMMENT ON COLUMN geoportal."nodesBackups".layertree IS 'the layertree, in xml mixed with json internals (the format sent by services.layertree.Get, plus the groups info)';
 

@@ -5,14 +5,9 @@
 <charts>
  <!-- List of the available DBs (connection must be properly defined in config-override-dev/prod.xml -->
  <DBs>
-<!--  	<db>
- 		<id>gm_census</id>
- 		<label>gm_census</label>
- 	</db>
- 	-->
  	<db>
- 		<id>bi_risk_geodata</id>
- 		<label>bi_risk_geodata</label>
+ 		<id>geodata</id>
+ 		<label>geodata</label>
  	</db>
  </DBs>
 </charts>
