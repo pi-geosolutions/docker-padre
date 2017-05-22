@@ -10,6 +10,7 @@ RUN apt-get update && \
               p7zip \
               rsync \
               tar \
+              vim \
               wget \
     && apt-get clean
 
