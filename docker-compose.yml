@@ -52,7 +52,9 @@ services:
     links:
       - pgis
     volumes:
-      - gsdata-volume:/usr/local/tomcat/webapps/ROOT/data
+      - gsdata-volume:/var/padre/geoserver_data
+    environment:
+      - GEOSERVER_DATA_DIR=/var/padre/geoserver_data
     labels:
       - "fr.pigeo.project=Gabon-mines"
       - "fr.pigeo.container-type=GeoServer"
@@ -69,7 +71,7 @@ services:
     volumes:
       - wwwdata-volume:/var/www/html/
     environment:
-      - APACHE_SERVERNAME=dock1.pigeo.fr
+      - APACHE_SERVERNAME=gm.pigeo.fr
       - POSTGRES_HOST=pgis
       - POSTGRES_PORT=5432
       - POSTGRES_DEFAULTDB=geodata
@@ -81,7 +83,7 @@ services:
     build: ./commandlinetools
     container_name: padre1-commandlinetools
     ports:
-      - "2222:22"
+      - "2255:22"
     links:
       - pgis
     volumes:

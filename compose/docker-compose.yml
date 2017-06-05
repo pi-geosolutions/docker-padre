@@ -1,0 +1,131 @@
+version: '2'
+volumes:
+  r-gabonmines-postgisdata-volume:
+    driver: local
+  r-gabonmines-owncloud-volume:
+    driver: local
+  r-gabonmines-sshd-home-volume:
+    driver: local
+  r-gabonmines-gndata-volume:
+    driver: local
+  r-gabonmines-gsdata-volume:
+    driver: local
+  r-gabonmines-wwwdata-volume:
+    driver: local
+  r-gabonmines-geodata-volume:
+    driver: local
+services:
+  r-gabonmines-lb:
+    image: rancher/lb-service-haproxy:v0.6.2
+    expose:
+    - 80:80/tcp
+    - 22:22/tcp
+    labels:
+      io.rancher.container.agent.role: environmentAdmin
+      io.rancher.container.create_agent: 'true'
+      web.http: 'true'
+  r-gabonmines-SSL-lb:
+    image: rancher/lb-service-haproxy:v0.6.2
+    expose:
+    - 8080:8080/tcp
+    - 80:80/tcp
+    labels:
+      io.rancher.container.agent.role: environmentAdmin
+      io.rancher.container.create_agent: 'true'
+      web.https: 'true'
+  r-gabonmines-httpd:
+    image: jeanpommier/padre1-httpd:latest
+    environment:
+      APACHE_SERVERNAME: "$DOMAIN_URL"
+      POSTGRES_HOST: pgis
+      POSTGRES_PORT: '5432'
+      POSTGRES_DEFAULTDB: geodata
+    stdin_open: true
+    volumes:
+    - r-gabonmines-wwwdata-volume:/var/www/html/
+    tty: true
+    links:
+    - r-gabonmines-postgis:pgis
+    labels:
+      io.rancher.container.pull_image: always
+  r-gabonmines-geoportal:
+    image: jeanpommier/padre1-gn:latest
+    environment:
+      POSTGRES_DB_USERNAME: padre
+      POSTGRES_DB_PASSWORD: padre
+      DATA_DIR: /padre/geonetwork_datadir
+    stdin_open: true
+    volumes:
+    - r-gabonmines-gndata-volume:/padre/geonetwork_datadir
+    tty: true
+    links:
+    - r-gabonmines-postgis:pg
+    labels:
+      io.rancher.container.pull_image: always
+  r-gabonmines-owncloud:
+    image: jeanpommier/padre1-owncloud:latest
+    environment:
+      OWNCLOUD_DOMAIN: "$DOMAIN_URL"
+      OWNCLOUD_SUB_URL: /owncloud
+    stdin_open: true
+    volumes:
+    - r-gabonmines-owncloud-volume:/mnt/data
+  r-gabonmines-odkaggregate:
+    image: jeanpommier/padre1-odkaggregate:latest
+    environment:
+      DB_HOSTNAME: pgis
+      DB_USER: padre
+      DB_PASSWORD: padre
+      DB_DATABASE: geodata
+      DB_SCHEMA: odk1
+      DB_PORT: '5432'
+      ODK_HOSTNAME: "$DOMAIN_URL"
+      ODK_PORT: '80'
+    stdin_open: true
+    links:
+    - r-gabonmines-postgis:pgis
+    labels:
+      io.rancher.container.pull_image: always
+  r-gabonmines-geoserver:
+    image: jeanpommier/padre1-gs:latest
+    environment:
+      GEOSERVER_DATA_DIR: /padre/geoserver_data
+    stdin_open: true
+    volumes:
+    - r-gabonmines-gsdata-volume:/padre/geoserver_data
+    - r-gabonmines-geodata-volume:/padre/geodata
+    tty: true
+    links:
+    - r-gabonmines-postgis:pgis
+    labels:
+      fr.pigeo.container-type: GeoServer
+      fr.pigeo.project: r-gabonmines-mines
+      fr.pigeo.product: Padre v1
+      io.rancher.container.pull_image: always
+  r-gabonmines-ssh:
+    image: jeanpommier/padre1-commandline:latest
+    environment:
+      SSH_USERS: jean:1000:1000
+    stdin_open: true
+    volumes:
+    - r-gabonmines-sshd-home-volume:/home
+    - r-gabonmines-wwwdata-volume:/padre/www-data
+    - r-gabonmines-geodata-volume:/padre/geodata
+    - r-gabonmines-gsdata-volume:/padre/geoserver_data
+    - r-gabonmines-gndata-volume:/padre/geonetwork_datadir
+    - /etc/authorized_keys:/etc/authorized_keys
+    tty: true
+    links:
+    - r-gabonmines-postgis:pgis
+    labels:
+      io.rancher.container.pull_image: always
+  r-gabonmines-postgis:
+    image: jeanpommier/padre1-postgis:latest
+    environment:
+      PGDATA: /var/lib/postgresql/data/pgdata
+    stdin_open: true
+    volumes:
+    - r-gabonmines-postgisdata-volume:/var/lib/postgresql/data/pgdata
+    tty: true
+    labels:
+      io.rancher.container.pull_image: always
