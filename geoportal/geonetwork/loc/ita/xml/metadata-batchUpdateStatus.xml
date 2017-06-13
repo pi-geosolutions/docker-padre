@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<strings>
-	<notfound>Record di metadati non trovati</notfound>
-	<notowner>Record di metadati con stato non aggiornato perchè ne sei il proprietario</notowner>
-	<updated>Record di metadati con stato aggiornato</updated>
-	<resultstitle>Risultati dell'aggiornamento di stato</resultstitle>
-</strings>

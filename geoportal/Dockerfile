@@ -1,29 +1,48 @@
-FROM tomcat:7.0-jre8
+FROM tomcat:8.0-jre8
 MAINTAINER Jean Pommier <jean.pommier@pi-geosolutions.fr>
 
-# Base Padre1 Geonetwork instance
+# Base Padre2 Geonetwork instance
 
-RUN apt-get update && apt-get install -y postgresql-client && \
+RUN apt-get update && apt-get install -y postgresql-client zip && \
     rm -rf /var/lib/apt/lists/*
 
-# Override if you want to override the configs
-#ENV GN_WAR_PATH /home/jean/Padre1/repo/padre1-gn.war
-ENV GN_FILE_PATH /home/jean/Padre1/repo/geonetwork
+ENV GN_FILE geonetwork.war
+ENV GN_REPO http://depots.pigeo.fr/WARs/
+
 ENV DATA_DIR=$CATALINA_HOME/webapps/geonetwork/WEB-INF/data
-ENV JAVA_OPTS="-Djava.security.egd=file:/dev/./urandom -Djava.awt.headless=true -server -Xms512m -Xmx2024m -XX:NewSize=512m -XX:MaxNewSize=1024m -XX:PermSize=512m -XX:MaxPermSize=1024m -XX:+UseConcMarkSweepGC"
+ENV JAVA_OPTS="-Djava.security.egd=file:/dev/./urandom -Djava.awt.headless=true -server -Xms512m -Xmx2024m -XX:NewSize=512m -XX:MaxNewSize=1024m -XX:+UseConcMarkSweepGC"
+
+#Environment variables
+ENV GN_VERSION 3.2.1
+#ENV GN_DOWNLOAD_MD5 54140c3e4badc87651bd656f13f860f2
 
 WORKDIR $CATALINA_HOME/webapps
 
-#COPY $GN_FILE_PATH $CATALINA_HOME/webapps/geonetwork/
-COPY geonetwork $CATALINA_HOME/webapps/geonetwork/
+RUN curl -fSL -o $GN_FILE \
+     $GN_REPO/geonetwork.war && \
+     mkdir -p geonetwork && \
+     unzip -e $GN_FILE -d geonetwork && \
+	rm $GN_FILE 
+	
+#fix bug https://github.com/geonetwork/docker-geonetwork/issues/4
+#apparently, simply removing one doesn't suffice, though I don't get why
+RUN	rm geonetwork/WEB-INF/lib/postgresql-*.jar && \
+	curl -fSL -o geonetwork/WEB-INF/lib/postgresql-9.4.1211.jar \
+		https://jdbc.postgresql.org/download/postgresql-9.4.1211.jar 
 
-#Set PostgreSQL as default GN DB
-COPY config-overrides-prod.xml $CATALINA_HOME/webapps/geonetwork/WEB-INF/config-overrides-prod.xml
+#Set PostgreSQL connection params
+COPY ./jdbc.properties $CATALINA_HOME/webapps/geonetwork/WEB-INF/config-db/jdbc.properties
+
+#set geodata postgresql connection params
+COPY ./config-db.xml ./config-db.xml
+
+RUN zip geonetwork/WEB-INF/lib/pigeosolutions-3.2.2-SNAPSHOT.jar config-db.xml && \
+	rm config-db.xml
 
 
 #Set geonetwork data dir
 COPY ./docker-entrypoint.sh /entrypoint.sh
-COPY ./wait-for-postgres.sh /wait-for-postgres.sh
+#COPY ./wait-for-postgres.sh /wait-for-postgres.sh
 ENTRYPOINT ["/entrypoint.sh"]
 
 CMD ["catalina.sh", "run"]

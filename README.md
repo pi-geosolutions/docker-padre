@@ -74,7 +74,10 @@ docker volume create --name postgisdata-volume
 3) Run an instance using the data volume :
 
 	docker run --name pgis -d --rm -e PGDATA=/var/lib/postgresql/data/pgdata -v postgisdata-volume:/var/lib/postgresql/data/pgdata padre1-postgis
-
+	
+	Si on veut le créer depuis le depots dockerhub:
+	docker run --name pgis -d --rm -e PGDATA=/var/lib/postgresql/data/pgdata -v postgisdata-volume:/var/lib/postgresql/data/pgdata jeanpommier/padre1-postgis
+	
 4) import existing DB : 
 
 - get the container's IP

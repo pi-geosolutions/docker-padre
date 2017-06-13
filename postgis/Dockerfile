@@ -1,7 +1,7 @@
 ######################################
 # PostGIS container for Padre1 instance
 # Contains 2 databases : 
-#  - geonetwork DB
+#  - geonetwork DB (created by geonetwork on first startup)
 #  - geodata DB (postgis DB)
 ######################################
 FROM camptocamp/postgis:9.6
