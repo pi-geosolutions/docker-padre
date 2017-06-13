@@ -1,49 +1,49 @@
 version: '2'
 services:
-  r-gabonmines-lb:
+  r-nerisk-lb:
     scale: 1
     start_on_create: true
     lb_config:
       certs: []
       port_rules:
-      - hostname: ga.pigeo.fr
+      - hostname: ne.pigeo.fr
         path: /geoserver
         priority: 1
         protocol: http
-        service: r-gabonmines-geoserver
+        service: r-nerisk-geoserver
         source_port: 80
         target_port: 8080
-      - hostname: ga.pigeo.fr
+      - hostname: ne.pigeo.fr
         path: /geonetwork
         priority: 3
         protocol: http
-        service: r-gabonmines-geoportal
+        service: r-nerisk-geoportal
         source_port: 80
         target_port: 8080
-      - hostname: ga.pigeo.fr
+      - hostname: ne.pigeo.fr
         path: /ODKAggregate
         priority: 4
         protocol: http
-        service: r-gabonmines-odkaggregate
+        service: r-nerisk-odkaggregate
         source_port: 80
         target_port: 8080
-      - hostname: ga.pigeo.fr
+      - hostname: ne.pigeo.fr
         path: /owncloud
         priority: 5
         protocol: http
-        service: r-gabonmines-owncloud
+        service: r-nerisk-owncloud
         source_port: 80
         target_port: 80
-      - hostname: ga.pigeo.fr
+      - hostname: ne.pigeo.fr
         path: /
         priority: 6
         protocol: http
-        service: r-gabonmines-httpd
+        service: r-nerisk-httpd
         source_port: 80
         target_port: 80
       - priority: 7
         protocol: tcp
-        service: r-gabonmines-ssh
+        service: r-nerisk-ssh
         source_port: 22
         target_port: 22
     health_check:
@@ -52,31 +52,31 @@ services:
       port: 42
       unhealthy_threshold: 3
       interval: 2000
-  r-gabonmines-SSL-lb:
+  r-nerisk-SSL-lb:
     scale: 1
     start_on_create: true
     lb_config:
       certs: []
       port_rules:
-      - hostname: ga.pigeo.fr
+      - hostname: ne.pigeo.fr
         path: /geoserver
         priority: 1
         protocol: http
-        service: r-gabonmines-geoserver
+        service: r-nerisk-geoserver
         source_port: 8080
         target_port: 8080
-      - hostname: ga.pigeo.fr
+      - hostname: ne.pigeo.fr
         path: /geoserver
         priority: 2
         protocol: http
-        service: r-gabonmines-geoserver
+        service: r-nerisk-geoserver
         source_port: 80
         target_port: 8080
-      - hostname: ga.pigeo.fr
+      - hostname: ne.pigeo.fr
         path: /
         priority: 3
         protocol: http
-        service: r-gabonmines-httpd
+        service: r-nerisk-httpd
         source_port: 80
         target_port: 80
     health_check:
@@ -85,24 +85,24 @@ services:
       port: 42
       unhealthy_threshold: 3
       interval: 2000  
-  r-gabonmines-httpd:
+  r-nerisk-httpd:
     scale: 1
     start_on_create: true
-  r-gabonmines-geoportal:
+  r-nerisk-geoportal:
     scale: 1
     start_on_create: false
-  r-gabonmines-owncloud:
+  r-nerisk-owncloud:
     scale: 1
     start_on_create: true
-  r-gabonmines-odkaggregate:
+  r-nerisk-odkaggregate:
     scale: 1
     start_on_create: true
-  r-gabonmines-geoserver:
+  r-nerisk-geoserver:
     scale: 1
     start_on_create: false
-  r-gabonmines-ssh:
+  r-nerisk-ssh:
     scale: 1
     start_on_create: true
-  r-gabonmines-postgis:
+  r-nerisk-postgis:
     scale: 1
     start_on_create: true
