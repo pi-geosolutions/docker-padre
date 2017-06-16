@@ -21,6 +21,13 @@ services:
         source_port: 80
         target_port: 8080
       - hostname: ne.pigeo.fr
+        path: /geodash
+        priority: 3
+        protocol: http
+        service: r-nerisk-geodash
+        source_port: 80
+        target_port: 8080
+      - hostname: ne.pigeo.fr
         path: /ODKAggregate
         priority: 4
         protocol: http

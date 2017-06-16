@@ -45,5 +45,12 @@ for file in $4; do
 	echo "sed -i -E \"s|fr_FR.UTF-8|en_US.UTF-8|gm\" $file" >> finishMigrateDB.sh
 	echo "psql -h pgis -U padre -e < ${file}" >> finishMigrateDB.sh
 done 
+
+#apply manually geonetwork DB migration
+echo "for sqlfile in geonetwork_migrate_sql/*.sql; psql -h pgis -U padre -d geonetwork < \${sqlfile}; done;" >> finishMigrateDB.sh
+
 chmod +x finishMigrateDB.sh
 scp -P $DEST_PORT finishMigrateDB.sh root@$DEST_SERVER:/padre/
+scp -r -P $DEST_PORT geonetwork_migrate_sql/ root@$DEST_SERVER:/padre/
+
+echo "transfer done. Please now ssh to the sshd container as root and execute /padre/finishMigrateDB.sh script"

@@ -9,6 +9,10 @@ if [ "$1" = 'catalina.sh' ]; then
 
 	#Set geonetwork data dir
 	export CATALINA_OPTS="$CATALINA_OPTS -Dgeonetwork.dir=$DATA_DIR"
+	
+	#Set logs destination
+	sed -i -E "s|^(param name=\"File\" value=\")([A-Za-z\.0-9]+)|\1$DATA_DIR/logs/geonetwork.log|gm" \
+				geonetwork/WEB-INF/classes/log4j.xml
 
 	#Setting host (use $POSTGRES_DB_HOST if it's set, otherwise use "pg")
 	db_host="${POSTGRES_DB_HOST:-pg}"

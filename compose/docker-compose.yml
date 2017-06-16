@@ -62,6 +62,19 @@ services:
     - r-nerisk-postgis:pg
     labels:
       io.rancher.container.pull_image: always
+  r-nerisk-geodash:
+    image: jeanpommier/padre-geodash:latest
+    environment:
+      POSTGRES_DB_USERNAME: padre
+      POSTGRES_DB_PASSWORD: padre
+    stdin_open: true
+    volumes:
+    - r-nerisk-geodata-volume:/padre/geodata
+    tty: true
+    links:
+    - r-nerisk-postgis:pg
+    labels:
+      io.rancher.container.pull_image: always
   r-nerisk-owncloud:
     image: jeanpommier/padre-owncloud:latest
     environment:

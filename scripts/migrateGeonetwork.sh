@@ -35,4 +35,4 @@ echo "Copying data files"
 
 #Works : 
 #rsync -avzh -e "ssh -p 2256" --exclude="data/metadata_subversion" --include="*" /media/jean/Backup4/serveurSYS/home/jean/tomcat7/data/gabon-mines-gn2_10-datadir/ root@ga.pigeo.fr:/padre/geonetwork_datadir/
-rsync -avzh -e "ssh -p $DEST_PORT" --exclude="data/metadata_subversion" --include="*" $DATADIR_ROOT_PATH/ root@$DEST_SERVER:/padre/geonetwork_datadir/
+rsync -avzh -e "ssh -p $DEST_PORT" --exclude="data/metadata_subversion" --exclude="index" --exclude="spatialindex" --include="*" $DATADIR_ROOT_PATH/ root@$DEST_SERVER:/padre/geonetwork_datadir/

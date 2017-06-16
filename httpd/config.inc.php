@@ -24,7 +24,7 @@
 	// Possible options: disable, allow, prefer, require
 	// To require SSL on older servers use option: legacy
 	// To ignore the SSL mode, use option: unspecified
-	$conf['servers'][0]['sslmode'] = 'allow';
+	$conf['servers'][0]['sslmode'] = 'require';
 
 	// Change the default database only if you cannot connect to template1.
 	// For a PostgreSQL 8.1+ server, you can set this to 'postgres'.
@@ -85,7 +85,7 @@
 	// will be denied. Only set this false once you have read the FAQ and
 	// understand how to change PostgreSQL's pg_hba.conf to enable
 	// passworded local connections.
-	$conf['extra_login_security'] = false;
+	$conf['extra_login_security'] = true;
 
 	// Only show owned databases?
 	// Note: This will simply hide other databases in the list - this does
