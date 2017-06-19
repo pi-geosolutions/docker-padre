@@ -1,22 +1,22 @@
 version: '2'
 volumes:
-  r-nerisk-postgisdata-volume:
+  r-mlrisk-postgisdata-volume:
     driver: local
-  r-nerisk-owncloud-volume:
+  r-mlrisk-owncloud-volume:
     driver: local
-  r-nerisk-sshd-home-volume:
+  r-mlrisk-sshd-home-volume:
     driver: local
-  r-nerisk-gndata-volume:
+  r-mlrisk-gndata-volume:
     driver: local
-  r-nerisk-gsdata-volume:
+  r-mlrisk-gsdata-volume:
     driver: local
-  r-nerisk-wwwdata-volume:
+  r-mlrisk-wwwdata-volume:
     driver: local
-  r-nerisk-geodata-volume:
+  r-mlrisk-geodata-volume:
     driver: local
 services:
-  r-nerisk-lb:
-    image: rancher/lb-service-haproxy:v0.6.2
+  r-mlrisk-lb:
+    image: rancher/lb-service-haproxy:v0.7.5
     expose:
     - 80:80/tcp
     - 22:22/tcp
@@ -24,8 +24,8 @@ services:
       io.rancher.container.agent.role: environmentAdmin
       io.rancher.container.create_agent: 'true'
       web.http: 'true'
-  r-nerisk-SSL-lb:
-    image: rancher/lb-service-haproxy:v0.6.2
+  r-mlrisk-SSL-lb:
+    image: rancher/lb-service-haproxy:v0.7.5
     expose:
     - 8080:8080/tcp
     - 80:80/tcp
@@ -33,22 +33,22 @@ services:
       io.rancher.container.agent.role: environmentAdmin
       io.rancher.container.create_agent: 'true'
       web.https: 'true'
-  r-nerisk-httpd:
+  r-mlrisk-httpd:
     image: jeanpommier/padre-httpd:latest
     environment:
-      APACHE_SERVERNAME: "$DOMAIN_URL"
+      APACHE_SERVERNAME: ml-risk.pigeo.fr
       POSTGRES_HOST: pgis
       POSTGRES_PORT: '5432'
       POSTGRES_DEFAULTDB: geodata
     stdin_open: true
     volumes:
-    - r-nerisk-wwwdata-volume:/var/www/html/
+    - r-mlrisk-wwwdata-volume:/var/www/html/
     tty: true
     links:
-    - r-nerisk-postgis:pgis
+    - r-mlrisk-postgis:pgis
     labels:
       io.rancher.container.pull_image: always
-  r-nerisk-geoportal:
+  r-mlrisk-geoportal:
     image: jeanpommier/padre-geonetwork:latest
     environment:
       POSTGRES_DB_USERNAME: padre
@@ -56,34 +56,34 @@ services:
       DATA_DIR: /padre/geonetwork_datadir
     stdin_open: true
     volumes:
-    - r-nerisk-gndata-volume:/padre/geonetwork_datadir
+    - r-mlrisk-gndata-volume:/padre/geonetwork_datadir
     tty: true
     links:
-    - r-nerisk-postgis:pg
+    - r-mlrisk-postgis:pg
     labels:
       io.rancher.container.pull_image: always
-  r-nerisk-geodash:
+  r-mlrisk-geodash:
     image: jeanpommier/padre-geodash:latest
     environment:
       POSTGRES_DB_USERNAME: padre
       POSTGRES_DB_PASSWORD: padre
     stdin_open: true
     volumes:
-    - r-nerisk-geodata-volume:/padre/geodata
+    - r-mlrisk-geodata-volume:/padre/geodata
     tty: true
     links:
-    - r-nerisk-postgis:pg
+    - r-mlrisk-postgis:pg
     labels:
       io.rancher.container.pull_image: always
-  r-nerisk-owncloud:
+  r-mlrisk-owncloud:
     image: jeanpommier/padre-owncloud:latest
     environment:
-      OWNCLOUD_DOMAIN: "$DOMAIN_URL"
+      OWNCLOUD_DOMAIN: ml-risk.pigeo.fr
       OWNCLOUD_SUB_URL: /owncloud
     stdin_open: true
     volumes:
-    - r-nerisk-owncloud-volume:/mnt/data
-  r-nerisk-odkaggregate:
+    - r-mlrisk-owncloud-volume:/mnt/data
+  r-mlrisk-odkaggregate:
     image: jeanpommier/padre-odkaggregate:latest
     environment:
       DB_HOSTNAME: pgis
@@ -92,53 +92,53 @@ services:
       DB_DATABASE: geodata
       DB_SCHEMA: odk1
       DB_PORT: '5432'
-      ODK_HOSTNAME: "$DOMAIN_URL"
+      ODK_HOSTNAME: ml-risk.pigeo.fr
       ODK_PORT: '80'
     stdin_open: true
     links:
-    - r-nerisk-postgis:pgis
+    - r-mlrisk-postgis:pgis
     labels:
       io.rancher.container.pull_image: always
-  r-nerisk-geoserver:
+  r-mlrisk-geoserver:
     image: jeanpommier/padre-geoserver:latest
     environment:
       GEOSERVER_DATA_DIR: /padre/geoserver_data
     stdin_open: true
     volumes:
-    - r-nerisk-gsdata-volume:/padre/geoserver_data
-    - r-nerisk-geodata-volume:/padre/geodata
+    - r-mlrisk-gsdata-volume:/padre/geoserver_data
+    - r-mlrisk-geodata-volume:/padre/geodata
     tty: true
     links:
-    - r-nerisk-postgis:pgis
+    - r-mlrisk-postgis:pgis
     labels:
       fr.pigeo.container-type: GeoServer
-      fr.pigeo.project: r-nerisk-mines
+      fr.pigeo.project: r-mlrisk-mines
       fr.pigeo.product: Padre v2
       io.rancher.container.pull_image: always
-  r-nerisk-ssh:
+  r-mlrisk-ssh:
     image: jeanpommier/padre-commandline:latest
     environment:
       SSH_USERS: jean:1000:1000
     stdin_open: true
     volumes:
-    - r-nerisk-sshd-home-volume:/home
-    - r-nerisk-wwwdata-volume:/padre/www-data
-    - r-nerisk-geodata-volume:/padre/geodata
-    - r-nerisk-gsdata-volume:/padre/geoserver_data
-    - r-nerisk-gndata-volume:/padre/geonetwork_datadir
+    - r-mlrisk-sshd-home-volume:/home
+    - r-mlrisk-wwwdata-volume:/padre/www-data
+    - r-mlrisk-geodata-volume:/padre/geodata
+    - r-mlrisk-gsdata-volume:/padre/geoserver_data
+    - r-mlrisk-gndata-volume:/padre/geonetwork_datadir
     - /etc/authorized_keys:/etc/authorized_keys
     tty: true
     links:
-    - r-nerisk-postgis:pgis
+    - r-mlrisk-postgis:pgis
     labels:
       io.rancher.container.pull_image: always
-  r-nerisk-postgis:
+  r-mlrisk-postgis:
     image: jeanpommier/padre-postgis:latest
     environment:
       PGDATA: /var/lib/postgresql/data/pgdata
     stdin_open: true
     volumes:
-    - r-nerisk-postgisdata-volume:/var/lib/postgresql/data/pgdata
+    - r-mlrisk-postgisdata-volume:/var/lib/postgresql/data/pgdata
     tty: true
     labels:
       io.rancher.container.pull_image: always

@@ -6,42 +6,42 @@ services:
     lb_config:
       certs: []
       port_rules:
-      - hostname: ne.pigeo.fr
+      - hostname: ne-risk.pigeosolutions.fr
         path: /geoserver
         priority: 1
         protocol: http
         service: r-nerisk-geoserver
         source_port: 80
         target_port: 8080
-      - hostname: ne.pigeo.fr
+      - hostname: ne-risk.pigeosolutions.fr
         path: /geonetwork
         priority: 3
         protocol: http
         service: r-nerisk-geoportal
         source_port: 80
         target_port: 8080
-      - hostname: ne.pigeo.fr
+      - hostname: ne-risk.pigeosolutions.fr
         path: /geodash
         priority: 3
         protocol: http
         service: r-nerisk-geodash
         source_port: 80
         target_port: 8080
-      - hostname: ne.pigeo.fr
+      - hostname: ne-risk.pigeosolutions.fr
         path: /ODKAggregate
         priority: 4
         protocol: http
         service: r-nerisk-odkaggregate
         source_port: 80
         target_port: 8080
-      - hostname: ne.pigeo.fr
+      - hostname: ne-risk.pigeosolutions.fr
         path: /owncloud
         priority: 5
         protocol: http
         service: r-nerisk-owncloud
         source_port: 80
         target_port: 80
-      - hostname: ne.pigeo.fr
+      - hostname: ne-risk.pigeosolutions.fr
         path: /
         priority: 6
         protocol: http
@@ -65,21 +65,21 @@ services:
     lb_config:
       certs: []
       port_rules:
-      - hostname: ne.pigeo.fr
+      - hostname: ne-risk.pigeosolutions.fr
         path: /geoserver
         priority: 1
         protocol: http
         service: r-nerisk-geoserver
         source_port: 8080
         target_port: 8080
-      - hostname: ne.pigeo.fr
+      - hostname: ne-risk.pigeosolutions.fr
         path: /geoserver
         priority: 2
         protocol: http
         service: r-nerisk-geoserver
         source_port: 80
         target_port: 8080
-      - hostname: ne.pigeo.fr
+      - hostname: ne-risk.pigeosolutions.fr
         path: /
         priority: 3
         protocol: http

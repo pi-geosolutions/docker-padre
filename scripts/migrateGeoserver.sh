@@ -43,7 +43,7 @@ fi
 #if in pays subfolder
 if [ -d "$DATADIR_ROOT_PATH/data/pays/$NS" ]; then
 	#create folder pays (rsync would, otherwise, issue an error)
-	rsync -avzh -e "ssh -p $DEST_PORT" --include="pays/" --exclude="**"  $DATADIR_ROOT_PATH/data/pays root@ga.pigeo.fr:/padre/geoserver_data/data/
+	rsync -avzh -e "ssh -p $DEST_PORT" --include="pays/" --exclude="**"  $DATADIR_ROOT_PATH/data/pays root@$DEST_SERVER:/padre/geoserver_data/data/
 	rsync -avzh -e "ssh -p $DEST_PORT" $DATADIR_ROOT_PATH/data/pays/$NS root@$DEST_SERVER:/padre/geoserver_data/data/pays/
 fi
 
