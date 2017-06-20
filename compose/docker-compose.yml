@@ -130,6 +130,7 @@ services:
     image: jeanpommier/padre-postgis:latest
     environment:
       PGDATA: /var/lib/postgresql/data/pgdata
+      POSTGRES_PASSWORD:
     stdin_open: true
     volumes:
     - r-nerisk-postgisdata-volume:/var/lib/postgresql/data/pgdata

@@ -5,9 +5,9 @@
 # Param 3 = destination server port nb
 # Param 4 = files list
 display_usage() {
-echo "This script must be run with super-user privileges."
-echo "it copies the useful files to the new geoserver instance's datadir"
-echo -e "\nUsage:\n$0 NS DEST_SERVER DEST_PORT [DATADIR_ROOT_PATH] \n"
+echo "it copies the backup SQL files into the destination host, changes them as needed and prepares migration locally"
+echo "You have afterwards some scripts to run on the destination host"
+echo -e "\nUsage:\n$0 PGSQLBACKUPS_ROOT_PATH NS DEST_SERVER DEST_PORT\n"
 }
 # if less than two arguments supplied, display usage
 if [ $# -ne 4 ]
@@ -27,6 +27,8 @@ DEST_PORT=${3:-2255}
 
 
 rm finishMigrateDB.sh
+cat ./createUsers.sql >> finishMigrateDB.sh
+
 for file in $4; do
 	cd $1
 	scp -P $DEST_PORT ${file}.gz root@$DEST_SERVER:/padre/
@@ -54,3 +56,4 @@ scp -P $DEST_PORT finishMigrateDB.sh root@$DEST_SERVER:/padre/
 scp -r -P $DEST_PORT geonetwork_migrate_sql/ root@$DEST_SERVER:/padre/
 
 echo "transfer done. Please now ssh to the sshd container as root and execute /padre/finishMigrateDB.sh script"
+echo "ssh -p ${DEST_PORT} root@$DEST_SERVER"
