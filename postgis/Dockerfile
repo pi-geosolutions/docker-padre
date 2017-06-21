@@ -14,8 +14,8 @@ ENV LANG fr_FR.utf8
 ENV POSTGRES_USER postgres 
 #ENV POSTGRES_DB geodata
 
-COPY ./pg_hba.conf $PGDATA/
-RUN chmod 600 $PGDATA/pg_hba.conf
+#COPY ./pg_hba.conf $PGDATA/
+#RUN chmod 600 $PGDATA/pg_hba.conf
 
 ADD sql/*.sql /docker-entrypoint-initdb.d/
-
+ADD sh/*.sh /docker-entrypoint-initdb.d/

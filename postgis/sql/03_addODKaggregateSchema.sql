@@ -2,7 +2,7 @@
 
 \connect geodata;
 CREATE SCHEMA odk1 AUTHORIZATION padre;
-#GRANT ALL PRIVILEGES ON SCHEMA odk1 TO padre;
+--GRANT ALL PRIVILEGES ON SCHEMA odk1 TO padre;
 
 
 -- make sure role 'padre' will have access to all new created tables
