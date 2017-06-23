@@ -26,34 +26,47 @@ DEST_SERVER=${2:-ner.pigeo.fr}
 DEST_PORT=${3:-2255}
 
 
-rm finishMigrateDB.sh
-cat ./createUsers.sql >> finishMigrateDB.sh
+rm migrateDB/finishMigrateDB.sh
 
+echo "echo \"Creating pigeosolutions users DB accounts\" " >> migrateDB/finishMigrateDB.sh
+echo "psql -h pgis -U postgres -e < createUsers.sql" >> migrateDB/finishMigrateDB.sh
+
+echo "Exporting database backup files"
+echo "echo \"Importing database backup files\" " >> migrateDB/finishMigrateDB.sh
 for file in $4; do
 	cd $1
 	scp -P $DEST_PORT ${file}.gz root@$DEST_SERVER:/padre/
 	cd -
-	echo "gunzip ${file}.gz" >> finishMigrateDB.sh
+	echo "gunzip ${file}.gz" >> migrateDB/finishMigrateDB.sh
 	#replace DB name to 'geodata' if this is relevant
 	if [[ "$file" == *geodata ]]
 	then
-		echo "sed -i -E \"s|${file}|geodata|gm\" $file" >> finishMigrateDB.sh
+		echo "sed -i -E \"s|${file}|geodata|gm\" $file" >> migrateDB/finishMigrateDB.sh
 	fi
 	#replace DB name to 'geonetwork' if this is relevant
 	if [[ "$file" == *gn2_10 ]]
 	then
-		echo "sed -i -E \"s|${file}|geonetwork|gm\" $file" >> finishMigrateDB.sh
+		echo "sed -i -E \"s|${file}|geonetwork|gm\" $file" >> migrateDB/finishMigrateDB.sh
 	fi
-	echo "sed -i -E \"s|fr_FR.UTF-8|en_US.UTF-8|gm\" $file" >> finishMigrateDB.sh
-	echo "psql -h pgis -U padre -e < ${file}" >> finishMigrateDB.sh
+	echo "sed -i -E \"s|fr_FR.UTF-8|en_US.UTF-8|gm\" $file" >> migrateDB/finishMigrateDB.sh
+	
+	#comment DROP/CREATE DB instructions
+	echo "sed -i -E \"s|DROP DATABASE|--DROP DATABASE|gm\" $file" >> migrateDB/finishMigrateDB.sh
+	echo "sed -i -E \"s|CREATE DATABASE|--CREATE DATABASE|gm\" $file" >> migrateDB/finishMigrateDB.sh
+
+	echo "psql -h pgis -U padre -e < ${file}" >> migrateDB/finishMigrateDB.sh
 done 
 
+
+
+echo "echo \"Copying SQL files to perform actual DB migration for geonetwork\" " >> migrateDB/finishMigrateDB.sh
 #apply manually geonetwork DB migration
-echo "for sqlfile in geonetwork_migrate_sql/*.sql; psql -h pgis -U padre -d geonetwork < \${sqlfile}; done;" >> finishMigrateDB.sh
+echo "for sqlfile in geonetwork_migrate_sql/*.sql; do psql -h pgis -U padre -d geonetwork < \${sqlfile}; done;" >> migrateDB/finishMigrateDB.sh
 
-chmod +x finishMigrateDB.sh
-scp -P $DEST_PORT finishMigrateDB.sh root@$DEST_SERVER:/padre/
-scp -r -P $DEST_PORT geonetwork_migrate_sql/ root@$DEST_SERVER:/padre/
+echo "echo \"Migration should be complete. Please comment the 'trust' line in /var/lib/postbresql/data/pgdata/ph_hba.conf and reload the DB\" " >> migrateDB/finishMigrateDB.sh
 
-echo "transfer done. Please now ssh to the sshd container as root and execute /padre/finishMigrateDB.sh script"
+chmod +x migrateDB/finishMigrateDB.sh
+rsync -avzh -e "ssh -p $DEST_PORT" migrateDB/ root@$DEST_SERVER:/padre/
+
+echo "transfer done. Please now ssh to the sshd container as root and execute /padre/migrateDB/finishMigrateDB.sh script"
 echo "ssh -p ${DEST_PORT} root@$DEST_SERVER"

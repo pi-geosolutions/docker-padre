@@ -1,4 +1,4 @@
-CREATE USER padre WITH PASSWORD 'padre';
+CREATE USER padre WITH SUPERUSER PASSWORD 'padre';
 -- needed for some connexions using padre user (assumed he has a DB at his name)
 CREATE DATABASE padre WITH OWNER padre;
 
