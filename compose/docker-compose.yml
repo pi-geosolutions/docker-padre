@@ -45,6 +45,7 @@ services:
   r-nerisk-geoportal:
     image: jeanpommier/padre-geonetwork:latest
     environment:
+      POSTGRES_DB_HOST: pg
       POSTGRES_DB_USERNAME: padre
       POSTGRES_DB_PASSWORD: padre
       DATA_DIR: /padre/geonetwork_datadir

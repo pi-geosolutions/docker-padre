@@ -63,6 +63,9 @@ echo "echo \"Copying SQL files to perform actual DB migration for geonetwork\" "
 #apply manually geonetwork DB migration
 echo "for sqlfile in geonetwork_migrate_sql/*.sql; do psql -h pgis -U padre -d geonetwork < \${sqlfile}; done;" >> migrateDB/finishMigrateDB.sh
 
+#remove superuser status from user padre
+echo "psql -h pgis -U postgres -c \"ALTER USER padre WITH NOSUPERUSER;\"" >> migrateDB/finishMigrateDB.sh
+
 echo "echo \"Migration should be complete. Please comment the 'trust' line in /var/lib/postbresql/data/pgdata/ph_hba.conf and reload the DB\" " >> migrateDB/finishMigrateDB.sh
 
 chmod +x migrateDB/finishMigrateDB.sh

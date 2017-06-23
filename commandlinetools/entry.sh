@@ -30,6 +30,10 @@ if [ -w /etc/authorized_keys ]; then
     find /etc/authorized_keys/ -type f -exec chmod 644 {} \;
 fi
 
+#creates pgpass file so that user padre can connect without need to provide a password
+echo  "pgis:5432:*:padre:padre" > /root/.pgpass
+chmod 0600 /root/.pgpass
+
 
 # Add users if SSH_USERS=user:uid:gid set
 echo "SSH_USER: ${SSH_USERS}"

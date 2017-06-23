@@ -22,17 +22,19 @@ if [ "$1" = 'catalina.sh' ]; then
 	db_port="${POSTGRES_DB_PORT:-5432}"
 	echo "db port: $db_port"
 	
-	#wait for the DB to be ready to accept connections
-	until psql -h "$db_host" -p "$db_port" -U "postgres" -c '\l'; do
-		>&2 echo "Postgres is unavailable - sleeping"
-		sleep 1
-	done
-	>&2 echo "Postgres is up - starting geonetwork"
 
 	if [ -z "$POSTGRES_DB_USERNAME" ] || [ -z "$POSTGRES_DB_PASSWORD" ]; then
 		echo >&2 "you must set POSTGRES_DB_USERNAME and POSTGRES_DB_PASSWORD"
 		exit 1
 	fi
+	
+		#wait for the DB to be ready to accept connections
+	until PGPASSWORD=$POSTGRES_DB_PASSWORD psql -h "$db_host" -p "$db_port" -U "$POSTGRES_DB_USERNAME" -c '\l'; do
+		>&2 echo "Postgres is unavailable - sleeping"
+		sleep 1
+	done
+	>&2 echo "Postgres is up - starting geonetwork"
+
 
 	db_admin="padre"
 	db_gn="geonetwork"
