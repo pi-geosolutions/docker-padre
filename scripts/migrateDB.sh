@@ -1,16 +1,17 @@
 #!/bin/bash
 # Execute this as root
 # Param 1 = source path
-# Param 2 = destination server name or IP
+# Param 2 = destination server name
 # Param 3 = destination server port nb
 # Param 4 = files list
+# Param 5 = origin server name (e.g. ne-risk.pigeo.fr)
 display_usage() {
 echo "it copies the backup SQL files into the destination host, changes them as needed and prepares migration locally"
 echo "You have afterwards some scripts to run on the destination host"
 echo -e "\nUsage:\n$0 PGSQLBACKUPS_ROOT_PATH NS DEST_SERVER DEST_PORT\n"
 }
 # if less than two arguments supplied, display usage
-if [ $# -ne 4 ]
+if [ $# -lt 4 ]
 then
 display_usage
 exit 1
@@ -47,6 +48,11 @@ for file in $4; do
 	if [[ "$file" == *gn2_10 ]]
 	then
 		echo "sed -i -E \"s|${file}|geonetwork|gm\" $file" >> migrateDB/finishMigrateDB.sh
+		#if $5 is set, replace all occurences of its value (origin server address) 
+		#to the new one (destination server address)
+		if [ -z ${5+x} ]; then 
+			echo "sed -i -E \"s|${5}|${2}|gm\" $file" >> migrateDB/finishMigrateDB.sh; 
+		fi
 	fi
 	echo "sed -i -E \"s|fr_FR.UTF-8|en_US.UTF-8|gm\" $file" >> migrateDB/finishMigrateDB.sh
 	
