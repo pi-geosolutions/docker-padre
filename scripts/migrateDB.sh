@@ -23,7 +23,8 @@ display_usage
 exit 0
 fi
 
-DEST_SERVER=${2:-ner.pigeo.fr}
+DEST_SERVER=${2:-ne-risk.pigeosolutions.fr}
+ORIG_SERVER=${5:-ne-risk.pigeo.fr}
 DEST_PORT=${3:-2255}
 
 
@@ -48,11 +49,9 @@ for file in $4; do
 	if [[ "$file" == *gn2_10 ]]
 	then
 		echo "sed -i -E \"s|${file}|geonetwork|gm\" $file" >> migrateDB/finishMigrateDB.sh
-		#if $5 is set, replace all occurences of its value (origin server address) 
+		#replace all occurences of its value (origin server address) 
 		#to the new one (destination server address)
-		if [ -z ${5+x} ]; then 
-			echo "sed -i -E \"s|${5}|${2}|gm\" $file" >> migrateDB/finishMigrateDB.sh; 
-		fi
+		echo "sed -i -E \"s|${ORIG_SERVER}|${DEST_SERVER}|gm\" $file" >> migrateDB/finishMigrateDB.sh; 
 	fi
 	echo "sed -i -E \"s|fr_FR.UTF-8|en_US.UTF-8|gm\" $file" >> migrateDB/finishMigrateDB.sh
 	
