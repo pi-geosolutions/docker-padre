@@ -11,8 +11,7 @@ if [ "$1" = 'catalina.sh' ]; then
 	export CATALINA_OPTS="$CATALINA_OPTS -Dgeonetwork.dir=$DATA_DIR"
 	
 	#Set logs destination
-	sed -i -E "s|^(param name=\"File\" value=\")([A-Za-z\.0-9]+)|\1$DATA_DIR/logs/geonetwork.log|gm" \
-				geonetwork/WEB-INF/classes/log4j.xml
+	sed -i -E "s|\"logs\/geonetwork.log\"|\"${DATA_DIR}\/logs\/geonetwork.log\"|gm" geonetwork/WEB-INF/classes/log4j.xml
 
 	#Setting host (use $POSTGRES_DB_HOST if it's set, otherwise use "pg")
 	db_host="${POSTGRES_DB_HOST:-pg}"
@@ -28,7 +27,7 @@ if [ "$1" = 'catalina.sh' ]; then
 		exit 1
 	fi
 	
-		#wait for the DB to be ready to accept connections
+	#wait for the DB to be ready to accept connections
 	until PGPASSWORD=$POSTGRES_DB_PASSWORD psql -h "$db_host" -p "$db_port" -U "$POSTGRES_DB_USERNAME" -c '\l'; do
 		>&2 echo "Postgres is unavailable - sleeping"
 		sleep 1
