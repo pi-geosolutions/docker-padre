@@ -10,7 +10,7 @@ echo "it copies the useful files to the new geoserver instance's datadir"
 echo -e "\nUsage:\n$0 SOURCE_PATH DEST_SERVER DEST_PORT \n"
 }
 # if less than two arguments supplied, display usage
-if [ $# -lt 3 ]
+if [ $# -ne 3 ]
 then
 display_usage
 exit 1
@@ -33,8 +33,8 @@ echo "DEST_PORT : $DEST_PORT"
 echo "DATADIR_ROOT_PATH : $DATADIR_ROOT_PATH"
 
 
-echo "Copying data directory (should suffice)"
-rsync -avzh -e "ssh -p $DEST_PORT -o CheckHostIP=no" $DATADIR_ROOT_PATH root@$DEST_SERVER:${DEST_ROOT_PATH}/owncloud-data/files/
+echo "Copying files to HTTPD root dir"
+rsync -avzh -e "ssh -p $DEST_PORT -o CheckHostIP=no" $DATADIR_ROOT_PATH root@$DEST_SERVER:${DEST_ROOT_PATH}/www_data/
 
 
-echo "Now please restart owncloud container. It should work"
+echo "Files copied"
