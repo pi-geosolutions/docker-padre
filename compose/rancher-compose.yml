@@ -1,56 +1,42 @@
 version: '2'
 services:
-  r-nerisk-lb:
+  lb:
     scale: 1
     start_on_create: true
     lb_config:
       certs: []
       port_rules:
-      - hostname: ne-risk.pigeosolutions.fr
+      - hostname: "${DOMAIN_URL}"
         path: /geoserver
         priority: 1
         protocol: http
-        service: r-nerisk-geoserver
+        service: geoserver
         source_port: 80
         target_port: 8080
-      - hostname: ne-risk.pigeosolutions.fr
+      - hostname: "${DOMAIN_URL}"
         path: /geonetwork
-        priority: 3
+        priority: 2
         protocol: http
-        service: r-nerisk-geoportal
+        service: geoportal
         source_port: 80
         target_port: 8080
-      - hostname: ne-risk.pigeosolutions.fr
+      - hostname: "${DOMAIN_URL}"
         path: /geodash
         priority: 3
         protocol: http
-        service: r-nerisk-geodash
+        service: geodash
         source_port: 80
         target_port: 8080
-      - hostname: ne-risk.pigeosolutions.fr
-        path: /ODKAggregate
-        priority: 4
-        protocol: http
-        service: r-nerisk-odkaggregate
-        source_port: 80
-        target_port: 8080
-      - hostname: ne-risk.pigeosolutions.fr
-        path: /owncloud
+      - hostname: "${DOMAIN_URL}"
+        path: /
         priority: 5
         protocol: http
-        service: r-nerisk-owncloud
+        selector: web.https=promote
         source_port: 80
         target_port: 80
-      - hostname: ne-risk.pigeosolutions.fr
-        path: /
-        priority: 6
-        protocol: http
-        service: r-nerisk-httpd
-        source_port: 80
-        target_port: 80
-      - priority: 7
+      - priority: 6
         protocol: tcp
-        service: r-nerisk-ssh
+        service: ssh
         source_port: 22
         target_port: 22
     health_check:
@@ -59,31 +45,53 @@ services:
       port: 42
       unhealthy_threshold: 3
       interval: 2000
-  r-nerisk-SSL-lb:
+      strategy: recreate
+  SSL-lb:
     scale: 1
     start_on_create: true
     lb_config:
       certs: []
       port_rules:
-      - hostname: ne-risk.pigeosolutions.fr
+      - hostname: "${DOMAIN_URL}"
         path: /geoserver
         priority: 1
         protocol: http
-        service: r-nerisk-geoserver
+        service: geoserver
         source_port: 8080
         target_port: 8080
-      - hostname: ne-risk.pigeosolutions.fr
+      - hostname: "${DOMAIN_URL}"
         path: /geoserver
         priority: 2
         protocol: http
-        service: r-nerisk-geoserver
+        service: geoserver
         source_port: 80
         target_port: 8080
-      - hostname: ne-risk.pigeosolutions.fr
-        path: /
+      - hostname: "${DOMAIN_URL}"
+        path: /ODKAggregate
         priority: 3
         protocol: http
-        service: r-nerisk-httpd
+        service: odkaggregate
+        source_port: 80
+        target_port: 8080
+      - hostname: "${DOMAIN_URL}"
+        path: /owncloud
+        priority: 4
+        protocol: http
+        service: owncloud
+        source_port: 80
+        target_port: 80
+      - hostname: "${DOMAIN_URL}"
+        path: /geonetwork
+        priority: 5
+        protocol: http
+        service: geoportal
+        source_port: 80
+        target_port: 8080
+      - hostname: "${DOMAIN_URL}"
+        path: /
+        priority: 6
+        protocol: http
+        service: httpd
         source_port: 80
         target_port: 80
     health_check:
@@ -91,25 +99,26 @@ services:
       response_timeout: 2000
       port: 42
       unhealthy_threshold: 3
-      interval: 2000  
-  r-nerisk-httpd:
+      interval: 2000
+      strategy: recreate
+  httpd:
     scale: 1
     start_on_create: true
-  r-nerisk-geoportal:
+  geoportal:
     scale: 1
     start_on_create: false
-  r-nerisk-owncloud:
+  owncloud:
     scale: 1
     start_on_create: true
-  r-nerisk-odkaggregate:
+  odkaggregate:
     scale: 1
     start_on_create: true
-  r-nerisk-geoserver:
+  geoserver:
     scale: 1
     start_on_create: false
-  r-nerisk-ssh:
+  ssh:
     scale: 1
     start_on_create: true
-  r-nerisk-postgis:
+  postgis:
     scale: 1
     start_on_create: true

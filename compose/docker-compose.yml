@@ -1,86 +1,78 @@
 version: '2'
-volumes:
-  r-nerisk-postgisdata-volume:
-    driver: local
-  r-nerisk-owncloud-volume:
-    driver: local
-  r-nerisk-sshd-home-volume:
-    driver: local
-  r-nerisk-gndata-volume:
-    driver: local
-  r-nerisk-gsdata-volume:
-    driver: local
-  r-nerisk-wwwdata-volume:
-    driver: local
-  r-nerisk-geodata-volume:
-    driver: local
-  r-nerisk-sshd-volume:
-    driver: local
 services:
-  r-nerisk-lb:
+  lb:
     image: rancher/lb-service-haproxy:v0.7.5
     labels:
       io.rancher.container.agent.role: environmentAdmin
       io.rancher.container.create_agent: 'true'
       web.http: 'true'
-  r-nerisk-SSL-lb:
+  SSL-lb:
     image: rancher/lb-service-haproxy:v0.7.5
     labels:
       io.rancher.container.agent.role: environmentAdmin
       io.rancher.container.create_agent: 'true'
       web.https: 'true'
-  r-nerisk-httpd:
+  httpd:
     image: jeanpommier/padre-httpd:latest
     environment:
-      APACHE_SERVERNAME: ne-risk.pigeosolutions.fr
+      APACHE_SERVERNAME: ${DOMAIN_URL}
       POSTGRES_HOST: pgis
       POSTGRES_PORT: '5432'
       POSTGRES_DEFAULTDB: geodata
     stdin_open: true
     volumes:
-    - r-nerisk-wwwdata-volume:/var/www/html/
+      - "/home/projects/${PROJECT_ID}/www_data:/var/www/html/"
     tty: true
     links:
-    - r-nerisk-postgis:pgis
+      - postgis:pgis
     labels:
+      fr.pigeo.container-type: httpd
+      fr.pigeo.project: ${PROJECT_ID}
+      fr.pigeo.product: Padre v2
       io.rancher.container.pull_image: always
-  r-nerisk-geoportal:
+  geoportal:
     image: jeanpommier/padre-geonetwork:latest
     environment:
       POSTGRES_DB_HOST: pg
       POSTGRES_DB_USERNAME: padre
       POSTGRES_DB_PASSWORD: padre
-      DATA_DIR: /padre/geonetwork_datadir
+      DATA_DIR: /padre/geonetwork_data
     stdin_open: true
     volumes:
-    - r-nerisk-gndata-volume:/padre/geonetwork_datadir
+      - "/home/projects/${PROJECT_ID}/geonetwork_data:/padre/geonetwork_data"
     tty: true
     links:
-    - r-nerisk-postgis:pg
+      - postgis:pg
     labels:
+      fr.pigeo.container-type: Geonetwork
+      fr.pigeo.project: ${PROJECT_ID}
+      fr.pigeo.product: Padre v2
       io.rancher.container.pull_image: always
-  r-nerisk-geodash:
+  geodash:
     image: jeanpommier/padre-geodash:latest
     environment:
       POSTGRES_DB_USERNAME: padre
       POSTGRES_DB_PASSWORD: padre
     stdin_open: true
     volumes:
-    - r-nerisk-geodata-volume:/padre/geodata
+      - "/home/projects/${PROJECT_ID}/geodata:/padre/geodata"
     tty: true
     links:
-    - r-nerisk-postgis:pg
+      - postgis:pg
     labels:
+      fr.pigeo.container-type: Geodash
+      fr.pigeo.project: ${PROJECT_ID}
+      fr.pigeo.product: Padre v2
       io.rancher.container.pull_image: always
-  r-nerisk-owncloud:
+  owncloud:
     image: jeanpommier/padre-owncloud:latest
     environment:
-      OWNCLOUD_DOMAIN: ne-risk.pigeosolutions.fr
+      OWNCLOUD_DOMAIN: ${DOMAIN_URL}
       OWNCLOUD_SUB_URL: /owncloud
     stdin_open: true
     volumes:
-    - r-nerisk-owncloud-volume:/mnt/data
-  r-nerisk-odkaggregate:
+      - "/home/projects/${PROJECT_ID}/owncloud_data:/mnt/data"
+  odkaggregate:
     image: jeanpommier/padre-odkaggregate:latest
     environment:
       DB_HOSTNAME: pgis
@@ -89,56 +81,65 @@ services:
       DB_DATABASE: geodata
       DB_SCHEMA: odk1
       DB_PORT: '5432'
-      ODK_HOSTNAME: ne-risk.pigeosolutions.fr
+      ODK_HOSTNAME: ${DOMAIN_URL}
       ODK_PORT: '80'
     stdin_open: true
     links:
-    - r-nerisk-postgis:pgis
+      - postgis:pgis
     labels:
+      fr.pigeo.container-type: owncloud
+      fr.pigeo.project: ${PROJECT_ID}
+      fr.pigeo.product: Padre v2
       io.rancher.container.pull_image: always
-  r-nerisk-geoserver:
+  geoserver:
     image: jeanpommier/padre-geoserver:latest
     environment:
       GEOSERVER_DATA_DIR: /padre/geoserver_data
     stdin_open: true
     volumes:
-    - r-nerisk-gsdata-volume:/padre/geoserver_data
-    - r-nerisk-geodata-volume:/padre/geodata
+      - "/home/projects/${PROJECT_ID}/geodata:/padre/geodata"
+      - "/home/projects/${PROJECT_ID}/geoserver_data:/padre/geoserver_data"
     tty: true
     links:
-    - r-nerisk-postgis:pgis
+      - postgis:pgis
     labels:
       fr.pigeo.container-type: GeoServer
-      fr.pigeo.project: r-nerisk-mines
+      fr.pigeo.project: ${PROJECT_ID}
       fr.pigeo.product: Padre v2
       io.rancher.container.pull_image: always
-  r-nerisk-ssh:
+  ssh:
     image: jeanpommier/padre-commandline:latest
     environment:
       SSH_USERS: jean:1000:1000
     stdin_open: true
     volumes:
-    - r-nerisk-sshd-home-volume:/home
-    - r-nerisk-wwwdata-volume:/padre/www-data
-    - r-nerisk-geodata-volume:/padre/geodata
-    - r-nerisk-gsdata-volume:/padre/geoserver_data
-    - r-nerisk-gndata-volume:/padre/geonetwork_datadir
-    - r-nerisk-owncloud-volume:/padre/owncloud-data
-    - /etc/authorized_keys:/etc/authorized_keys
-    - r-nerisk-sshd-volume:/etc/ssh
+      - "/home/projects/${PROJECT_ID}/sshd_config:/etc/ssh"
+      - "/home/projects/${PROJECT_ID}/sshd_home:/home"
+      - "/home/projects/${PROJECT_ID}/geodata:/padre/geodata"
+      - "/home/projects/${PROJECT_ID}/geoserver_data:/padre/geoserver_data"
+      - "/home/projects/${PROJECT_ID}/geonetwork_data:/padre/geonetwork_data"
+      - "/home/projects/${PROJECT_ID}/www_data:/padre/www_data"
+      - "/home/projects/${PROJECT_ID}/owncloud_data:/padre/owncloud_data"
+      - /etc/authorized_keys:/etc/authorized_keys
     tty: true
     links:
-    - r-nerisk-postgis:pgis
+      - postgis:pgis
     labels:
+      fr.pigeo.container-type: SSHD
+      fr.pigeo.project: ${PROJECT_ID}
+      fr.pigeo.product: Padre v2
       io.rancher.container.pull_image: always
-  r-nerisk-postgis:
+  postgis:
     image: jeanpommier/padre-postgis:latest
     environment:
       PGDATA: /var/lib/postgresql/data/pgdata
       POSTGRES_PASSWORD:
     stdin_open: true
     volumes:
-    - r-nerisk-postgisdata-volume:/var/lib/postgresql/data/pgdata
+      - "/home/projects/${PROJECT_ID}/postgis_data:/var/lib/postgresql/data/pgdata"
     tty: true
     labels:
+      fr.pigeo.container-type: PostGis
+      fr.pigeo.project: ${PROJECT_ID}
+      fr.pigeo.product: Padre v2
       io.rancher.container.pull_image: always
