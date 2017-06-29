@@ -37,19 +37,19 @@ echo "DATADIR_ROOT_PATH : $DATADIR_ROOT_PATH"
 echo "Copying data files"
 #if in data/ root
 if [ -d "$DATADIR_ROOT_PATH/data/$NS" ]; then
-	rsync -avzh -e "ssh -p $DEST_PORT" $DATADIR_ROOT_PATH/data/$NS root@$DEST_SERVER:/padre/geoserver_data/data/
+	rsync -avzh -e "ssh -p $DEST_PORT -o CheckHostIP=no" $DATADIR_ROOT_PATH/data/$NS root@$DEST_SERVER:/padre/geoserver_data/data/
 fi
 
 #if in pays subfolder
 if [ -d "$DATADIR_ROOT_PATH/data/pays/$NS" ]; then
 	#create folder pays (rsync would, otherwise, issue an error)
-	rsync -avzh -e "ssh -p $DEST_PORT" --include="pays/" --exclude="**"  $DATADIR_ROOT_PATH/data/pays root@$DEST_SERVER:/padre/geoserver_data/data/
-	rsync -avzh -e "ssh -p $DEST_PORT" $DATADIR_ROOT_PATH/data/pays/$NS root@$DEST_SERVER:/padre/geoserver_data/data/pays/
+	rsync -avzh -e "ssh -p $DEST_PORT -o CheckHostIP=no" --include="pays/" --exclude="**"  $DATADIR_ROOT_PATH/data/pays root@$DEST_SERVER:/padre/geoserver_data/data/
+	rsync -avzh -e "ssh -p $DEST_PORT -o CheckHostIP=no" $DATADIR_ROOT_PATH/data/pays/$NS root@$DEST_SERVER:/padre/geoserver_data/data/pays/
 fi
 
 
 echo "Copying global & matching style files (the ones starting with  ${NS}_"
-rsync -avzh -e "ssh -p $DEST_PORT" --include="*" --include="${NS}_*" --exclude="??_*" $DATADIR_ROOT_PATH/styles/ root@$DEST_SERVER:/padre/geoserver_data/styles/
+rsync -avzh -e "ssh -p $DEST_PORT -o CheckHostIP=no" --include="*" --include="${NS}_*" --exclude="??_*" $DATADIR_ROOT_PATH/styles/ root@$DEST_SERVER:/padre/geoserver_data/styles/
 
 echo "Copying workspace ${NS}"
-rsync -avzh -e "ssh -p $DEST_PORT" $DATADIR_ROOT_PATH/workspaces/$NS root@$DEST_SERVER:/padre/geoserver_data/workspaces/
+rsync -avzh -e "ssh -p $DEST_PORT -o CheckHostIP=no" $DATADIR_ROOT_PATH/workspaces/$NS root@$DEST_SERVER:/padre/geoserver_data/workspaces/

@@ -49,6 +49,7 @@ for file in $4; do
 	if [[ "$file" == *gn2_10 ]]
 	then
 		echo "sed -i -E \"s|${file}|geonetwork|gm\" $file" >> migrateDB/finishMigrateDB.sh
+		echo "sed -i -E \"s|geoserver-prod|geoserver|gm\" $file" >> migrateDB/finishMigrateDB.sh
 		#replace all occurences of its value (origin server address) 
 		#to the new one (destination server address)
 		echo "sed -i -E \"s|${ORIG_SERVER}|${DEST_SERVER}|gm\" $file" >> migrateDB/finishMigrateDB.sh; 
@@ -74,7 +75,7 @@ echo "psql -h pgis -U postgres -c \"ALTER USER padre WITH NOSUPERUSER;\"" >> mig
 echo "echo \"Migration should be complete. Please comment the 'trust' line in /var/lib/postbresql/data/pgdata/ph_hba.conf and reload the DB\" " >> migrateDB/finishMigrateDB.sh
 
 chmod +x migrateDB/finishMigrateDB.sh
-rsync -avzh -e "ssh -p $DEST_PORT" migrateDB/ root@$DEST_SERVER:/padre/
+rsync -avzh -e "ssh -p $DEST_PORT -o CheckHostIP=no " migrateDB/ root@$DEST_SERVER:/padre/
 
 echo "transfer done. Please now ssh to the sshd container as root and execute /padre/migrateDB/finishMigrateDB.sh script"
 echo "ssh -p ${DEST_PORT} root@$DEST_SERVER"

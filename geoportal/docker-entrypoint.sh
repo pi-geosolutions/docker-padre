@@ -8,7 +8,7 @@ if [ "$1" = 'catalina.sh' ]; then
 	mkdir -p "$DATA_DIR"
 
 	#Set geonetwork data dir
-	export CATALINA_OPTS="$CATALINA_OPTS -Dgeonetwork.dir=$DATA_DIR"
+	export CATALINA_OPTS="$CATALINA_OPTS -Dgeonetwork.data.dir=$DATA_DIR/data/metadata_data"
 	
 	#Set logs destination
 	sed -i -E "s|\"logs\/geonetwork.log\"|\"${DATA_DIR}\/logs\/geonetwork.log\"|gm" geonetwork/WEB-INF/classes/log4j.xml
