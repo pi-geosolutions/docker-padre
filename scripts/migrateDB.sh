@@ -5,6 +5,7 @@
 # Param 3 = destination server port nb
 # Param 4 = files list
 # Param 5 = origin server name (e.g. ne-risk.pigeo.fr)
+# Param 6 = Destination path
 display_usage() {
 echo "it copies the backup SQL files into the destination host, changes them as needed and prepares migration locally"
 echo "You have afterwards some scripts to run on the destination host"
@@ -26,6 +27,7 @@ fi
 DEST_SERVER=${2:-ne-risk.pigeosolutions.fr}
 ORIG_SERVER=${5:-ne-risk.pigeo.fr}
 DEST_PORT=${3:-2255}
+DEST_ROOT_PATH=${6:-/padre}
 
 
 rm migrateDB/finishMigrateDB.sh
@@ -75,7 +77,7 @@ echo "psql -h pgis -U postgres -c \"ALTER USER padre WITH NOSUPERUSER;\"" >> mig
 echo "echo \"Migration should be complete. Please comment the 'trust' line in /var/lib/postbresql/data/pgdata/ph_hba.conf and reload the DB\" " >> migrateDB/finishMigrateDB.sh
 
 chmod +x migrateDB/finishMigrateDB.sh
-rsync -avzh -e "ssh -p $DEST_PORT -o CheckHostIP=no " migrateDB/ root@$DEST_SERVER:/padre/
+rsync -avzh -e "ssh -p $DEST_PORT -o CheckHostIP=no " migrateDB/ root@$DEST_SERVER:${DEST_ROOT_PATH}/
 
 echo "transfer done. Please now ssh to the sshd container as root and execute /padre/migrateDB/finishMigrateDB.sh script"
 echo "ssh -p ${DEST_PORT} root@$DEST_SERVER"

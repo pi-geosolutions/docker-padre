@@ -3,6 +3,7 @@
 # Param 1 = destination server name or IP
 # Param 2 = destination server port nb
 # Param 3 = (Optional) source geoserver datadir root path
+# Param 4 = Destination root path
 display_usage() {
 echo "This script must be run with super-user privileges."
 echo "it copies the useful files to the new geoserver instance's datadir"
@@ -25,6 +26,7 @@ fi
 DEST_SERVER=${1:-ner.pigeo.fr}
 DEST_PORT=${2:-2255}
 DATADIR_ROOT_PATH=${3}
+DEST_ROOT_PATH=${4:-/padre}
 
 echo "DEST_SERVER : $DEST_SERVER"
 echo "DEST_PORT : $DEST_PORT"
@@ -34,5 +36,5 @@ echo "DATADIR_ROOT_PATH : $DATADIR_ROOT_PATH"
 echo "Copying data files"
 
 #Works : 
-#rsync -avzh -e "ssh -p 2256" --exclude="data/metadata_subversion" --include="*" /media/jean/Backup4/serveurSYS/home/jean/tomcat7/data/gabon-mines-gn2_10-datadir/ root@ga.pigeo.fr:/padre/geonetwork_datadir/
-rsync -avzh -e "ssh -p $DEST_PORT -o CheckHostIP=no" --exclude="data/metadata_subversion" --exclude="index" --exclude="spatialindex" --include="*" $DATADIR_ROOT_PATH/ root@$DEST_SERVER:/padre/geonetwork_datadir/
+#rsync -avzh -e "ssh -p 2256" --exclude="data/metadata_subversion" --include="*" /media/jean/Backup4/serveurSYS/home/jean/tomcat7/data/gabon-mines-gn2_10-datadir/ root@ga.pigeo.fr:/padre/geonetwork_data/
+rsync -avzh -e "ssh -p $DEST_PORT -o CheckHostIP=no" --exclude="data/metadata_subversion" --exclude="index" --exclude="spatialindex" --include="*" $DATADIR_ROOT_PATH/ root@$DEST_SERVER:${DEST_ROOT_PATH}/geonetwork_data/

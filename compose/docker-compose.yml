@@ -33,12 +33,12 @@ services:
   geoportal:
     image: jeanpommier/padre-geonetwork:latest
     environment:
-      POSTGRES_DB_HOST: pg
-      POSTGRES_DB_USERNAME: padre
-      POSTGRES_DB_PASSWORD: padre
-      DATA_DIR: /padre/geonetwork_data
-      GEOSERVER_NS:${GEOSERVER_NS}
-      PROJECT_URL:${PROJECT_URL}
+      - "POSTGRES_DB_HOST: pg"
+      - "POSTGRES_DB_USERNAME: padre"
+      - "POSTGRES_DB_PASSWORD: padre"
+      - "DATA_DIR: /padre/geonetwork_data"
+      - "GEOSERVER_NS:${GEOSERVER_NS}"
+      - "PROJECT_URL:${DOMAIN_URL}"
     stdin_open: true
     volumes:
       - "/home/projects/${PROJECT_ID}/geonetwork_data:/padre/geonetwork_data"
@@ -112,7 +112,7 @@ services:
   ssh:
     image: jeanpommier/padre-commandline:latest
     environment:
-      SSH_USERS: jean:1000:1000
+      SSH_USERS: jean:1000:1000,florent:1001:1001,philippe:1002:1002,raincell:1003:1003
     stdin_open: true
     volumes:
       - "/home/projects/${PROJECT_ID}/sshd_config:/etc/ssh"
