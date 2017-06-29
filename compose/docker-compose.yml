@@ -37,6 +37,8 @@ services:
       POSTGRES_DB_USERNAME: padre
       POSTGRES_DB_PASSWORD: padre
       DATA_DIR: /padre/geonetwork_data
+      GEOSERVER_NS:${GEOSERVER_NS}
+      PROJECT_URL:${PROJECT_URL}
     stdin_open: true
     volumes:
       - "/home/projects/${PROJECT_ID}/geonetwork_data:/padre/geonetwork_data"
