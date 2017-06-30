@@ -49,23 +49,23 @@ RUN sed -i 's/\;date\.timezone\ \=/date\.timezone\ \=\ Etc\/UTC/g' /etc/php5/cli
 # Activate a2enmod
 RUN a2enmod rewrite
 
-WORKDIR /var/www/html
+WORKDIR /var/www
 
 #install phppgadmin from github repo
 ENV PHPPGADMIN_VERSION REL_5-1-0
 
 RUN ln -sf /dev/stdout /var/log/apache2/access.log \
   && ln -sf /dev/stdout /var/log/apache2/error.log \
-  && chown -R www-data:www-data /var/log/apache2 /var/www/html \
+  && chown -R www-data:www-data /var/log/apache2 /var/www \
   && wget https://github.com/phppgadmin/phppgadmin/archive/${PHPPGADMIN_VERSION}.zip \
-  && echo "" > /var/www/html/index.html && unzip /var/www/html/${PHPPGADMIN_VERSION}.zip \
-  && mv phppgadmin-${PHPPGADMIN_VERSION} pgadmin \
-  && rm /var/www/html/${PHPPGADMIN_VERSION}.zip \
+  && echo "" > /var/www/html/index.html && unzip /var/www/${PHPPGADMIN_VERSION}.zip \
+  && rm /var/www/${PHPPGADMIN_VERSION}.zip \
   && rm -rf /var/lib/apt/lists/*
 
+ADD config.inc.php /var/www/${PHPPGADMIN_VERSION}/conf/config.inc.php
   
+WORKDIR /var/www/html
   
-ADD config.inc.php /var/www/html/pgadmin/conf/config.inc.php
 #make it read the environment variables
 RUN sed -i 's/variables_order = "GPCS"/variables_order = "EGPCS"/g' /etc/php5/apache2/php.ini 
 
