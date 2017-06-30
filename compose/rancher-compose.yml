@@ -28,6 +28,13 @@ services:
         source_port: 80
         target_port: 8080
       - hostname: "${DOMAIN_URL}"
+        path: /ODKAggregate
+        priority: 3
+        protocol: http
+        service: odkaggregate
+        source_port: 80
+        target_port: 8080
+      - hostname: "${DOMAIN_URL}"
         path: /
         priority: 5
         protocol: http
@@ -72,6 +79,13 @@ services:
         protocol: http
         service: odkaggregate
         source_port: 80
+        target_port: 8080
+      - hostname: "${DOMAIN_URL}"
+        path: /ODKAggregate
+        priority: 3
+        protocol: http
+        service: odkaggregate
+        source_port: 8080
         target_port: 8080
       - hostname: "${DOMAIN_URL}"
         path: /owncloud

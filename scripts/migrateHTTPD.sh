@@ -34,7 +34,7 @@ echo "DATADIR_ROOT_PATH : $DATADIR_ROOT_PATH"
 
 
 echo "Copying files to HTTPD root dir"
-rsync -avzh -e "ssh -p $DEST_PORT -o CheckHostIP=no" $DATADIR_ROOT_PATH root@$DEST_SERVER:${DEST_ROOT_PATH}/www_data/
+rsync -avzh -e "ssh -p $DEST_PORT -o CheckHostIP=no" --include="*" --exclude="oc/*" --exclude="stats/*" $DATADIR_ROOT_PATH root@$DEST_SERVER:${DEST_ROOT_PATH}/www_data/
 
 
 echo "Files copied"

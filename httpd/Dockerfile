@@ -55,11 +55,12 @@ WORKDIR /var/www/html
 RUN ln -sf /dev/stdout /var/log/apache2/access.log \
   && ln -sf /dev/stdout /var/log/apache2/error.log \
   && chown -R www-data:www-data /var/log/apache2 /var/www/html \
-  && wget https://github.com/phppgadmin/phppgadmin/archive/master.zip \
+  && wget https://github.com/phppgadmin/phppgadmin/archive/REL_5-1-0.zip \
   && rm /var/www/html/index.html && unzip /var/www/html/master.zip \
   && mv phppgadmin-master pgadmin \
   && rm /var/www/html/master.zip \
   && rm -rf /var/lib/apt/lists/*
+  && touch /var/www/html/index.html
   
   
 ADD config.inc.php /var/www/html/pgadmin/conf/config.inc.php

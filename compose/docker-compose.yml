@@ -33,12 +33,12 @@ services:
   geoportal:
     image: jeanpommier/padre-geonetwork:latest
     environment:
-      - "POSTGRES_DB_HOST: pg"
-      - "POSTGRES_DB_USERNAME: padre"
-      - "POSTGRES_DB_PASSWORD: padre"
-      - "DATA_DIR: /padre/geonetwork_data"
-      - "GEOSERVER_NS:${GEOSERVER_NS}"
-      - "PROJECT_URL:${DOMAIN_URL}"
+      POSTGRES_DB_HOST: pg
+      POSTGRES_DB_USERNAME: padre
+      POSTGRES_DB_PASSWORD: padre
+      DATA_DIR: /padre/geonetwork_data
+      GEOSERVER_NS: ${GEOSERVER_NS}
+      PROJECT_URL: ${DOMAIN_URL}
     stdin_open: true
     volumes:
       - "/home/projects/${PROJECT_ID}/geonetwork_data:/padre/geonetwork_data"
@@ -85,6 +85,8 @@ services:
       DB_PORT: '5432'
       ODK_HOSTNAME: ${DOMAIN_URL}
       ODK_PORT: '80'
+      ODK_PORT_SECURE: '443' 
+      ODK_CHANNELTYPE: 'ANY_CHANNEL'
     stdin_open: true
     links:
       - postgis:pgis

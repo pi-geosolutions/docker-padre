@@ -34,7 +34,7 @@ echo "DATADIR_ROOT_PATH : $DATADIR_ROOT_PATH"
 
 
 echo "Copying data directory (should suffice)"
-rsync -avzh -e "ssh -p $DEST_PORT -o CheckHostIP=no" $DATADIR_ROOT_PATH root@$DEST_SERVER:${DEST_ROOT_PATH}/owncloud-data/files/
+rsync -avzh -e "ssh -p $DEST_PORT -o CheckHostIP=no" $DATADIR_ROOT_PATH root@$DEST_SERVER:${DEST_ROOT_PATH}/owncloud_data/files/
 
 
 echo "Now please restart owncloud container. It should work"
