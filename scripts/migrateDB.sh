@@ -32,9 +32,6 @@ DEST_ROOT_PATH=${6:-/padre}
 
 rm migrateDB/finishMigrateDB.sh
 
-echo "echo \"Creating pigeosolutions users DB accounts\" " >> migrateDB/finishMigrateDB.sh
-echo "psql -h pgis -U postgres -e < createUsers.sql" >> migrateDB/finishMigrateDB.sh
-
 echo "Exporting database backup files"
 echo "echo \"Importing database backup files\" " >> migrateDB/finishMigrateDB.sh
 for file in $4; do

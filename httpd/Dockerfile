@@ -58,7 +58,7 @@ RUN ln -sf /dev/stdout /var/log/apache2/access.log \
   && ln -sf /dev/stdout /var/log/apache2/error.log \
   && chown -R www-data:www-data /var/log/apache2 /var/www \
   && wget https://github.com/phppgadmin/phppgadmin/archive/${PHPPGADMIN_VERSION}.zip \
-  && echo "" > /var/www/html/index.html && unzip /var/www/${PHPPGADMIN_VERSION}.zip \
+  && unzip /var/www/${PHPPGADMIN_VERSION}.zip \
   && rm /var/www/${PHPPGADMIN_VERSION}.zip \
   && rm -rf /var/lib/apt/lists/*
 

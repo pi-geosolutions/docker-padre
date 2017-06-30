@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #create default index.html file if it does not exist
-#touch /var/www/html/index.html
+touch /var/www/html/index.html
 
 #Copy phppgadmin folder to /var/www/html
 cp -pr /var/www/phppgadmin-${PHPPGADMIN_VERSION} /var/www/html/
