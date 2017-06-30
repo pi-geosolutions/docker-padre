@@ -8,19 +8,15 @@ if [ "$1" = 'catalina.sh' ]; then
 	mkdir -p "$DATA_DIR"
 
 	#Set geonetwork data dir
-	export CATALINA_OPTS="$CATALINA_OPTS -Dgeonetwork.data.dir=$DATA_DIR/data/metadata_data"
+	export CATALINA_OPTS="$CATALINA_OPTS -Dgeonetwork.dir=$DATA_DIR/data/metadata_data"
 	
 	#clear volatile directories
-	rm -rf geonetwork/WEB-INF/data/data/metadata_subversion
-	rm -rf geonetwork/WEB-INF/data/index
-	rm -rf geonetwork/WEB-INF/data/spatialindex
+	rm -rf ${WEBAPP_NAME}/WEB-INF/data/data/metadata_subversion
+	rm -rf ${WEBAPP_NAME}/WEB-INF/data/index
+	rm -rf ${WEBAPP_NAME}/WEB-INF/data/spatialindex
 	
 	#Set logs destination
-	sed -i -E "s|\"logs\/geonetwork.log\"|\"${DATA_DIR}\/logs\/geonetwork.log\"|gm" geonetwork/WEB-INF/classes/log4j.xml
-
-	#Set url & geoserver namespace where needed
-	sed -i -E "s|http:\/\/bi-risk.pigeo.fr\/geoserver-prod\/bi\/|https:\/\/${PROJECT_URL}\/geoserver\/${GEOSERVER_NS}\/|gm" geonetwork/xslt/pigeo/geoportal/layertree-admin.xsl
-	sed -i -E "s|http:\/\/bi-risk.pigeo.fr|https:\/\/${PROJECT_URL}|gm" geonetwork/catalog/views/pigeo/js/adminunits/adminunits.js
+	sed -i -E "s|\"\/home\/jean\/tomcat7\/logs\/gm-risk-gn2_10.log\"|\"${DATA_DIR}\/logs\/geonetwork.log\"|gm" geonetwork/WEB-INF/log4j.cfg
 
 	#Setting host (use $POSTGRES_DB_HOST if it's set, otherwise use "pg")
 	db_host="${POSTGRES_DB_HOST:-pg}"
