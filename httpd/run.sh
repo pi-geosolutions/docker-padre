@@ -4,8 +4,8 @@
 #touch /var/www/html/index.html
 
 #Copy phppgadmin folder to /var/www/html
-cp -pr /var/www/${PHPPGADMIN_VERSION} /var/www/html/
-mv /var/www/html/${PHPPGADMIN_VERSION} /var/www/html/pgadmin
+cp -pr /var/www/phppgadmin-${PHPPGADMIN_VERSION} /var/www/html/
+mv /var/www/html/phppgadmin-${PHPPGADMIN_VERSION} /var/www/html/pgadmin
 chown -R www-data:www-data /var/www/html 
 
 #add 'padre' to list of users banned from phppgadmin
