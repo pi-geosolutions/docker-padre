@@ -62,6 +62,7 @@ RUN ln -sf /dev/stdout /var/log/apache2/access.log \
   && mv phppgadmin-${PHPPGADMIN_VERSION} pgadmin \
   && rm /var/www/html/${PHPPGADMIN_VERSION}.zip \
   && rm -rf /var/lib/apt/lists/*
+
   
   
 ADD config.inc.php /var/www/html/pgadmin/conf/config.inc.php
