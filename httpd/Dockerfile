@@ -59,7 +59,7 @@ RUN ln -sf /dev/stdout /var/log/apache2/access.log \
   && rm /var/www/html/index.html && unzip /var/www/html/master.zip \
   && mv phppgadmin-master pgadmin \
   && rm /var/www/html/master.zip \
-  && rm -rf /var/lib/apt/lists/*
+  && rm -rf /var/lib/apt/lists/* \
   && touch /var/www/html/index.html
   
   
