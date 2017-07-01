@@ -31,7 +31,7 @@ services:
       fr.pigeo.product: Padre v2
       io.rancher.container.pull_image: always
   geoportal:
-    image: jeanpommier/padre-geonetwork:latest
+    image: jeanpommier/padre-geonetwork:padre1-gm-risk
     environment:
       POSTGRES_DB_HOST: pg
       POSTGRES_DB_USERNAME: padre
