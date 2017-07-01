@@ -45,7 +45,8 @@ RUN mkdir -p ~root/.ssh /etc/authorized_keys && chmod 700 ~root/.ssh/ && \
     cp -a /etc/ssh /etc/ssh.cache 
 
 ENV NOTVISIBLE "in users profile"
-RUN echo "export VISIBLE=now" >> /etc/profile
+RUN echo "export VISIBLE=now" >> /etc/profile \
+	&& locale-gen fr_FR.UTF-8
 
 EXPOSE 22
 

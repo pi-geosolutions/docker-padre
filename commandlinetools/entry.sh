@@ -73,6 +73,9 @@ if [ -v MOTD ]; then
     echo -e "$MOTD" > /etc/motd
 fi
 
+#coloration syntaxique pour root
+echo "set bg=dark" > /root/.vimrc
+
 stop() {
     echo "Received SIGINT or SIGTERM. Shutting down $DAEMON"
     # Get PID
