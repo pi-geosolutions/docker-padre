@@ -8,7 +8,7 @@ if [ "$1" = 'catalina.sh' ]; then
 	mkdir -p "$DATA_DIR"
 
 	#Set geonetwork data dir
-	export CATALINA_OPTS="$CATALINA_OPTS -Dgeonetwork.dir=$DATA_DIR/data/metadata_data"
+	export CATALINA_OPTS="$CATALINA_OPTS -Dgeonetwork.dir=$DATA_DIR"
 	
 	#clear volatile directories
 	rm -rf ${WEBAPP_NAME}/WEB-INF/data/data/metadata_subversion
@@ -16,7 +16,7 @@ if [ "$1" = 'catalina.sh' ]; then
 	rm -rf ${WEBAPP_NAME}/WEB-INF/data/spatialindex
 	
 	#Set logs destination
-	sed -i -E "s|\"\/home\/jean\/tomcat7\/logs\/gm-risk-gn2_10.log\"|\"${DATA_DIR}\/logs\/geonetwork.log\"|gm" ${WEBAPP_NAME}/WEB-INF/log4j.cfg
+	sed -i -E "s|\/home\/jean\/tomcat7\/logs\/gm-risk-gn2_10.log|${DATA_DIR}\/logs\/geonetwork.log|gm" ${WEBAPP_NAME}/WEB-INF/log4j.cfg
 
 	#Setting host (use $POSTGRES_DB_HOST if it's set, otherwise use "pg")
 	db_host="${POSTGRES_DB_HOST:-pg}"
