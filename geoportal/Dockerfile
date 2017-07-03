@@ -9,6 +9,7 @@ RUN apt-get update && apt-get install -y postgresql-client zip && \
 ENV GN_FILE geonetwork.war
 ENV GN_REPO http://depots.pigeo.fr/WARs/
 ENV WEBAPP_NAME gm-risk-gn2_10
+ENV DB_NAME gm_risk_gn2_10
 
 ENV DATA_DIR=$CATALINA_HOME/webapps/geonetwork/WEB-INF/data
 ENV JAVA_OPTS="-Djava.security.egd=file:/dev/./urandom -Djava.awt.headless=true -server -Xms512m -Xmx2024m -XX:NewSize=512m -XX:MaxNewSize=1024m -XX:+UseConcMarkSweepGC"
@@ -20,9 +21,8 @@ ENV GN_VERSION 2.10.3
 WORKDIR $CATALINA_HOME/webapps
 
 RUN curl -fSL -o $GN_FILE \
-     $GN_REPO/gm-risk-gn2_10.war && \
-     mkdir -p $WEBAPP_NAME && \
-     unzip -e $GN_FILE -d $WEBAPP_NAME && \
+     $GN_REPO/gm-risk-gn2_10.war 
+RUN unzip -e $GN_FILE  && \
 	rm $GN_FILE 
 	
 

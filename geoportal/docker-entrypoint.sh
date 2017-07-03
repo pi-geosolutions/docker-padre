@@ -32,6 +32,9 @@ if [ "$1" = 'catalina.sh' ]; then
 		exit 1
 	fi
 	
+	echo "user: $POSTGRES_DB_USERNAME"
+	echo "passwd: $POSTGRES_DB_PASSWORD"
+	
 	#wait for the DB to be ready to accept connections
 	until PGPASSWORD=$POSTGRES_DB_PASSWORD psql -h "$db_host" -p "$db_port" -U "$POSTGRES_DB_USERNAME" -c '\l'; do
 		>&2 echo "Postgres is unavailable - sleeping"
@@ -40,8 +43,8 @@ if [ "$1" = 'catalina.sh' ]; then
 	>&2 echo "Postgres is up - starting geonetwork"
 
 
-	db_admin="padre"
-	db_gn="${WEBAPP_NAME}"
+	db_admin="$POSTGRES_DB_USERNAME"
+	db_gn="${DB_NAME}"
 
 	#Create databases, if they do not exist yet (http://stackoverflow.com/a/36591842/433558)
 	echo  "$db_host:$db_port:*:$POSTGRES_DB_USERNAME:$POSTGRES_DB_PASSWORD" > ~/.pgpass

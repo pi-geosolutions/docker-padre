@@ -45,7 +45,7 @@
 									<user>${charts-db.user}</user>
 									<password>${charts-db.pass}</password>
 									<driver>org.postgis.DriverWrapper</driver>
-									<url>jdbc:postgresql://localhost:5432/gm_census</url>
+									<url>jdbc:postgresql://pg:5432/gm_census</url>
 									<poolSize>10</poolSize>
                                 	<validationQuery>SELECT 1</validationQuery>
                                 </config>
@@ -57,7 +57,7 @@
 									<user>${charts-db.user}</user>
 									<password>${charts-db.pass}</password>
 									<driver>org.postgis.DriverWrapper</driver>
-									<url>jdbc:postgresql://localhost:5432/gm_risk_geodata</url>
+									<url>jdbc:postgresql://pg:5432/geodata</url>
 									<poolSize>10</poolSize>
                                 	<validationQuery>SELECT 1</validationQuery>
                                 </config>
