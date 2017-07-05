@@ -54,13 +54,12 @@ if [ -n "${SSH_USERS}" ]; then
 #        adduser --shell /bin/bash --uid ${_UID} --gid ${_GID} --disabled-password ${_NAME}
 
 		if getent group ${_NAME} | grep &>/dev/null "${_NAME}"; then
-			echo "Group ${_NAME} already exists."
+			echo "Group ${_NAME} already exists. Skipping user creation"
 		else
 			groupadd --gid ${_GID} ${_NAME}
-			echo ">> group created"
+			useradd --gid ${_GID} --create-home --shell '/bin/bash' --uid ${_UID} ${_NAME}
+			echo ">> group & user created"
 		fi
-		useradd --gid ${_GID} --create-home --shell '/bin/bash' --uid ${_UID} ${_NAME}
-		echo ">> user created"
     done
 else
     # Warn if no authorized_keys
