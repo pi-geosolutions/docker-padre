@@ -41,7 +41,7 @@ RUN zip geonetwork/WEB-INF/lib/pigeosolutions-3.2.2-SNAPSHOT.jar config-db.xml &
 	rm config-db.xml
 
 #Incorporate UI customization files (will be copied properly in entrypoint.sh
-COPY custom/* $CATALINA_HOME/webapps/geonetwork/
+COPY custom $CATALINA_HOME/webapps/geonetwork/custom/
 
 #Set geonetwork data dir
 COPY ./docker-entrypoint.sh /entrypoint.sh
