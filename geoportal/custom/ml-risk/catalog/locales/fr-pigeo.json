@@ -106,6 +106,7 @@
   "geomFilter" : "Filtre géographique",
   "advanced": "Recherche avancée",
   "results": "Résultats",
+    "administrativeunits": "Entités Administratives",
   "ui.senegal.title": "Sénégal",
   "ui.senegal.subtitle": "Gestion des risques",
   "ui.niger.title": "Niger",
