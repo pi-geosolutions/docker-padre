@@ -1,0 +1,7 @@
+<select class="form-control"
+        ng-options="item as item.label for item in ctrl.animations track by item.id" ng-model="ctrl.animation">
+</select>
+
+<app-animator app-animator-list="ctrl.filesList.files"
+              app-animator-dateformatter="ctrl.animation.timestampformatter"
+              app-animator-onchange="ctrl.onAnimatorChange(index)" ng-if="ctrl.filesList" class="row form-horizontal"></app-animator>

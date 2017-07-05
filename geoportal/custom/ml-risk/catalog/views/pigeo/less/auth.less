@@ -1,0 +1,48 @@
+app-auth {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  z-index: 10000;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+  color: @main_color_800;
+  background-color: @main_color_50;
+  padding: 5px;
+  form {
+    text-align: center;
+  }
+
+  .fa-sign-out {
+    font-size: 14px;
+    margin-left: 5px;
+    &:hover {
+      color: @main_color_600;
+    }
+  }
+
+  .form-control {
+    color: #455A64;
+    font-size: 12px;
+    box-shadow: none;
+    border-radius: 0;
+    border: #90A4AE 1px solid;
+  }
+}
+
+a.app-auth-btn {
+  color: white !important;
+  position: absolute;
+  right: 8px;
+  top: 27px;
+  font-size: 18px;
+  &:hover {
+    color: lightgrey !important;
+  }
+}
+
+.app-auth-actions {
+  margin-left: 10px;
+  margin-top: 5px;
+  a {
+    display: block;
+  }
+}

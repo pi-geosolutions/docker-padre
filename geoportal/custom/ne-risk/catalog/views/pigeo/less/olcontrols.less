@@ -1,0 +1,63 @@
+.ol-control {
+  &, &:hover {
+    background-color: transparent;
+  }
+  button {
+    width: 36px;
+    height: 36px;
+    font-size: 1em;
+    font-weight: normal;
+    text-align: center;
+    text-indent: 0;
+    border: 1px solid #8394a0;
+    margin: -1px;
+
+    background-color: @main_color_400;
+    color: white;
+    border-color: white;
+
+    &:focus, &:hover {
+      background-color: white;
+      color: @main_color_400;
+    }
+  }
+}
+
+.ol-zoom {
+  right: 0.5em;
+  left: auto;
+}
+.un-zoom-extent {
+  right: 0.5em;
+  left: auto;
+  top: 160px;
+}
+
+.un-full-screen {
+  right: 0.5em;
+  left: auto;
+  top: 139px;
+  .hidden-xs;
+}
+
+.ol-mouse-position {
+  left: 2em;
+  top: 0;
+  right: auto;
+  height: 32px;
+  line-height: 32px;
+  color: #ffffff;
+  text-shadow: 0px 0px 1px #000000;
+}
+
+.ol-scale-line {
+  background: none;
+  bottom: 0;
+  left: auto;
+  right: 0;
+  .ol-scale-line-inner {
+    height: 22px;
+    font-size: 13px;
+    text-shadow: 0px 0px 1px rgb(0, 0, 0);
+  }
+}

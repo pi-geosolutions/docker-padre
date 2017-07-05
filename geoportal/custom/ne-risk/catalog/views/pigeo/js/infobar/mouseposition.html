@@ -1,0 +1,12 @@
+<div class="dropdown dropup">
+  <button type="button" class="btn btn-default footer-button" data-toggle="dropdown">
+    <span>{{projection.label}}</span>&nbsp;<span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" role="menu">
+    <li ng-repeat="p in ::mousePositionProjections">
+      <a href ng-click="changeProj(p)">{{p.label}}</a>
+    </li>
+  </ul>
+</div>
+
+<div id="mouseposition"></div>

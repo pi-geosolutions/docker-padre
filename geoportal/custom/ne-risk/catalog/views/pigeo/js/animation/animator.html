@@ -1,0 +1,19 @@
+<input class="form-control" type="range" min="0" max="{{ctrl.list.length-1}}" step="1" ng-model="ctrl.index">
+<div class="form-group">
+  <label class="col-sm-2 control-label">Date:</label>
+  <div class="col-sm-10">
+    <span class="form-control">{{ctrl.time}}</span>
+  </div>
+</div>
+
+<button class="btn btn-default" ng-click="ctrl.first()"><span class="fa fa-fast-backward"></span></button>
+<button class="btn btn-default" ng-click="ctrl.previous()"><span class="fa fa-backward"></span></button>
+<button class="btn btn-default" ng-click="ctrl.play(true)">
+  <span class="fa fa-rotate-180" ng-class="{'fa-refresh fa-counter-spin fa-2x': (ctrl.playing && ctrl.modeBackward), 'fa-play': (!ctrl.playing || !ctrl.modeBackward)}"></span>
+</button>
+<button class="btn btn-default" ng-click="ctrl.stop()"><span class="fa fa-stop"></span></button>
+<button class="btn btn-default" ng-click="ctrl.play()">
+  <span class="fa" ng-class="{'fa-refresh fa-spin fa-2x': (ctrl.playing && !ctrl.modeBackward), 'fa-play': (!ctrl.playing || ctrl.modeBackward)}"></span>
+</button>
+<button class="btn btn-default" ng-click="ctrl.next()"><span class="fa fa-forward"></span></button>
+<button class="btn btn-default" ng-click="ctrl.last()"><span class="fa fa-fast-forward"></span></button>

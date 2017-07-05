@@ -1,0 +1,377 @@
+<div id="layertreemanager" data-ng-controller="AppAdminLayertreeManagerController">
+
+  <!--Logging-->
+  <div class="row logging">
+    <div class="col-md-12" data-ng-bind-html="logs">
+    </div>
+  </div>
+
+  <div class="row admin-layertree">
+
+    <div class="col-md-4">
+
+      <ul class="layertreemenu list-inline">
+        <li class="dropdown">
+          <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <span class="fa fa-sitemap"></span>
+            <span translate>tree</span>
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="pigeo.layertree.admin.get" target="_blank" translate="">seelayertree</a></li>
+            <li><a href="" ng-click="saveLayertree(true)">
+              <span class="fa fa-save"></span>
+              <span translate="">savelayertree</span>
+            </a></li>
+            <li><a href="" ng-click="loadLayertree()">
+              <span class="fa fa-refresh"></span>
+              <span translate="">reload</span>
+            </a></li>
+            <li><a href="" ng-click="setRightPanel('import')">
+              <span class="fa fa-arrow-left"></span>
+              <span translate="">import</span>
+            </a></li>
+            <li><a href="" ng-click="setRightPanel('export')">
+              <span class="fa fa-arrow-right"></span>
+              <span translate="">export</span>
+            </a></li>
+            <li><a href="" ng-click="setRightPanel('backuplist')">
+              <span class="fa fa-share"></span>
+              <span translate="">backuplist</span>
+            </a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <span class="fa fa-plus"></span>
+            <span translate>add</span>
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="" ng-click="createNode('folder')">
+              <span class="fa fa-folder"></span>
+              <span translate="">addfolder</span>
+            </a></li>
+            <li><a href="" ng-click="createNode('wms')">
+              <span class="fa fa-globe"></span>
+              <span translate="">addwms</span>
+            </a></li>
+            <li><a href="" ng-click="createNode('chart')">
+              <span class="fa fa-pie-chart"></span>
+              <span translate="">addchart</span>
+            </a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="" ng-click="removeTreeNode()">
+            <span class="fa fa-trash"></span>
+            <span translate>remove</span>
+          </a>
+        </li>
+        <li class="dropdown">
+          <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <span class="fa fa-paperclip"></span>
+            <span translate>edit</span>
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="" ng-click="copyNode()">
+              <span class="fa fa-copy"></span>
+              <span translate="">copy</span>
+            </a></li>
+            <li><a href="" ng-click="cutNode()">
+              <span class="fa fa-cut"></span>
+              <span translate="">cut</span>
+            </a></li>
+            <li><a href="" ng-click="pasteNode()">
+              <span class="fa fa-paste"></span>
+              <span translate="">paste</span>
+            </a></li>
+            <li><a href="" ng-click="duplicateNode()">
+              <span class="fa fa-copy"></span>
+              <span translate="">duplicate</span>
+            </a></li>
+            <li><a href="" ng-click="setRightPanel('paperweight')">
+              <span class="fa fa-newspaper-o"></span>
+              <span translate="">paperweight</span>
+            </a></li>
+          </ul>
+        </li>
+
+      </ul>
+
+      <!--Layer tree-->
+      <div id="layertree" admin-layertree="tree" admin-layertree-nodelayer="getLayer(node)"
+           class="themes-switcher collapse in"></div>
+    </div>
+
+    <!--Form panel-->
+    <form class="col-md-8 form-horizontal" data-ng-if="activeLayer && !rightPanel">
+
+      <div class="btn btn-link pull-right" ng-click="resetNode()" translate="">cancel</div>
+      <div class="btn btn-link pull-right" ng-click="applyChanges()" translate="">apply</div>
+      <h4 translate="" data-translate-values="{type: '{{activeLayer.type}}'}">treenodeinfo</h4>
+
+      <!--general features-->
+      <div class="panel panel-default">
+        <div class="panel-heading" data-toggle="collapse" data-target="#generalFeatures">
+          <a role="button" translate="">
+            generalFeatures
+          </a>
+        </div>
+        <div id="generalFeatures" class="panel-collapse collapse in">
+          <div class="panel-body">
+            <div class="form-group">
+              <label translate="" class="col-md-3 control-label">id</label>
+              <div class="col-md-9">
+                <input data-ng-model="activeLayer.id" disabled class="form-control input-sm" placeholder="{{'id' | translate}}">
+              </div>
+            </div>
+            <div class="form-group">
+              <label translate="" class="col-md-3 control-label">type</label>
+              <div class="col-md-9">
+                <input data-ng-model="activeLayer.type" disabled class="form-control input-sm" placeholder="{{'type' | translate}}">
+              </div>
+            </div>
+            <div class="form-group">
+              <label translate="" class="col-md-3 control-label">text</label>
+              <div class="col-md-9">
+                <input data-ng-model="activeLayer.text" class="form-control input-sm" placeholder="ID">
+              </div>
+            </div>
+            <div class="form-group" ng-if="activeLayer.type == 'wms' || activeLayer.type == 'chart'">
+              <label translate="" class="col-md-3 control-label">opacity</label>
+              <div class="col-md-3">
+                <input class="opacity" type="range" min="0" max="1" step="0.1" ng-model="activeLayer.opacity" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label translate="" class="col-md-3 control-label">cssClass</label>
+              <div class="col-md-9">
+                <input data-ng-model="activeLayer.cssClass" class="form-control input-sm" placeholder="{{'cssClass' | translate}}">
+              </div>
+            </div>
+            <div class="form-group">
+              <label translate="" class="col-md-3 control-label">comments</label>
+              <div class="col-md-9">
+                <input data-ng-model="activeLayer.comments" class="form-control input-sm" placeholder="{{'comments' | translate}}">
+              </div>
+            </div>
+            <div class="form-group">
+              <label translate="" class="col-md-3 control-label">ext</label>
+              <div class="col-md-9">
+                <input data-ng-model="activeLayer.ext" class="form-control input-sm" placeholder="{{'ext' | translate}}">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--WMS features-->
+      <div class="panel panel-default" ng-if="activeLayer.type == 'wms'">
+        <div class="panel-heading" data-toggle="collapse" data-target="#wmsFeatures">
+          <a role="button" translate="">
+            wmsFeatures
+          </a>
+        </div>
+        <div id="wmsFeatures" class="panel-collapse collapse in">
+          <div class="panel-body">
+            <div class="form-group">
+              <label translate="" class="col-md-3 control-label">url</label>
+              <div class="col-md-9">
+                <input data-ng-model="activeLayer.url" class="form-control input-sm" placeholder="{{'url' | translate}}">
+              </div>
+            </div>
+            <div class="form-group">
+              <label translate="" class="col-md-3 control-label">layernames</label>
+              <div class="col-md-9">
+                <input data-ng-model="activeLayer.layers" class="form-control input-sm">
+              </div>
+            </div>
+            <div class="form-group">
+              <label translate="" class="col-md-3 control-label">legendurl</label>
+              <div class="col-md-9">
+                <input data-ng-model="activeLayer.legend" class="form-control input-sm" placeholder="http://">
+              </div>
+            </div>
+            <label class="radio-inline col-md-offset-3">
+              <input type="radio" name="format" data-ng-model="activeLayer.format" value="image/png">image/png
+            </label>
+            <label class="radio-inline col-md-offset-3">
+              <input type="radio" name="format" data-ng-model="activeLayer.format" id="inlineRadio2" value="image/jpeg">image/jpeg
+            </label>
+            <div class="checkbox col-md-offset-3">
+              <label>
+                <input type="checkbox" value="" data-ng-model="activeLayer.TILED">
+                <span translate="">tile</span>
+              </label>
+            </div>
+            <div class="checkbox col-md-offset-3">
+              <label>
+                <input type="checkbox" value="" data-ng-model="activeLayer.queryable" >
+                <span translate="">queryable</span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--geographic features-->
+      <div class="panel panel-default" ng-if="activeLayer.type == 'chart'">
+        <div class="panel-heading" data-toggle="collapse" data-target="#geoFeatures">
+          <a role="button" translate="">
+            geoFeatures
+          </a>
+        </div>
+        <div id="geoFeatures" class="panel-collapse collapse in">
+          <div class="panel-body">
+            <div class="form-group">
+              <label translate="" class="col-md-3 control-label">url</label>
+              <div class="col-md-9">
+                <input data-ng-model="activeLayer.url" class="form-control input-sm" placeholder="{{'url' | translate}}">
+              </div>
+            </div>
+            <div class="form-group">
+              <label translate="" class="col-md-3 control-label">layernames</label>
+              <div class="col-md-9">
+                <input data-ng-model="activeLayer.layers" class="form-control input-sm">
+              </div>
+            </div>
+            <div class="form-group">
+              <label translate="" class="col-md-3 control-label">legendurl</label>
+              <div class="col-md-9">
+                <input data-ng-model="activeLayer.legend" class="form-control input-sm" placeholder="http://">
+              </div>
+            </div>
+            <div class="form-group">
+              <label translate="" class="col-md-3 control-label">scales</label>
+              <div class="col-md-9">
+                <input data-ng-model="activeLayer.changescales" class="form-control input-sm">
+              </div>
+            </div>
+            <label class="radio-inline col-md-offset-3">
+              <input type="radio" name="format" data-ng-model="activeLayer.format" value="geojson">geojson
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <!--database parameter-->
+      <div class="panel panel-default" ng-if="activeLayer.type == 'chart'">
+        <div class="panel-heading" data-toggle="collapse" data-target="#dbparams">
+          <a role="button" translate="">
+            dbparams
+          </a>
+        </div>
+        <div id="dbparams" class="panel-collapse collapse in">
+          <div class="panel-body">
+            <div class="form-group">
+              <label translate="" class="col-md-3 control-label">dbname</label>
+              <div class="col-md-9">
+                <input data-ng-model="activeLayer.dbname" class="form-control input-sm">
+              </div>
+            </div>
+            <div class="form-group">
+              <label translate="" class="col-md-3 control-label">dbtables</label>
+              <div class="col-md-9">
+                <input data-ng-model="activeLayer.dbtables" class="form-control input-sm">
+              </div>
+            </div>
+            <div class="form-group">
+              <label translate="" class="col-md-3 control-label">valuesdbfield</label>
+              <div class="col-md-9">
+                <input data-ng-model="activeLayer.values_dbfield" class="form-control input-sm">
+              </div>
+            </div>
+            <div class="form-group">
+              <label translate="" class="col-md-3 control-label">labelsdbfield</label>
+              <div class="col-md-9">
+                <input data-ng-model="activeLayer.labels_dbfield" class="form-control input-sm">
+              </div>
+            </div>
+            <div class="form-group">
+              <label translate="" class="col-md-3 control-label">joingeofield</label>
+              <div class="col-md-9">
+                <input data-ng-model="activeLayer.join_geofield" class="form-control input-sm">
+              </div>
+            </div>
+            <div class="form-group">
+              <label translate="" class="col-md-3 control-label">dbwhere</label>
+              <div class="col-md-9">
+                <input data-ng-model="activeLayer.dbwhere" class="form-control input-sm">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--representation-->
+      <div class="panel panel-default" ng-if="activeLayer.type == 'chart'">
+        <div class="panel-heading" data-toggle="collapse" data-target="#representation">
+          <a role="button" translate="">
+            representation
+          </a>
+        </div>
+        <div id="representation" class="panel-collapse collapse in">
+          <div class="panel-body">
+            <label class="radio-inline col-md-offset-3">
+              <input type="radio" name="charttype" data-ng-model="activeLayer.charttype" value="pie">pie
+            </label>
+            <label class="radio-inline col-md-offset-3">
+              <input type="radio" name="charttype" data-ng-model="activeLayer.charttype" value="chart">chart
+            </label>
+            <div class="form-group">
+              <label translate="" class="col-md-3 control-label">colorcodes</label>
+              <div class="col-md-9">
+                <input data-ng-model="activeLayer.colorcodes" class="form-control input-sm">
+              </div>
+            </div>
+            <div class="form-group">
+              <label translate="" class="col-md-3 control-label">chartsize</label>
+              <div class="col-md-9">
+                <input data-ng-model="activeLayer.chartsize" class="form-control input-sm">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Metadata reference-->
+      <div class="panel panel-default" ng-if="activeLayer.type == 'wms' ">
+        <div class="panel-heading" data-toggle="collapse" data-target="#mdinfo">
+          <a role="button" translate="">
+            mdreference
+          </a>
+        </div>
+        <div id="mdinfo" class="panel-collapse collapse in">
+          <div class="panel-body">
+            <div class="form-group">
+              <label translate="" class="col-md-3 control-label">uuid</label>
+              <div class="col-md-9">
+                <input data-ng-model="activeLayer.uuid" class="form-control input-sm" placeholder="ID">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <div pi-backup-list class="col-md-8" data-ng-if="rightPanel == 'backuplist'">
+    </div>
+
+    <div class="col-md-8" data-ng-if="rightPanel == 'paperweight'">
+      <textarea data-ng-model="paperWeight" class="form-control" rows="15" json-text></textarea>
+    </div>
+
+    <!--Export as JSON-->
+    <div class="col-md-8" data-ng-if="rightPanel == 'export'">
+      <textarea data-ng-model="tree" class="form-control" rows="15" json-text></textarea>
+    </div>
+
+    <!--Import as JSON-->
+    <div class="col-md-8" data-ng-if="rightPanel == 'import'">
+      <textarea data-ng-model="import.tree" class="form-control" rows="15"></textarea>
+      <div class="btn btn-primary" data-ng-click="importFromJson()" translate="">import</div>
+    </div>
+  </div>
+</div>

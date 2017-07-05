@@ -1,0 +1,6 @@
+<ul class="list-group">
+  <li ng-repeat="backup in backuplist">
+    <i class="fa fa-trash pull-right text-" data-ng-click="removeBackup(backup.id)"></i>
+    <a href="" data-ng-dblclick="loadLayertree(backup.id)">{{backup.name}}</a>
+  </li>
+</ul>

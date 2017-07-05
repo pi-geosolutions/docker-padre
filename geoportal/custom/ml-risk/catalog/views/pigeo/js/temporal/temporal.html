@@ -1,0 +1,63 @@
+<div id="temporalfiles">
+
+  <button data-ng-show="ctrl.level" class="btn back pull-right" data-ng-click="ctrl.back()"><i class="fa fa-backward"></i></button>
+
+  <!--First level choice-->
+  <div class="first-level" data-ng-if="ctrl.level == 0">
+    <div class="btn-container">
+      <button class="btn" data-ng-repeat="type in ctrl.types" data-ng-click="ctrl.choose(1, type)">{{type | translate}}</button>
+    </div>
+  </div>
+
+  <div data-ng-if="ctrl.level == 1">
+    <h4>{{ (ctrl.choice[0] + 'Title') | translate}}</h4>
+    <p data-ng-bind-html="(ctrl.choice[0] + 'Desc') | translate"></p>
+    <div class="btn-container">
+      <button class="btn" data-ng-click="ctrl.choose(2, 'annual')" translate="">annualData</button>
+      <button class="btn" data-ng-click="ctrl.choose(2, 'variation')" translate="">variation</button>
+    </div>
+  </div>
+
+  <div data-ng-if="ctrl.level == 2 && ctrl.choice[1] == 'annual'">
+    <h4 translate="">annualData</h4>
+    <p translate="" data-translate-values="{type: '{{ctrl.choice[0] | translate}}'}">annualDataMsg</p>
+    <div class="btn-container">
+      <button class="btn" data-ng-repeat="year in ::ctrl.config[ctrl.choice[0]].years" data-ng-click="ctrl.processAnnual(ctrl.choice[0], year);ctrl.choose(3, year)">{{year}}</button>
+      <br>
+    </div>
+  </div>
+
+  <div data-ng-if="ctrl.level == 2 && ctrl.choice[1] == 'variation'" class="form-horizontal">
+    <h4 translate="">variation</h4>
+    <p translate="" data-translate-values="{type: '{{ctrl.choice[0] | translate}}'}">variationMsg</p>
+
+    <div class="form-group">
+      <label class="col-sm-2">Dates</label>
+      <div class="col-sm-5">
+        <div class="input-group date" data-date="" data-date-format="dd-mm-yyyy"
+             gn-bootstrap-datepicker="dateFrom" date-available="layer.ncInfo.datesWithData">
+          <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+          <input class="form-control input-sm" type="text">
+        </div>
+        à
+        <div class="input-group date" data-date="" data-date-format="dd-mm-yyyy"
+             gn-bootstrap-datepicker="dateTo" date-available="layer.ncInfo.datesWithData">
+          <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+          <input class="form-control input-sm" type="text">
+        </div>
+      </div>
+    </div>
+
+    <br>
+  </div>
+
+  <h4 data-ng-if="ctrl.level == 3 && ctrl.choice[1] == 'annual'">
+    {{ctrl.choice[2]}}
+  </h4>
+
+
+  <div data-ng-show="ctrl.level == 3" id="temporalChart">
+  </div>
+
+
+</div>

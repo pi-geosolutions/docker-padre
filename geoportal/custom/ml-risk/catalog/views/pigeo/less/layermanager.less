@@ -1,0 +1,134 @@
+#layermanager {
+  .text-center {
+    margin:10px;
+  }
+}
+
+ul.layermanager {
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+}
+
+li.layermanager-panel {
+  list-style-type: none;
+  margin-bottom: 1px;
+  padding: 5px 10px;
+  padding-bottom: 2px;
+  border-radius: 0;
+  background-color: @main_color_100;
+
+  &.proccessed {
+    background-color: @main_color_200;
+  }
+  .sortable-handle {
+    padding-right: 15px;
+    margin-top: 2px;
+  }
+
+  .fa-minus, .fa-ellipsis-h, .fa-trash-o {
+    padding-right: 5px;
+  }
+
+  a:hover, a:focus {
+    text-decoration: none;
+  }
+
+  a[data-toggle=collapse] .expanded,
+  a[data-toggle=collapse] .collapsed {
+    float: right;
+    line-height: inherit;
+  }
+
+  a .collapsed {
+    display: none;
+  }
+
+  a.collapsed {
+    .collapsed {
+      display: block;
+    }
+    .expanded {
+      display: none;
+    }
+  }
+  a.layername {
+    width: 240px;
+    display: inline-block;
+    /* overflow-x: hidden; */
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 16px;
+  }
+
+  input.opacity {
+    margin-top: 10px;
+    margin-left: 32px;
+    width: 100px;
+    display: inline-block;
+  }
+  .delete {
+    float: right;
+    cursor: pointer;
+  }
+  .left-icons a {
+    display: block;
+    &:hover {
+      color: @main_color_300 !important;
+    }
+  }
+  .right-content {
+    margin-left: 25px;
+    margin-bottom: 5px;
+    color: grey;
+  }
+  &.proccessed {
+    .right-content {
+      color: @main_color_50;
+    }
+  }
+  .slider-col {
+    span {
+      width: 105px;
+      display: inline-block;
+      text-align: right;
+    }
+  }
+
+  .info-icon {
+    margin-right: 2em;
+    color: grey;
+    display: none;
+  }
+  &:hover .info-icon {
+    display: block;
+  }
+  .fa.proccessed-type {
+    color: #982c2c;
+  }
+}
+
+.sortable-handle {
+  cursor: move;
+  -moz-user-select: none;
+}
+
+.sortable-dragger {
+  padding: 2px 10px;
+  z-index: 1070;
+  .box-shadow(0px 2px 6px -1px rgba(0, 0, 0, 0.5));
+  .fa {
+    &.sortable-handle {
+      visibility: visible;
+    }
+  }
+}
+
+.layermanager-curr-drag-item {
+  * {
+    visibility: hidden;
+  }
+  background-color: white !important;
+  border: 2px dashed @main_color_300;
+}

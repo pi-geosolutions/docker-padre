@@ -1,0 +1,138 @@
+#layertree {
+
+  ul.catalog {
+    list-style-type: none;
+    padding: 0;
+
+    > li.panel > a {
+      color: white;
+      background-color: @main_color_400;
+    }
+    ul {
+      background-color: @main_color_50;
+    }
+    ul a:hover {
+      color: @main_color_600 !important;
+    }
+
+    a:hover, a:focus {
+      text-decoration: none;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 10px;
+      &:not(.catalog) {
+      }
+    }
+    > li > ul {
+      padding: 0;
+      ul {
+        padding-left: 12px;
+        margin-left: 12px;
+      }
+    }
+    .panel {
+      border: 0;
+      margin-bottom: 1px;
+      box-shadow: none;
+      background-color: transparent;
+      > a {
+        display: block;
+        position: relative;
+        padding: 5px 10px;
+        &:hover {
+          text-decoration: none;
+          &:after {
+            border-top-color: white;
+          }
+        }
+        ul a {
+          padding: 0;
+        }
+      }
+    }
+    > li.panel {
+      > ul > li.panel {
+        &:last-child {
+          padding-bottom: 10px;
+        }
+
+        > a {
+          padding-bottom: 0;
+        }
+        ul {
+          > li.panel > a {
+          padding: 0;
+        }}
+
+        > ul > li > a {
+          //padding: 3px 5px 3px 9px;
+          //background-color: beige;
+        }
+      }
+
+      > a {
+        &:after {
+          content: '';
+          width: 0;
+          height: 0;
+          border-top: 6px solid white;
+          border-right: 8px solid transparent;
+          border-bottom: 6px solid transparent;
+          border-left: 8px solid transparent;
+          position: absolute;
+          right: 10px;
+          top: 10px;
+        }
+        &:hover {
+          color: @main_color_50;
+        }
+        &:hover:after {
+          border-top-color: @main_color_50 !important;
+        }
+
+        &:not(.collapsed) {
+          &:after {
+            border-top-color: transparent !important;
+            border-bottom-color: white;
+            top: 4px;
+          }
+        }
+      }
+    }
+    .leaf {
+      border-left: 1px dotted @main_color_300;;
+    }
+  }
+  .layer-loader {
+    position: absolute;
+    left: 25px;
+    margin-top: 2px;
+  }
+}
+
+
+#sidebar .app-layertree-filter {
+  margin: 0 0 15px 15px;
+  position:relative;
+
+  .clear {
+    right: 3em;
+    position: absolute;
+    top: .75em;
+    color: @main_color_800;
+    &:hover {
+      cursor: pointer;
+      color: #222;
+    }
+  }
+
+  .layerfilter {
+    border: none;
+    border-bottom: 1px solid @main_color_500;
+    border-radius: 0;
+    box-shadow: none;
+    width: 90%;
+  }
+}

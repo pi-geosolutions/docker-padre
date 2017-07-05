@@ -8,6 +8,7 @@ RUN apt-get update && apt-get install -y postgresql-client zip && \
 
 ENV GN_FILE geonetwork.war
 ENV GN_REPO http://depots.pigeo.fr/WARs/
+ENV PROJECT_ID ne-risk
 
 ENV DATA_DIR=$CATALINA_HOME/webapps/geonetwork/WEB-INF/data
 ENV JAVA_OPTS="-Djava.security.egd=file:/dev/./urandom -Djava.awt.headless=true -server -Xms512m -Xmx2024m -XX:NewSize=512m -XX:MaxNewSize=1024m -XX:+UseConcMarkSweepGC"
@@ -39,6 +40,8 @@ COPY ./config-db.xml ./config-db.xml
 RUN zip geonetwork/WEB-INF/lib/pigeosolutions-3.2.2-SNAPSHOT.jar config-db.xml && \
 	rm config-db.xml
 
+#Incorporate UI customization files (will be copied properly in entrypoint.sh
+COPY custom/* $CATALINA_HOME/webapps/geonetwork/
 
 #Set geonetwork data dir
 COPY ./docker-entrypoint.sh /entrypoint.sh

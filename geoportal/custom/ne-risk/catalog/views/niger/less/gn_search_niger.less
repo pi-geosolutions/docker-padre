@@ -1,0 +1,105 @@
+@main_color_50: #EFEBE9;
+@main_color_100: #D7CCC8;
+@main_color_200: #BCAAA4;
+@main_color_300: #A1887F;
+@main_color_400: #8D6E63;
+@main_color_500: #795548;
+@main_color_600: #6D4C41;
+@main_color_700: #5D4037;
+@main_color_800: #4E342E;
+@main_color_900: #3E2723;
+
+
+@import "../../pigeo/less/gn_search_pigeo";
+
+header img {
+  width: 75px;
+
+}
+
+@mobile_header_height: 90px;
+
+@mobile_sidebar-left-offset: 20px;
+
+@media (max-width: @screen-xs-max) {
+  header {
+    img {
+      height: 40px;
+      width: 70px;
+    }
+    .navbar-header {
+      margin-left: 0 !important;
+      .portaltitle {
+        padding-top: 5px;
+        span {
+          font-size: 11px;
+        }
+        > span:first-child {
+          font-size: 0.9em;
+        }
+      }
+    }
+    &.navbar {
+      min-height: @mobile_header_height;
+    }
+  }
+
+  #sidebar {
+    top: 84px;
+    left: @mobile_sidebar-left-offset;
+    width: 25em;
+    .tab-content {
+      max-height: calc(~"100vh - 250px");
+    }
+  }
+  #map-container {
+    padding-top: @mobile_header_height;
+  }
+  .ol-zoom {
+    top: 4.5em;
+  }
+  .un-zoom-extent {
+    top: 140px
+  }
+
+  [gn-localisation-input] {
+    right: auto;
+    top: 50px;
+    left: @mobile_sidebar-left-offset;
+    box-shadow: none;
+    input {
+      height: 2.5em;
+      font-size: 13px;
+    }
+  }
+
+  #geocatalog {
+    .nav-tabs {
+      margin-left: 0;
+      li {
+        padding-left: 2px;
+      }
+    }
+    .tab-content {
+    }
+    .tab-content.no-nav {
+      width: inherit;
+    }
+    .col-md-7 {
+      padding-left: 5px;
+    }
+    .nav > li > a {
+      padding: 7px;
+    }
+    .app-reset-btn {
+      margin-left: 8px;
+    }
+    .gn-resultview > li {
+      padding: 8px 0px 4px 0;
+    }
+    .gn-resultview .gn-grid-item {
+      height: auto;
+    }
+  }
+}
+

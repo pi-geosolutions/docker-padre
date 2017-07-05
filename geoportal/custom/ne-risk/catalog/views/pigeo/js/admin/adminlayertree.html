@@ -1,0 +1,42 @@
+<!--folder-->
+<a ng-if="!layertreeCtrl.isRoot && layertreeCtrl.node.type == 'folder'"
+   data-target="#catalog-{{::layertreeCtrl.uid}}"
+   data-toggle="collapse"
+   data-ng-class="{active : layertreeCtrl.node.id == activeLayer.id}"
+   ng-click="loadNodeInfo(layertreeCtrl.node);layertreeCtrl.toggleNode($event)">
+    <span
+      class="ngeo-sortable-handle">
+    <span class="fa fa-ellipsis-v"></span>
+  </span>
+  <i class="fa fa-plus-square" data-ng-class="{empty : !layertreeCtrl.node.children}"></i>
+  <i class="fa fa-folder"></i>
+  {{layertreeCtrl.node.text}}
+</a>
+
+<!--Layer leaf-->
+<div ng-if="::layertreeCtrl.layer">
+  <span
+    class="ngeo-sortable-handle">
+    <i class="fa fa-ellipsis-v"></i>
+  </span>
+
+  <a href="" ng-click="loadNodeInfo(layertreeCtrl.node)" data-ng-class="{active : layertreeCtrl.node.id == activeLayer.id}">
+    <i class="fa" ng-click="node.checked = !node.checked" ng-class="node.checked ? 'fa-check-square' : 'fa-square'"></i>
+    <i data-ng-if="layertreeCtrl.node.type == 'chart'" class="fa fa-pie-chart chart-icon"></i>
+    <i data-ng-if="layertreeCtrl.node.type == 'wms'" class="fa fa-globe"></i>
+    {{layertreeCtrl.node.text}}
+  </a>
+</div>
+
+<ul id="catalog-{{::layertreeCtrl.uid}}" ng-if="::layertreeCtrl.node.children"
+    ng-class="{collapse: !layertreeCtrl.isRoot && layertreeCtrl.depth < 5, catalog: layertreeCtrl.isRoot}"
+    ngeo-sortable="::layertreeCtrl.node.children"
+    ngeo-sortable-options="{handleClassName: 'ngeo-sortable-handle', draggerClassName: 'gmf-layertree-dragger', currDragItemClassName : 'gmf-layertree-curr-drag-item'}">
+
+<li ng-repeat="node in layertreeCtrl.node.children"
+      admin-layertree="node"
+      admin-layertree-notroot
+      admin-layertree-nodelayerexpr="layertreeCtrl.nodelayerExpr"
+      ng-class="::(layertreeCtrl.isRoot || (layertreeCtrl.node.children && layertreeCtrl.depth < 5)) ? 'panel' : ''">
+  </li>
+</ul>

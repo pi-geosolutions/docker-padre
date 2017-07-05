@@ -1,0 +1,57 @@
+<div class="gn-md-links">
+
+  <!--Downloads button-->
+  <div class="btn-group pull-right"  ng-class="::{dropup: !isFormatterView}" ng-if="downloads">
+    <button type="button" class="btn btn-default dropdown-toggle btn-sm" data-toggle="dropdown" title="{{'download' | translate}}" data-ng-disabled="md['geonet:info'].download == 'false'">
+      <span class="fa fa-download"></span>
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" role="menu">
+      <li ng-repeat="link in downloads">
+        <a href="{{link.url}}" target="_blank" title="{{::(link.desc || (link.name + ' - ' + link.contentType) || link.url)}}">
+          <span class="fa fa-file-zip-o" ng-if="link.contentType=='application/zip'"></span>
+          {{::link.desc || (link.name + ' - ' + link.contentType) }} </a></li>
+        </a></li>
+    </ul>
+  </div>
+
+  <!--Layers to map button-->
+  <div class="btn-group pull-right" ng-class="::{dropup: !isFormatterView}" ng-if="layers.length > 1 && !isFormatterView">
+    <button type="button" class="btn btn-default dropdown-toggle btn-sm" data-toggle="dropdown" title="{{'View' | translate}}" data-ng-disabled="md['geonet:info'].dynamic == 'false'">
+      <span class="fa fa-globe"></span>
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" role="menu">
+      <li ng-repeat="layer in layers"><a href="" ng-click="resultviewFns.addMdLayerToMap(layer, md)" title="{{layer.desc || layer.name}}">
+        <span class="fa fa-google" ng-if="layer.contentType=='application/vnd.google-earth.kml+xml'"></span>
+        <span class="fa fa-globe" ng-if="layer.contentType=='application/vnd.ogc.wms_xml' || layer.contentType=='OGC:WMTS'"></span>
+        {{layer.desc || layer.name}} </a></li>
+      <li class="divider"></li>
+      <li>
+        <a href="" data-ng-click="resultviewFns.addAllMdLayersToMap(layers, md)">
+          <i class="fa fa-plus"></i>&nbsp;
+                  <span data-translate=""
+                        data-translate-values="{number: '{{layers.length}}'}">
+                    addAllLayersToMap</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <button type="button" class="btn btn-default btn-sm pull-right" data-ng-disabled="md['geonet:info'].dynamic == 'false'"
+          ng-if="layers.length == 1 && !isFormatterView" ng-click="resultviewFns.addMdLayerToMap(layers[0], md)" title="{{'View' | translate}}">
+    <span class="fa fa-globe"></span>
+  </button>
+
+  <div class="btn-group pull-right"  ng-class="::{dropup: !isFormatterView}" ng-if="links.length > 0">
+    <button type="button" class="btn btn-default dropdown-toggle btn-sm" data-toggle="dropdown" title="{{'links' | translate}}">
+      <span class="fa fa-link"></span>
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" role="menu">
+      <li ng-repeat="link in links">
+      <a href="{{link.url}}" target="_blank" title="{{::(link.desc || link.name || link.url)}}">
+        {{::(link.desc || link.name || link.url)}}
+      </a></li>
+    </ul>
+  </div>
+</div>
