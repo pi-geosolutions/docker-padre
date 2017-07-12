@@ -6,6 +6,11 @@ set -e
 
 DAEMON=sshd
 
+# We run sshd using supervisord, hence not using init.d, so we apprently need to make this directory
+# see https://bugs.launchpad.net/ubuntu/+source/openssh/+bug/45234
+# or we would get a 'Missing privilege separation directory: /var/run/sshd' error
+[ -d /var/run/sshd ] || mkdir /var/run/sshd
+
 # Copy default config from cache
 if [ ! "$(ls -A /etc/ssh)" ]; then
    cp -a /etc/ssh.cache/* /etc/ssh/

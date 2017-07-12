@@ -1,37 +1,40 @@
-FROM ubuntu:16.04
+FROM debian:stretch
+#FROM ubuntu:16.04
 MAINTAINER Jean Pommier "jp@pi-geosolutions.fr"
 #Gives a SSH access + several SIG & more general commandline tools : GDAL, python with geospatial extensions
 # SSH part taken from https://hub.docker.com/r/macropin/sshd/
+# Also runs CRON
+# Uses supervisor in order to run side-by-side cron and sshd
 
 #install ssh server + system utilities
 RUN apt-get update && \
     apt-get install -y \
+		      cron \
+			  git \
               openssh-server \
               p7zip \
               rsync \
+              supervisor \
               tar \
               vim \
-              wget \
-    && apt-get clean
+              wget 
 
-#install postgresql/postgis support, gdal & python tools : numpy, scipy, rasterstats (http://pythonhosted.org/rasterstats/installation.html), statsmodel, 
+#install postgresql/postgis support, gdal, libgrib API
+# & python virtualenv that will be used by any user needing it to install its specific python libs : 
+# numpy, scipy, rasterstats (http://pythonhosted.org/rasterstats/installation.html), statsmodel, 
 RUN apt-get update && \
     apt-get install -y \
               gdal-bin \
-              libgdal1i \
+              libgdal20 \
               libgdal-dev \
+              libgrib-api0 \
               postgis \
               postgresql-client \
               python \
-              python-gdal \
-              python-pil \
               python-pip \
-              python-pyproj \
-              python-scipy \
-              python-statsmodels\
-    && apt-get clean \
-    && pip install --upgrade pip \
-    && pip install rasterstats
+              python-virtualenv \
+    && rm -rf /var/lib/apt/lists/* && apt-get clean \
+    && pip install --upgrade pip
 
 #Install pygrib (https://github.com/jswhit/pygrib)
 #RUN cd /tmp && \
@@ -50,8 +53,14 @@ RUN echo "export VISIBLE=now" >> /etc/profile \
 
 EXPOSE 22
 
-COPY entry.sh /entry.sh
+ADD supervisord.conf /etc/supervisor/conf.d/
+RUN mkdir -p /var/log/supervisor
+
+ADD entry.sh /entry.sh
+RUN chmod u+x /entry.sh
 
 ENTRYPOINT ["/entry.sh"]
 
-CMD ["/usr/sbin/sshd", "-D", "-f", "/etc/ssh/sshd_config"]
+#CMD ["/usr/sbin/sshd", "-D", "-f", "/etc/ssh/sshd_config"]
+
+CMD ["/usr/bin/supervisord"]
