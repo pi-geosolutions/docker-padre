@@ -1,58 +1,5 @@
 version: '2'
 services:
-  lb:
-    scale: 1
-    start_on_create: true
-    lb_config:
-      certs: []
-      port_rules:
-      - hostname: "${DOMAIN_URL}"
-        path: /geoserver
-        priority: 1
-        protocol: http
-        service: geoserver
-        source_port: 80
-        target_port: 8080
-      - hostname: "${DOMAIN_URL}"
-        path: /geonetwork
-        priority: 2
-        protocol: http
-        service: geoportal
-        source_port: 80
-        target_port: 8080
-      - hostname: "${DOMAIN_URL}"
-        path: /geodash
-        priority: 3
-        protocol: http
-        service: geodash
-        source_port: 80
-        target_port: 8080
-      - hostname: "${DOMAIN_URL}"
-        path: /ODKAggregate
-        priority: 3
-        protocol: http
-        service: odkaggregate
-        source_port: 80
-        target_port: 8080
-      - hostname: "${DOMAIN_URL}"
-        path: /
-        priority: 5
-        protocol: http
-        selector: web.https=promote
-        source_port: 80
-        target_port: 80
-      - priority: 6
-        protocol: tcp
-        service: ssh
-        source_port: 22
-        target_port: 22
-    health_check:
-      healthy_threshold: 2
-      response_timeout: 2000
-      port: 42
-      unhealthy_threshold: 3
-      interval: 2000
-      strategy: recreate
   SSL-lb:
     scale: 1
     start_on_create: true
@@ -98,7 +45,7 @@ services:
         path: /geonetwork
         priority: 5
         protocol: http
-        service: geoportal
+        service: geonetwork
         source_port: 80
         target_port: 8080
       - hostname: "${DOMAIN_URL}"

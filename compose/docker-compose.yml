@@ -1,11 +1,5 @@
 version: '2'
 services:
-  lb:
-    image: rancher/lb-service-haproxy:v0.7.5
-    labels:
-      io.rancher.container.agent.role: environmentAdmin
-      io.rancher.container.create_agent: 'true'
-      web.http: 'true'
   SSL-lb:
     image: rancher/lb-service-haproxy:v0.7.5
     labels:
@@ -30,7 +24,7 @@ services:
       fr.pigeo.project: ${PROJECT_ID}
       fr.pigeo.product: Padre v2
       io.rancher.container.pull_image: always
-  geoportal:
+  geonetwork:
     image: jeanpommier/padre-geonetwork:latest
     environment:
       POSTGRES_DB_HOST: pg
