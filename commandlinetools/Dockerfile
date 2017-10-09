@@ -9,9 +9,10 @@ MAINTAINER Jean Pommier "jp@pi-geosolutions.fr"
 #install ssh server + system utilities
 RUN apt-get update && \
     apt-get install -y \
-		      cron \
-			  git \
-        locate \
+		          cron \
+			        git \
+              locate \
+              openjdk-8-jre \
               openssh-server \
               p7zip \
               rsync \
