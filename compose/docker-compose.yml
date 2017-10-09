@@ -118,6 +118,7 @@ services:
       - "/home/projects/${PROJECT_ID}/geonetwork_data:/padre/geonetwork_data"
       - "/home/projects/${PROJECT_ID}/www_data:/padre/www_data"
       - "/home/projects/${PROJECT_ID}/owncloud_data:/padre/owncloud_data"
+      - "/home/projects/${PROJECT_ID}/cron_crontabs:/var/spool/cron/crontabs"
       - /etc/authorized_keys:/etc/authorized_keys
     tty: true
     links:
