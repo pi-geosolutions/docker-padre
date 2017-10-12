@@ -73,6 +73,11 @@ else
     fi
 fi
 
+#fix directory permission for crontab, in case we use a host-mounted folder (permissions are then not set correctly)
+chown root:crontab /var/spool/cron/crontabs/
+chmod 731 /var/spool/cron/crontabs
+chmod o+t /var/spool/cron/crontabs
+
 # Update MOTD
 if [ -v MOTD ]; then
     echo -e "$MOTD" > /etc/motd
