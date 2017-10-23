@@ -4,7 +4,7 @@
 
   var module = angular.module('app.adminunits', []);
 
-  var serviceUrl = 'http://bi-risk.pigeo.fr/sigdt-config/services-burundi/';
+  var serviceUrl = 'http://ne-risk.pigeosolutions.fr/sigdt-config/services/';
 
   var getNodeText = function(htmlParentNode, nodeName) {
     var parent = $(htmlParentNode);
@@ -29,7 +29,7 @@
 
     var loc = {};
     var promises = [];
-    var adminUnitsNames = ['Provinces', 'Communes', 'Collines'];
+    var adminUnitsNames = ['Regions', 'Communes'];
     //serviceUrl = gnViewerSettings.ui.auService;
 
     adminUnitsNames.forEach(function(adminType, lvl) {

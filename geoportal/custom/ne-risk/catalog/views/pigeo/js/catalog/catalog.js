@@ -2,7 +2,7 @@
 
   goog.provide('app.catalog');
 
-  var PIGEO_GEOSERVER_URL = 'http://ne-risk.pigeo.fr/geoserver-prod/wms';
+  var PIGEO_GEOSERVER_URL = 'http://ne-risk.pigeosolutions.fr/geoserver/wms';
 
   var module = angular.module('app.catalog', []);
   //module.constant('appCatalogUrl', '../../catalog/views/pigeo/data/senegaltree.json');
@@ -203,16 +203,16 @@
               capL;
 
           // Layers configured to main geoserver, layername contains workspace
-          if(url.indexOf('http://ne-risk.pigeo.fr/geoserver-prod/wms') >= 0 ||
-            url.indexOf('http://ne-risk.pigeo.fr/geoserver-prod/ows') >= 0) {
+          if(url.indexOf('http://ne-risk.pigeosolutions.fr/geoserver/wms') >= 0 ||
+            url.indexOf('http://ne-risk.pigeosolutions.fr/geoserver/ows') >= 0) {
             capL = this.gnOwsCapabilities.getLayerInfoFromCap(layers, capObj);
           }
-          else if(url.indexOf('http://ne-risk.pigeo.fr/geoserver-prod/') >= 0) {
+          else if(url.indexOf('http://ne-risk.pigeosolutions.fr/geoserver/') >= 0) {
             if(layers.indexOf(':') > 0) {
               capL = this.gnOwsCapabilities.getLayerInfoFromCap(layers, capObj);
             }
             else {
-              var r = layers.match(/geoserver-prod\/(.*)\//);
+              var r = layers.match(/geoserver\/(.*)\//);
               if(r && r.length == 2) {
                 // TODO can layers have multiple ?
                 capL = this.gnOwsCapabilities.getLayerInfoFromCap(

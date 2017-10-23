@@ -5,7 +5,7 @@
   var module = angular.module('app.chartlayer.service', []);
 
   var GETCHARTDATA_URL = 'pigeo.layers.getchartdata';
-  var GEOSERVER_URL = 'http://gm-risk.pigeo.fr/geoserver-prod/gm/ows';
+  var GEOSERVER_URL = 'http://ne-risk.pigeosolutions.fr/geoserver/ows';
   GETCHARTDATA_URL =  '../../catalog/views/pigeo/data/getchartdata';
 
   module.service('chartlayerService', ['$http', '$q', 'ngeoDecorateLayer',

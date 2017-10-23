@@ -4,7 +4,7 @@
 
   var module = angular.module('app.query.polygon', []);
 
-  var WPS_SERVER_URL = 'http://gm-risk.pigeo.fr//geoserver-prod/wps';
+  var WPS_SERVER_URL = 'http://ne-risk.pigeosolutions.fr/geoserver/wps';
 
   gn.queryPolygonDirective = function() {
     return {

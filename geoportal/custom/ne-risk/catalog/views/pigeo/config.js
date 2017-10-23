@@ -31,11 +31,11 @@ if(!goog) {
 
           viewerSettings.servicesUrl = {
             wms: [{
-              name: 'Pigeo geoserver',
-              url: 'http://gm-risk.pigeo.fr/geoserver-prod/ows'
+              name: 'Geoserver pi-geosolutions',
+              url: 'http://pigeo.fr/geoserver-prod/ows'
             }, {
-              name: 'Pigeo geoserver tests WMST',
-              url: 'http://ne-risk.pigeo.fr/geoserver-prod/test_time/ows'
+              name: 'Geoserver pi-geosolutions, tests WMST',
+              url: 'http://pigeo.fr/geoserver-prod/test_time/ows'
             }],
             wmts: [{
               name: 'Arcgisonline - Relief ombré',
@@ -141,7 +141,7 @@ if(!goog) {
 
           viewerSettings.singleTileWMS = false;
 
-          viewerSettings.geodashUrl = 'http://dev.padre2.pigeo.fr/geodash/' +
+          viewerSettings.geodashUrl = 'http://ne-risk.pigeosolutions.fr/geodash/' +
               'dashboard/public/index.html?'
 
 
