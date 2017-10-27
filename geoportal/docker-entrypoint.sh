@@ -16,7 +16,7 @@ if [ "$1" = 'catalina.sh' ]; then
 	rm -rf geonetwork/WEB-INF/data/spatialindex
 	
 	#customize UI
-	cp -r geonetwork/custom/${PROJECT_ID}/* /geonetwork/
+	#cp -r geonetwork/custom/${PROJECT_ID}/* /geonetwork/
 	
 	#Set logs destination
 	sed -i -E "s|\"logs\/geonetwork.log\"|\"${DATA_DIR}\/logs\/geonetwork.log\"|gm" geonetwork/WEB-INF/classes/log4j.xml
