@@ -14,9 +14,13 @@ if [ "$1" = 'catalina.sh' ]; then
 	rm -rf geonetwork/WEB-INF/data/data/metadata_subversion
 	rm -rf geonetwork/WEB-INF/data/index
 	rm -rf geonetwork/WEB-INF/data/spatialindex
+
+  #clear wro4j cache files
+  rm -f  geonetwork/WEB-INF/data/wro4j*
 	
 	#customize UI
 	#cp -r geonetwork/custom/${PROJECT_ID}/* /geonetwork/
+
 	
 	#Set logs destination
 	sed -i -E "s|\"logs\/geonetwork.log\"|\"${DATA_DIR}\/logs\/geonetwork.log\"|gm" geonetwork/WEB-INF/classes/log4j.xml
