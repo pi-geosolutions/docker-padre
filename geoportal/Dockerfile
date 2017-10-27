@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -y postgresql-client zip && \
     rm -rf /var/lib/apt/lists/*
 
 ENV GN_FILE geonetwork.war
-ENV GN_REPO http://depots.pigeo.fr/WARs/geonetwork/3.4.0
+ENV GN_REPO http://depots.pigeo.fr/WARs/geonetwork/latest
 ENV PROJECT_ID ne-risk
 
 ENV DATA_DIR=$CATALINA_HOME/webapps/geonetwork/WEB-INF/data
@@ -36,13 +36,13 @@ RUN curl -fSL -o $GN_FILE \
 COPY ./jdbc.properties $CATALINA_HOME/webapps/geonetwork/WEB-INF/config-db/jdbc.properties
 
 #set geodata postgresql connection params
-COPY ./config-db.xml ./config-db.xml
+#COPY ./config-db.xml ./config-db.xml
 
-RUN zip geonetwork/WEB-INF/lib/pigeosolutions-3.4.0-SNAPSHOT.jar config-db.xml && \
-	rm config-db.xml
+#RUN zip geonetwork/WEB-INF/lib/pigeosolutions-3.4.0-SNAPSHOT.jar config-db.xml && \
+#	rm config-db.xml
 
 #Incorporate UI customization files (will be copied properly in entrypoint.sh
-COPY custom $CATALINA_HOME/webapps/geonetwork/custom/
+#COPY custom $CATALINA_HOME/webapps/geonetwork/custom/
 
 #Set geonetwork data dir
 COPY ./docker-entrypoint.sh /entrypoint.sh
