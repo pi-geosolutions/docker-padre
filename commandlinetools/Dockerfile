@@ -59,6 +59,9 @@ RUN sed -i -e 's/# fr_FR.UTF-8 UTF-8/fr_FR.UTF-8 UTF-8/' /etc/locale.gen && \
 
 EXPOSE 22
 
+#add user files skeleton for useradd (needed for custom bash prompt
+ADD etc/skel/* /etc/skel/
+
 ADD supervisord.conf /etc/supervisor/conf.d/
 RUN mkdir -p /var/log/supervisor
 

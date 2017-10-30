@@ -109,6 +109,7 @@ services:
     image: jeanpommier/padre-commandline:latest
     environment:
       SSH_USERS: jpommier:1000:1000,fgravin:1001:1001,prapaport:1002:1002,raincell:1003:1003
+      PROJECTID: ${PROJECT_ID}
     stdin_open: true
     volumes:
       - "/home/projects/${PROJECT_ID}/sshd_config:/etc/ssh"
