@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -y postgresql-client && \
     rm -rf /var/lib/apt/lists/*
 
 ENV WAR_FILE geodash.war
-ENV REPO http://depots.pigeo.fr/WARs/
+ENV REPO http://depots.pigeo.fr/WARs/geodash/latest
 ENV APP_NAME geodash
 
 ENV JAVA_OPTS="-Djava.security.egd=file:/dev/./urandom -Djava.awt.headless=true -server -Xms512m -Xmx2024m -XX:NewSize=512m -XX:MaxNewSize=1024m -XX:+UseConcMarkSweepGC"
