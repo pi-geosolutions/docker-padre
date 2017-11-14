@@ -49,6 +49,13 @@ services:
         source_port: 80
         target_port: 8080
       - hostname: "${DOMAIN_URL}"
+        path: /geodash
+        priority: 5
+        protocol: http
+        service: geodash
+        source_port: 80
+        target_port: 8080
+      - hostname: "${DOMAIN_URL}"
         path: /
         priority: 6
         protocol: http
