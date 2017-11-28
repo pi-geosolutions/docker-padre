@@ -15,11 +15,8 @@ if [ "$1" = 'catalina.sh' ]; then
 	rm -rf geonetwork/WEB-INF/data/index
 	rm -rf geonetwork/WEB-INF/data/spatialindex
 
-  #clear wro4j cache files
+  #clear wro4j cache files -- needed since gn3.4
   rm -f  geonetwork/WEB-INF/data/wro4j*
-	
-	#customize UI
-	#cp -r geonetwork/custom/${PROJECT_ID}/* /geonetwork/
 
 	
 	#Set logs destination

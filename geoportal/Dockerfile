@@ -8,7 +8,6 @@ RUN apt-get update && apt-get install -y postgresql-client zip && \
 
 ENV GN_FILE geonetwork.war
 ENV GN_REPO http://depots.pigeo.fr/WARs/geonetwork/latest
-ENV PROJECT_ID ne-risk
 
 ENV DATA_DIR=$CATALINA_HOME/webapps/geonetwork/WEB-INF/data
 ENV JAVA_OPTS="-Djava.security.egd=file:/dev/./urandom -Djava.awt.headless=true -server -Xms512m -Xmx2024m -XX:NewSize=512m -XX:MaxNewSize=1024m -XX:+UseConcMarkSweepGC"
