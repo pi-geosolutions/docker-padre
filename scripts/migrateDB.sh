@@ -28,11 +28,17 @@ DEST_SERVER=${2:-ne-risk.pigeosolutions.fr}
 ORIG_SERVER=${5:-ne-risk.pigeo.fr}
 DEST_PORT=${3:-2255}
 DEST_ROOT_PATH=${6:-/padre}
+PROJECT_ID=${7:-/niger}
+ORIG_GN_APP_NAME=${8:-ne-risk-gn2_10}
 
 
 rm migrateDB/finishMigrateDB.sh
 
 echo "Exporting database backup files"
+
+echo "#first drop existing tables if geonetwork has been started prior to migration"
+echo "psql -h pgis -U padre -e < droptables.sql" >> migrateDB/finishMigrateDB.sh
+
 echo "echo \"Importing database backup files\" " >> migrateDB/finishMigrateDB.sh
 for file in $4; do
 	cd $1
@@ -48,6 +54,7 @@ for file in $4; do
 	if [[ "$file" == *gn2_10 ]]
 	then
 		echo "sed -i -E \"s|${file}|geonetwork|gm\" $file" >> migrateDB/finishMigrateDB.sh
+		echo "sed -i -E \"s|${ORIG_GN_APP_NAME}|geonetwork|gm\" $file" >> migrateDB/finishMigrateDB.sh
 		echo "sed -i -E \"s|geoserver-prod|geoserver|gm\" $file" >> migrateDB/finishMigrateDB.sh
 		#replace all occurences of its value (origin server address) 
 		#to the new one (destination server address)
@@ -68,13 +75,16 @@ echo "echo \"Copying SQL files to perform actual DB migration for geonetwork\" "
 #apply manually geonetwork DB migration
 echo "for sqlfile in geonetwork_migrate_sql/*.sql; do psql -h pgis -U padre -d geonetwork < \${sqlfile}; done;" >> migrateDB/finishMigrateDB.sh
 
+echo "#set project template as default view"
+echo "psql -h pgis -U padre -c \"UPDATE settings SET value='${PROJECT_ID}' WHERE name='system/ui/defaultView';\"" >> migrateDB/finishMigrateDB.sh
+
 #remove superuser status from user padre
 echo "psql -h pgis -U postgres -c \"ALTER USER padre WITH NOSUPERUSER;\"" >> migrateDB/finishMigrateDB.sh
 
 echo "echo \"Migration should be complete. Please comment the 'trust' line in /var/lib/postbresql/data/pgdata/ph_hba.conf and reload the DB\" " >> migrateDB/finishMigrateDB.sh
 
 chmod +x migrateDB/finishMigrateDB.sh
-rsync -avzh -e "ssh -p $DEST_PORT -o CheckHostIP=no " migrateDB/ root@$DEST_SERVER:${DEST_ROOT_PATH}/
+rsync -avzh -e "ssh -p $DEST_PORT -o CheckHostIP=no " migrateDB root@$DEST_SERVER:${DEST_ROOT_PATH}/
 
 echo "transfer done. Please now ssh to the sshd container as root and execute /padre/migrateDB/finishMigrateDB.sh script"
 echo "ssh -p ${DEST_PORT} root@$DEST_SERVER"
