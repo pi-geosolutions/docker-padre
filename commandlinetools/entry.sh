@@ -72,7 +72,7 @@ if [ -n "${SSH_USERS}" ]; then
 		    else
           #if gid is pigeo's then main group for user will be pigeo
           #else it won't belong to pigeo, and thus not have access to pigeo folders
-			    useradd --gid ${_GID} --create-home --shell '/bin/bash' --uid ${_UID} ${_NAME}
+			    useradd --gid ${_GID} -G www-data --create-home --shell '/bin/bash' --uid ${_UID} ${_NAME}
 			    echo ">> group & user created"
 		    fi
     done
