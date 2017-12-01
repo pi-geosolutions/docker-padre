@@ -95,7 +95,7 @@ fi
 
 #coloration syntaxique pour root
 echo "set bg=dark" > /root/.vimrc
-echo "syntax on" > /root/.vimrc
+echo "syntax on" >> /root/.vimrc
 
 #get a nice prompt with project name
 echo "export PS1='\[\e]0;\u@\h: \w\a\]\${debian_chroot:+(\$debian_chroot)}\u@${PROJECTID}:\w\$'" >> /etc/profile
