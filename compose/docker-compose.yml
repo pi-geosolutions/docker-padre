@@ -7,7 +7,7 @@ services:
       io.rancher.container.create_agent: 'true'
       web.https: 'true'
   httpd:
-    image: jeanpommier/padre-httpd:latest
+    image: pigeosolutions/padre-httpd:latest
     environment:
       APACHE_SERVERNAME: ${DOMAIN_URL}
       POSTGRES_HOST: pgis
@@ -25,7 +25,7 @@ services:
       fr.pigeo.product: Padre v2
       io.rancher.container.pull_image: always
   geonetwork:
-    image: jeanpommier/padre-geonetwork:latest
+    image: pigeosolutions/padre-geonetwork:latest
     environment:
       POSTGRES_DB_HOST: pg
       POSTGRES_DB_USERNAME: padre
@@ -45,7 +45,7 @@ services:
       fr.pigeo.product: Padre v2
       io.rancher.container.pull_image: always
   geodash:
-    image: jeanpommier/padre-geodash:latest
+    image: pigeosolutions/padre-geodash:latest
     environment:
       POSTGRES_DB_USERNAME: padre
       POSTGRES_DB_PASSWORD: padre
@@ -61,7 +61,7 @@ services:
       fr.pigeo.product: Padre v2
       io.rancher.container.pull_image: always
   owncloud:
-    image: jeanpommier/padre-owncloud:latest
+    image: pigeosolutions/padre-owncloud:latest
     environment:
       OWNCLOUD_DOMAIN: ${DOMAIN_URL}
       OWNCLOUD_SUB_URL: /owncloud
@@ -69,7 +69,7 @@ services:
     volumes:
       - "/home/projects/${PROJECT_ID}/owncloud_data:/mnt/data"
   odkaggregate:
-    image: jeanpommier/padre-odkaggregate:latest
+    image: pigeosolutions/padre-odkaggregate:latest
     environment:
       DB_HOSTNAME: pgis
       DB_USER: padre
@@ -90,7 +90,7 @@ services:
       fr.pigeo.product: Padre v2
       io.rancher.container.pull_image: always
   geoserver:
-    image: jeanpommier/padre-geoserver:latest
+    image: pigeosolutions/padre-geoserver:latest
     environment:
       GEOSERVER_DATA_DIR: /padre/geoserver_data
     stdin_open: true
@@ -106,7 +106,7 @@ services:
       fr.pigeo.product: Padre v2
       io.rancher.container.pull_image: always
   ssh:
-    image: jeanpommier/padre-commandline:latest
+    image: pigeosolutions/padre-commandline:latest
     environment:
       SSH_USERS: jpommier:1000:1000,fgravin:1001:1001,prapaport:1002:1002,raincell:1003:1003
       PROJECTID: ${PROJECT_ID}
@@ -130,7 +130,7 @@ services:
       fr.pigeo.product: Padre v2
       io.rancher.container.pull_image: always
   postgis:
-    image: jeanpommier/padre-postgis:latest
+    image: pigeosolutions/padre-postgis:latest
     environment:
       PGDATA: /var/lib/postgresql/data/pgdata
       POSTGRES_PASSWORD:
