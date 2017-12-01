@@ -19,7 +19,8 @@ RUN apt-get update && \
               supervisor \
               tar \
               vim \
-              wget 
+              wget \
+              xsltproc
 
 #install postgresql/postgis support, gdal, libgrib API
 # & python virtualenv that will be used by any user needing it to install its specific python libs : 
@@ -30,6 +31,7 @@ RUN apt-get update && \
               libgdal20 \
               libgdal-dev \
               libgrib-api0 \
+              locales \
               postgis \
               postgresql-client \
               python \
@@ -51,11 +53,15 @@ RUN mkdir -p ~root/.ssh /etc/authorized_keys && chmod 700 ~root/.ssh/ && \
 
 ENV NOTVISIBLE "in users profile"
 RUN echo "export VISIBLE=now" >> /etc/profile 
-RUN sed -i -e 's/# fr_FR.UTF-8 UTF-8/fr_FR.UTF-8 UTF-8/' /etc/locale.gen && \
-    sed -i -e 's/# en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/' /etc/locale.gen && \
-    locale-gen && \
-    update-locale LANG=en_US.UTF-8 && \
-    echo "LANGUAGE=en_US.UTF-8" >> /etc/default/locale
+#Set locale
+#RUN sed -i -e 's/# fr_FR.UTF-8 UTF-8/fr_FR.UTF-8 UTF-8/' /etc/locale.gen && \
+#    sed -i -e 's/# en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/' /etc/locale.gen && \
+#    locale-gen && \
+#    update-locale LANG=en_US.UTF-8 && \
+#    echo "LANGUAGE=en_US.UTF-8" >> /etc/default/locale
+RUN localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8 \
+    && localedef -i fr_FR -c -f UTF-8 -A /usr/share/locale/locale.alias fr_FR.UTF-8
+ENV LANG en_US.utf8
 
 EXPOSE 22
 

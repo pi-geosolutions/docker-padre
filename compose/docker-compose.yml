@@ -115,6 +115,7 @@ services:
       - "/home/projects/${PROJECT_ID}/sshd_config:/etc/ssh"
       - "/home/projects/${PROJECT_ID}/sshd_home:/home"
       - "/home/projects/${PROJECT_ID}/geodata:/padre/geodata"
+      - "/home/projects/${PROJECT_ID}/processing:/padre/processing"
       - "/home/projects/${PROJECT_ID}/geoserver_data:/padre/geoserver_data"
       - "/home/projects/${PROJECT_ID}/geonetwork_data:/padre/geonetwork_data"
       - "/home/projects/${PROJECT_ID}/www_data:/padre/www_data"

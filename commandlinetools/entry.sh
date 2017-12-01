@@ -39,6 +39,9 @@ fi
 echo  "pgis:5432:*:padre:padre" > /root/.pgpass
 chmod 0600 /root/.pgpass
 
+#create pigeo user, that will be used mostly as a wildcard user for folders belonging to pigeo group (common to all users)
+groupadd --gid 2000 pigeo
+useradd --gid pigeo --create-home --shell '/bin/bash' --uid 2000 pigeo
 
 # Add users if SSH_USERS=user:uid:gid set
 echo "SSH_USER: ${SSH_USERS}"
@@ -58,13 +61,20 @@ if [ -n "${SSH_USERS}" ]; then
 #        addgroup --gid ${_GID} ${_NAME}
 #        adduser --shell /bin/bash --uid ${_UID} --gid ${_GID} --disabled-password ${_NAME}
 
-		if getent group ${_NAME} | grep &>/dev/null "${_NAME}"; then
-			echo "Group ${_NAME} already exists. Skipping user creation"
-		else
-			groupadd --gid ${_GID} ${_NAME}
-			useradd --gid ${_GID} --create-home --shell '/bin/bash' --uid ${_UID} ${_NAME}
-			echo ">> group & user created"
-		fi
+        if getent group ${_GID} | grep &>/dev/null "${_GID}"; then
+			    echo "Group ${_NAME} already exists. Skipping group creation"
+		    else
+          groupadd --gid ${_GID} ${_NAME}
+        fi
+
+		    if id "${_NAME}" > /dev/null 2>&1; then
+			    echo "User ${_NAME} already exists. Skipping user creation"
+		    else
+          #if gid is pigeo's then main group for user will be pigeo
+          #else it won't belong to pigeo, and thus not have access to pigeo folders
+			    useradd --gid ${_GID} --create-home --shell '/bin/bash' --uid ${_UID} ${_NAME}
+			    echo ">> group & user created"
+		    fi
     done
 else
     # Warn if no authorized_keys

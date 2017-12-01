@@ -42,7 +42,7 @@ echo "psql -h pgis -U padre -e < droptables.sql" >> migrateDB/finishMigrateDB.sh
 echo "echo \"Importing database backup files\" " >> migrateDB/finishMigrateDB.sh
 for file in $4; do
 	cd $1
-	scp -P $DEST_PORT ${file}.gz root@$DEST_SERVER:/padre/
+	scp -P $DEST_PORT ${file}.gz root@$DEST_SERVER:$DEST_ROOT_PATH/migrateDB/
 	cd -
 	echo "gunzip ${file}.gz" >> migrateDB/finishMigrateDB.sh
 	#replace DB name to 'geodata' if this is relevant
