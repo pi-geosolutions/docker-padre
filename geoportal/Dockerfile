@@ -24,24 +24,8 @@ RUN curl -fSL -o $GN_FILE \
      unzip -e $GN_FILE -d geonetwork && \
 	rm $GN_FILE 
 	
-#fix bug https://github.com/geonetwork/docker-geonetwork/issues/4
-#apparently, simply removing one doesn't suffice, though I don't get why
-#### Should not be necessary since 3.4 #####
-#RUN	rm geonetwork/WEB-INF/lib/postgresql-*.jar && \
-#	curl -fSL -o geonetwork/WEB-INF/lib/postgresql-9.4.1211.jar \
-#		https://jdbc.postgresql.org/download/postgresql-9.4.1211.jar 
-
 #Set PostgreSQL connection params
 COPY ./jdbc.properties $CATALINA_HOME/webapps/geonetwork/WEB-INF/config-db/jdbc.properties
-
-#set geodata postgresql connection params
-#COPY ./config-db.xml ./config-db.xml
-
-#RUN zip geonetwork/WEB-INF/lib/pigeosolutions-3.4.0-SNAPSHOT.jar config-db.xml && \
-#	rm config-db.xml
-
-#Incorporate UI customization files (will be copied properly in entrypoint.sh
-#COPY custom $CATALINA_HOME/webapps/geonetwork/custom/
 
 #Set geonetwork data dir
 COPY ./docker-entrypoint.sh /entrypoint.sh

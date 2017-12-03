@@ -108,7 +108,7 @@ services:
   ssh:
     image: pigeosolutions/padre-commandline:latest
     environment:
-      SSH_USERS: jpommier:1000:1000,fgravin:1001:1001,prapaport:1002:1002,raincell:1003:1003
+      SSH_USERS: jpommier:1000:2000,fgravin:1001:2000,prapaport:1002:2000,raincell:1003:1003
       PROJECTID: ${PROJECT_ID}
     stdin_open: true
     volumes:
