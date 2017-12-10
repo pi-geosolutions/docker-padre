@@ -18,7 +18,7 @@ RUN apt-get update && \
               rsync \
               supervisor \
               tar \
-              vim \
+              vim-nox \
               wget \
               xsltproc
 
