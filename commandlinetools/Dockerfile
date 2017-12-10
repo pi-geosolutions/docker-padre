@@ -35,6 +35,8 @@ RUN apt-get update && \
               postgis \
               postgresql-client \
               python \
+              python3-dev \
+              python-gdal \
               python-pip \
               python-virtualenv \
     && rm -rf /var/lib/apt/lists/* && apt-get clean \
