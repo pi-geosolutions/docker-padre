@@ -9,6 +9,7 @@ MAINTAINER Jean Pommier "jp@pi-geosolutions.fr"
 #install ssh server + system utilities
 RUN apt-get update && \
     apt-get install -y \
+              cmake \
 		          cron \
 			        git \
               locate \
@@ -28,6 +29,7 @@ RUN apt-get update && \
 RUN apt-get update && \
     apt-get install -y \
               gdal-bin \
+              gfortran \
               libgdal20 \
               libgdal-dev \
               libgrib-api0 \
@@ -53,14 +55,26 @@ RUN mkdir -p ~root/.ssh /etc/authorized_keys && chmod 700 ~root/.ssh/ && \
     echo "AuthorizedKeysFile\t.ssh/authorized_keys /etc/authorized_keys/%u" >> /etc/ssh/sshd_config && \
     cp -a /etc/ssh /etc/ssh.cache 
 
+#Install grib tools
+##ecCodes (https://software.ecmwf.int/wiki/display/ECC/ecCodes+installation)
+RUN cd /var/lib && \
+    wget https://software.ecmwf.int/wiki/download/attachments/45757960/eccodes-2.5.0-Source.tar.gz?api=v2 -O - | tar -xz && \
+    mkdir /var/lib/eccodesBuild ; cd /var/lib/eccodesBuild && \
+    sed -i -e 's@set( ECCODES_EXTRA_INCLUDE_DIRS "" )@set( ECCODES_EXTRA_INCLUDE_DIRS "/usr/include/openjpeg-2.1/" )@g' /var/lib/eccodes-2.5.0-Source/CMakeLists.txt && \
+    cmake -DCMAKE_INSTALL_PREFIX=/usr/local ../eccodes-2.5.0-Source/ && \
+    make && make install
+## wgrib2
+RUN cd /var/lib && \
+    wget ftp://ftp.cpc.ncep.noaa.gov/wd51we/wgrib2/wgrib2.tgz && \
+    tar -xzf wgrib2.tgz ;rm wgrib2.tgz ; mv grib2 wgrib2 && \
+    export CC=gcc && export FC=gfortran && \
+    make
+    
+
 ENV NOTVISIBLE "in users profile"
 RUN echo "export VISIBLE=now" >> /etc/profile 
+
 #Set locale
-#RUN sed -i -e 's/# fr_FR.UTF-8 UTF-8/fr_FR.UTF-8 UTF-8/' /etc/locale.gen && \
-#    sed -i -e 's/# en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/' /etc/locale.gen && \
-#    locale-gen && \
-#    update-locale LANG=en_US.UTF-8 && \
-#    echo "LANGUAGE=en_US.UTF-8" >> /etc/default/locale
 RUN localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8 \
     && localedef -i fr_FR -c -f UTF-8 -A /usr/share/locale/locale.alias fr_FR.UTF-8
 ENV LANG en_US.utf8
