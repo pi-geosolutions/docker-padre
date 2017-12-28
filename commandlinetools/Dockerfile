@@ -63,7 +63,8 @@ RUN cd /var/lib && \
     wget ftp://ftp.cpc.ncep.noaa.gov/wd51we/wgrib2/wgrib2.tgz && \
     tar -xzf wgrib2.tgz ;rm wgrib2.tgz ; mv grib2 wgrib2 ; cd wgrib2 && \
     export CC=gcc && export FC=gfortran && \
-    make
+    make && \
+    echo "PATH=$PATH:/var/lib/wgrib2/wgrib2" >> /etc/profile
     
 
 ENV NOTVISIBLE "in users profile"
