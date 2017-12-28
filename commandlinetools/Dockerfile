@@ -44,12 +44,6 @@ RUN apt-get update && \
     && rm -rf /var/lib/apt/lists/* && apt-get clean \
     && pip install --upgrade pip
 
-#Install pygrib (https://github.com/jswhit/pygrib)
-#RUN cd /tmp && \
-#    wget https://pypi.python.org/packages/3c/16/d128a64f2f5e9f776d6e080ba62551b5d103a4c0acb283204135bd23f14e/pygrib-2.0.2.tar.gz#md5=5ba35af5834c81711409031ed5e7d5cd  -O - | tar -xz && \
-#    mv pygrib-2.0.2 /var/lib/ && \
-#FINISH IT but first check if Philippe needs it   
-
 RUN mkdir -p ~root/.ssh /etc/authorized_keys && chmod 700 ~root/.ssh/ && \
     sed -i -e 's@^AuthorizedKeysFile.*@@g' /etc/ssh/sshd_config  && \
     echo "AuthorizedKeysFile\t.ssh/authorized_keys /etc/authorized_keys/%u" >> /etc/ssh/sshd_config && \
@@ -63,10 +57,11 @@ RUN cd /var/lib && \
     sed -i -e 's@set( ECCODES_EXTRA_INCLUDE_DIRS "" )@set( ECCODES_EXTRA_INCLUDE_DIRS "/usr/include/openjpeg-2.1/" )@g' /var/lib/eccodes-2.5.0-Source/CMakeLists.txt && \
     cmake -DCMAKE_INSTALL_PREFIX=/usr/local ../eccodes-2.5.0-Source/ && \
     make && make install
+
 ## wgrib2
 RUN cd /var/lib && \
     wget ftp://ftp.cpc.ncep.noaa.gov/wd51we/wgrib2/wgrib2.tgz && \
-    tar -xzf wgrib2.tgz ;rm wgrib2.tgz ; mv grib2 wgrib2 && \
+    tar -xzf wgrib2.tgz ;rm wgrib2.tgz ; mv grib2 wgrib2 ; cd wgrib2 && \
     export CC=gcc && export FC=gfortran && \
     make
     
