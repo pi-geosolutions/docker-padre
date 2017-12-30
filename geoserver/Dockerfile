@@ -56,5 +56,6 @@ RUN curl -L http://ares.boundlessgeo.com/geoserver/${GEOSERVER_VERSION_NAME}/ext
 #    wget https://github.com/bourgesl/marlin-renderer/releases/download/v0.7.4_2/marlin-0.7.4-Unsafe-sun-java2d.jar
 
 #ENV CATALINA_OPTS "-Xbootclasspath/a:/usr/local/tomcat/lib/marlin-0.7.4-Unsafe.jar -Xbootclasspath/p:/usr/local/tomcat/lib/marlin-0.7.4-Unsafe-sun-java2d.jar -Dsun.java2d.renderer=org.marlin.pisces.PiscesRenderingEngine -Duser.timezone=GMT -Dorg.geotools.shapefile.datetime=true"
+ENV CATALINA_OPTS "-Duser.timezone=GMT -Dorg.geotools.shapefile.datetime=true"
 
 
