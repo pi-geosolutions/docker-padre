@@ -59,13 +59,15 @@ RUN cd /var/lib && \
     make && make install
 
 ## wgrib2
+#ldconfig updates library paths, needed at least for eccodes
 RUN cd /var/lib && \
     wget ftp://ftp.cpc.ncep.noaa.gov/wd51we/wgrib2/wgrib2.tgz && \
     tar -xzf wgrib2.tgz ;rm wgrib2.tgz ; mv grib2 wgrib2 ; cd wgrib2 && \
     export CC=gcc && export FC=gfortran && \
     make && \
-    echo "PATH=$PATH:/var/lib/wgrib2/wgrib2" >> /etc/profile
-    
+    echo "PATH=$PATH:/var/lib/wgrib2/wgrib2" >> /etc/profile && \
+    ldconfig
+
 
 ENV NOTVISIBLE "in users profile"
 RUN echo "export VISIBLE=now" >> /etc/profile 
