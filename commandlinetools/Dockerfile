@@ -11,6 +11,7 @@ RUN apt-get update && \
     apt-get install -y \
               cmake \
 		          cron \
+              curl \
 			        git \
               locate \
               openjdk-8-jre \
