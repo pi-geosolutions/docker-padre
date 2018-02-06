@@ -1,1 +1,1 @@
-52 * * * * /usr/bin/freshclam --quiet #Update clamAV virus DB
+52 * * * * /usr/bin/freshclam --quiet #Update clamAV virus db

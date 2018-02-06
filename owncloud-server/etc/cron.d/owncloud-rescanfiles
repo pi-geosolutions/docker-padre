@@ -1,2 +1,0 @@
-#rescan owncloud files folders (all users) every 15 min
-*/15 * * * * www-data php occ files:scan --all
