@@ -35,11 +35,12 @@ RUN apt-get update && \
               postgis \
               postgresql-client \
               python \
+              python-pip \
               python3-gdal \
               python3-pip \
               python3-venv \
     && rm -rf /var/lib/apt/lists/* && apt-get clean \
-    && pip install --upgrade pip
+    && pip3 install --upgrade pip
 
 #Install pygrib (https://github.com/jswhit/pygrib)
 #RUN cd /tmp && \
