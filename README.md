@@ -161,7 +161,7 @@ Owncloud
 
 2) Build the image : 
 
-	source .env
+	source owncloud-server/.env
 	IMAGE_NAME=padre1-owncloudserver
 	docker build   	--build-arg VERSION=${VERSION} \
 					--build-arg TARBALL=${TARBALL} \
