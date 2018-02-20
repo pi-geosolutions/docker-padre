@@ -38,11 +38,12 @@ RUN apt-get update && \
               postgis \
               postgresql-client \
               python \
+              python-pip \
               python3-gdal \
               python3-pip \
               python3-venv \
     && rm -rf /var/lib/apt/lists/* && apt-get clean \
-    && pip install --upgrade pip
+    && pip3 install --upgrade pip
 
 RUN mkdir -p ~root/.ssh /etc/authorized_keys && chmod 700 ~root/.ssh/ && \
     sed -i -e 's@^AuthorizedKeysFile.*@@g' /etc/ssh/sshd_config  && \
