@@ -21,7 +21,7 @@ WORKDIR $CATALINA_HOME/webapps
 #Download pi-alert war
 #COPY ~/tmp/$WAR_FILE $CATALINA_HOME/webapps/
 RUN curl -fSL -o $WAR_FILE \
-    $REPO/$WAR_FILE && \
+    $REPO/$WAR_FILE
 
 # Install pi-alert from war
 RUN  unzip -e $WAR_FILE -d $APP_NAME && \
