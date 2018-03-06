@@ -27,6 +27,7 @@ RUN apt-get update && \
 #install postgresql/postgis support, gdal, libgrib API
 # & python virtualenv that will be used by any user needing it to install its specific python libs : 
 # numpy, scipy, rasterstats (http://pythonhosted.org/rasterstats/installation.html), statsmodel, 
+# python-gdal is necessary to get gdal python tools such as gdal_edit.py
 RUN apt-get update && \
     apt-get install -y \
               gdal-bin \
@@ -39,6 +40,7 @@ RUN apt-get update && \
               postgresql-client \
               python \
               python-pip \
+              python-gdal \
               python3-gdal \
               python3-pip \
               python3-venv \
