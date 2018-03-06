@@ -88,11 +88,6 @@ chown root:crontab /var/spool/cron/crontabs/
 chmod 731 /var/spool/cron/crontabs
 chmod o+t /var/spool/cron/crontabs
 
-# Update MOTD
-if [ -v MOTD ]; then
-    echo -e "$MOTD" > /etc/motd
-fi
-
 #coloration syntaxique pour root
 echo "set bg=dark" > /root/.vimrc
 echo "syntax on" >> /root/.vimrc

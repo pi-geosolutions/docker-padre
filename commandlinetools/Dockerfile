@@ -9,7 +9,9 @@ MAINTAINER Jean Pommier "jp@pi-geosolutions.fr"
 #install ssh server + system utilities
 RUN apt-get update && \
     apt-get install -y \
+              cmake \
 		          cron \
+              curl \
 			        git \
               locate \
               openjdk-8-jre \
@@ -25,9 +27,11 @@ RUN apt-get update && \
 #install postgresql/postgis support, gdal, libgrib API
 # & python virtualenv that will be used by any user needing it to install its specific python libs : 
 # numpy, scipy, rasterstats (http://pythonhosted.org/rasterstats/installation.html), statsmodel, 
+# python-gdal is necessary to get gdal python tools such as gdal_edit.py
 RUN apt-get update && \
     apt-get install -y \
               gdal-bin \
+              gfortran \
               libgdal20 \
               libgdal-dev \
               libgrib-api0 \
@@ -36,31 +40,42 @@ RUN apt-get update && \
               postgresql-client \
               python \
               python-pip \
+              python-gdal \
               python3-gdal \
               python3-pip \
               python3-venv \
     && rm -rf /var/lib/apt/lists/* && apt-get clean \
     && pip3 install --upgrade pip
 
-#Install pygrib (https://github.com/jswhit/pygrib)
-#RUN cd /tmp && \
-#    wget https://pypi.python.org/packages/3c/16/d128a64f2f5e9f776d6e080ba62551b5d103a4c0acb283204135bd23f14e/pygrib-2.0.2.tar.gz#md5=5ba35af5834c81711409031ed5e7d5cd  -O - | tar -xz && \
-#    mv pygrib-2.0.2 /var/lib/ && \
-#FINISH IT but first check if Philippe needs it   
-
 RUN mkdir -p ~root/.ssh /etc/authorized_keys && chmod 700 ~root/.ssh/ && \
     sed -i -e 's@^AuthorizedKeysFile.*@@g' /etc/ssh/sshd_config  && \
     echo "AuthorizedKeysFile\t.ssh/authorized_keys /etc/authorized_keys/%u" >> /etc/ssh/sshd_config && \
     cp -a /etc/ssh /etc/ssh.cache 
 
+#Install grib tools
+##ecCodes (https://software.ecmwf.int/wiki/display/ECC/ecCodes+installation)
+RUN cd /var/lib && \
+    wget https://software.ecmwf.int/wiki/download/attachments/45757960/eccodes-2.5.0-Source.tar.gz?api=v2 -O - | tar -xz && \
+    mkdir /var/lib/eccodesBuild ; cd /var/lib/eccodesBuild && \
+    sed -i -e 's@set( ECCODES_EXTRA_INCLUDE_DIRS "" )@set( ECCODES_EXTRA_INCLUDE_DIRS "/usr/include/openjpeg-2.1/" )@g' /var/lib/eccodes-2.5.0-Source/CMakeLists.txt && \
+    cmake -DCMAKE_INSTALL_PREFIX=/usr/local ../eccodes-2.5.0-Source/ && \
+    make && make install
+
+## wgrib2
+#ldconfig updates library paths, needed at least for eccodes
+RUN cd /var/lib && \
+    wget ftp://ftp.cpc.ncep.noaa.gov/wd51we/wgrib2/wgrib2.tgz && \
+    tar -xzf wgrib2.tgz ;rm wgrib2.tgz ; mv grib2 wgrib2 ; cd wgrib2 && \
+    export CC=gcc && export FC=gfortran && \
+    make && \
+    echo "PATH=$PATH:/var/lib/wgrib2/wgrib2" >> /etc/profile && \
+    ldconfig
+
+
 ENV NOTVISIBLE "in users profile"
 RUN echo "export VISIBLE=now" >> /etc/profile 
+
 #Set locale
-#RUN sed -i -e 's/# fr_FR.UTF-8 UTF-8/fr_FR.UTF-8 UTF-8/' /etc/locale.gen && \
-#    sed -i -e 's/# en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/' /etc/locale.gen && \
-#    locale-gen && \
-#    update-locale LANG=en_US.UTF-8 && \
-#    echo "LANGUAGE=en_US.UTF-8" >> /etc/default/locale
 RUN localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8 \
     && localedef -i fr_FR -c -f UTF-8 -A /usr/share/locale/locale.alias fr_FR.UTF-8
 ENV LANG en_US.utf8
