@@ -24,6 +24,7 @@ ALTER DEFAULT PRIVILEGES FOR USER padre IN SCHEMA public GRANT ALL ON SEQUENCES 
 
 CREATE DATABASE pialert WITH OWNER padre;
 \connect pialert;
+CREATE EXTENSION postgis;
 -- make sure role 'padre' will have access to all new created tables
 ALTER DEFAULT PRIVILEGES FOR USER padre IN SCHEMA public GRANT SELECT ON TABLES TO padre;
 ALTER DEFAULT PRIVILEGES FOR USER padre IN SCHEMA public GRANT ALL ON SEQUENCES TO padre;
