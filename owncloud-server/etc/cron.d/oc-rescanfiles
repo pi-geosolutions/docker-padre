@@ -1,1 +1,2 @@
-*/15 * * * * www-data php occ files:scan --all
+*/15 * * * * www-data /usr/bin/php /var/www/owncloud/occ files:scan --all
+
