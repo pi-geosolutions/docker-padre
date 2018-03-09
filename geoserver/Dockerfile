@@ -10,11 +10,12 @@ RUN cd /tmp && \
     mv /tmp/jai*/lib/*.so $JAVA_HOME/lib/amd64/ && \
     rm -r /tmp/*
 
+ENV REPO https://build.geoserver.org/geoserver
 ENV GEOSERVER_VERSION 2.12
 ENV GEOSERVER_VERSION_NAME ${GEOSERVER_VERSION}.x
 
 # Install geoserver
-RUN curl -L http://ares.boundlessgeo.com/geoserver/${GEOSERVER_VERSION_NAME}/geoserver-${GEOSERVER_VERSION_NAME}-latest-war.zip > /tmp/geoserver.zip && \
+RUN curl -L ${REPO}/${GEOSERVER_VERSION_NAME}/geoserver-${GEOSERVER_VERSION_NAME}-latest-war.zip > /tmp/geoserver.zip && \
     unzip /tmp/geoserver.zip -d /tmp/geoserver && \
     rm -rf ${CATALINA_HOME}/webapps/* && \
     unzip /tmp/geoserver/geoserver.war -d $CATALINA_HOME/webapps/geoserver && \
@@ -22,33 +23,38 @@ RUN curl -L http://ares.boundlessgeo.com/geoserver/${GEOSERVER_VERSION_NAME}/geo
     rm -r /tmp/*
 
 # Install plugins (WPS)
-RUN curl -L http://ares.boundlessgeo.com/geoserver/${GEOSERVER_VERSION_NAME}/ext-latest/geoserver-${GEOSERVER_VERSION}-SNAPSHOT-wps-plugin.zip > /tmp/geoserver-wps-plugin.zip && \
+RUN curl -L ${REPO}/${GEOSERVER_VERSION_NAME}/ext-latest/geoserver-${GEOSERVER_VERSION}-SNAPSHOT-wps-plugin.zip > /tmp/geoserver-wps-plugin.zip && \
     unzip -o /tmp/geoserver-wps-plugin.zip -d $CATALINA_HOME/webapps/geoserver/WEB-INF/lib/ && \
     rm /tmp/*
 
 # Install plugins (pyramid)
-RUN curl -L http://ares.boundlessgeo.com/geoserver/${GEOSERVER_VERSION_NAME}/ext-latest/geoserver-${GEOSERVER_VERSION}-SNAPSHOT-pyramid-plugin.zip > /tmp/geoserver-pyramid-plugin.zip && \
+RUN curl -L ${REPO}/${GEOSERVER_VERSION_NAME}/ext-latest/geoserver-${GEOSERVER_VERSION}-SNAPSHOT-pyramid-plugin.zip > /tmp/geoserver-pyramid-plugin.zip && \
     unzip -o /tmp/geoserver-pyramid-plugin.zip -d $CATALINA_HOME/webapps/geoserver/WEB-INF/lib/ && \
     rm /tmp/*
 
 # Install plugins (CSS)
-RUN curl -L http://ares.boundlessgeo.com/geoserver/${GEOSERVER_VERSION_NAME}/ext-latest/geoserver-${GEOSERVER_VERSION}-SNAPSHOT-css-plugin.zip > /tmp/geoserver-css-plugin.zip && \
+RUN curl -L ${REPO}/${GEOSERVER_VERSION_NAME}/ext-latest/geoserver-${GEOSERVER_VERSION}-SNAPSHOT-css-plugin.zip > /tmp/geoserver-css-plugin.zip && \
     unzip -o /tmp/geoserver-css-plugin.zip -d $CATALINA_HOME/webapps/geoserver/WEB-INF/lib/ && \
     rm /tmp/*
 
 # Install plugins (charts)
-RUN curl -L http://ares.boundlessgeo.com/geoserver/${GEOSERVER_VERSION_NAME}/ext-latest/geoserver-${GEOSERVER_VERSION}-SNAPSHOT-charts-plugin.zip > /tmp/geoserver-charts-plugin.zip && \
+RUN curl -L ${REPO}/${GEOSERVER_VERSION_NAME}/ext-latest/geoserver-${GEOSERVER_VERSION}-SNAPSHOT-charts-plugin.zip > /tmp/geoserver-charts-plugin.zip && \
     unzip -o /tmp/geoserver-charts-plugin.zip -d $CATALINA_HOME/webapps/geoserver/WEB-INF/lib/ && \
     rm /tmp/*
 
 # Install plugins (grib)
-RUN curl -L http://ares.boundlessgeo.com/geoserver/${GEOSERVER_VERSION_NAME}/ext-latest/geoserver-${GEOSERVER_VERSION}-SNAPSHOT-grib-plugin.zip > /tmp/geoserver-grib-plugin.zip && \
+RUN curl -L ${REPO}/${GEOSERVER_VERSION_NAME}/ext-latest/geoserver-${GEOSERVER_VERSION}-SNAPSHOT-grib-plugin.zip > /tmp/geoserver-grib-plugin.zip && \
     unzip -o /tmp/geoserver-grib-plugin.zip -d $CATALINA_HOME/webapps/geoserver/WEB-INF/lib/ && \
     rm /tmp/*
 
 # Install plugins (netCDF)
-RUN curl -L http://ares.boundlessgeo.com/geoserver/${GEOSERVER_VERSION_NAME}/ext-latest/geoserver-${GEOSERVER_VERSION}-SNAPSHOT-netcdf-plugin.zip > /tmp/geoserver-netcdf-plugin.zip && \
+RUN curl -L ${REPO}/${GEOSERVER_VERSION_NAME}/ext-latest/geoserver-${GEOSERVER_VERSION}-SNAPSHOT-netcdf-plugin.zip > /tmp/geoserver-netcdf-plugin.zip && \
     unzip -o /tmp/geoserver-netcdf-plugin.zip -d $CATALINA_HOME/webapps/geoserver/WEB-INF/lib/ && \
+    rm /tmp/*
+
+# Install plugins (DDS/BIL -- Community plugin for WorldWind)
+RUN curl -L ${REPO}/${GEOSERVER_VERSION_NAME}/community-latest/geoserver-${GEOSERVER_VERSION}-SNAPSHOT-dds-plugin.zip > /tmp/geoserver-dds-plugin.zip && \
+    unzip -o /tmp/geoserver-dds-plugin.zip -d $CATALINA_HOME/webapps/geoserver/WEB-INF/lib/ && \
     rm /tmp/*
 
 # Instal Marlin
@@ -57,5 +63,3 @@ RUN curl -L http://ares.boundlessgeo.com/geoserver/${GEOSERVER_VERSION_NAME}/ext
 
 #ENV CATALINA_OPTS "-Xbootclasspath/a:/usr/local/tomcat/lib/marlin-0.7.4-Unsafe.jar -Xbootclasspath/p:/usr/local/tomcat/lib/marlin-0.7.4-Unsafe-sun-java2d.jar -Dsun.java2d.renderer=org.marlin.pisces.PiscesRenderingEngine -Duser.timezone=GMT -Dorg.geotools.shapefile.datetime=true"
 ENV CATALINA_OPTS "-Duser.timezone=GMT -Dorg.geotools.shapefile.datetime=true"
-
-
