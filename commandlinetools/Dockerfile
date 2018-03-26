@@ -10,9 +10,10 @@ MAINTAINER Jean Pommier "jp@pi-geosolutions.fr"
 RUN apt-get update && \
     apt-get install -y \
               cmake \
-		          cron \
+	          cron \
               curl \
-			        git \
+              dos2unix \
+              git \
               locate \
               openjdk-8-jre \
               openssh-server \
@@ -25,8 +26,8 @@ RUN apt-get update && \
               xsltproc
 
 #install postgresql/postgis support, gdal, libgrib API
-# & python virtualenv that will be used by any user needing it to install its specific python libs : 
-# numpy, scipy, rasterstats (http://pythonhosted.org/rasterstats/installation.html), statsmodel, 
+# & python virtualenv that will be used by any user needing it to install its specific python libs :
+# numpy, scipy, rasterstats (http://pythonhosted.org/rasterstats/installation.html), statsmodel,
 # python-gdal is necessary to get gdal python tools such as gdal_edit.py
 RUN apt-get update && \
     apt-get install -y \
@@ -50,7 +51,7 @@ RUN apt-get update && \
 RUN mkdir -p ~root/.ssh /etc/authorized_keys && chmod 700 ~root/.ssh/ && \
     sed -i -e 's@^AuthorizedKeysFile.*@@g' /etc/ssh/sshd_config  && \
     echo "AuthorizedKeysFile\t.ssh/authorized_keys /etc/authorized_keys/%u" >> /etc/ssh/sshd_config && \
-    cp -a /etc/ssh /etc/ssh.cache 
+    cp -a /etc/ssh /etc/ssh.cache
 
 #Install grib tools
 ##ecCodes (https://software.ecmwf.int/wiki/display/ECC/ecCodes+installation)
@@ -73,7 +74,7 @@ RUN cd /var/lib && \
 
 
 ENV NOTVISIBLE "in users profile"
-RUN echo "export VISIBLE=now" >> /etc/profile 
+RUN echo "export VISIBLE=now" >> /etc/profile
 
 #Set locale
 RUN localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8 \
