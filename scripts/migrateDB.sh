@@ -37,7 +37,7 @@ rm migrateDB/finishMigrateDB.sh
 echo "Exporting database backup files"
 
 echo "#first drop existing tables if geonetwork has been started prior to migration"
-echo "psql -h pgis -U padre -e < droptables.sql" >> migrateDB/finishMigrateDB.sh
+echo "psql -h pgis -d geonetwork -U padre -e < droptables.sql" >> migrateDB/finishMigrateDB.sh
 
 echo "echo \"Importing database backup files\" " >> migrateDB/finishMigrateDB.sh
 for file in $4; do
@@ -56,18 +56,18 @@ for file in $4; do
 		echo "sed -i -E \"s|${file}|geonetwork|gm\" $file" >> migrateDB/finishMigrateDB.sh
 		echo "sed -i -E \"s|${ORIG_GN_APP_NAME}|geonetwork|gm\" $file" >> migrateDB/finishMigrateDB.sh
 		echo "sed -i -E \"s|geoserver-prod|geoserver|gm\" $file" >> migrateDB/finishMigrateDB.sh
-		#replace all occurences of its value (origin server address) 
+		#replace all occurences of its value (origin server address)
 		#to the new one (destination server address)
-		echo "sed -i -E \"s|${ORIG_SERVER}|${DEST_SERVER}|gm\" $file" >> migrateDB/finishMigrateDB.sh; 
+		echo "sed -i -E \"s|${ORIG_SERVER}|${DEST_SERVER}|gm\" $file" >> migrateDB/finishMigrateDB.sh;
 	fi
 	echo "sed -i -E \"s|fr_FR.UTF-8|en_US.UTF-8|gm\" $file" >> migrateDB/finishMigrateDB.sh
-	
+
 	#comment DROP/CREATE DB instructions
 	echo "sed -i -E \"s|DROP DATABASE|--DROP DATABASE|gm\" $file" >> migrateDB/finishMigrateDB.sh
 	echo "sed -i -E \"s|CREATE DATABASE|--CREATE DATABASE|gm\" $file" >> migrateDB/finishMigrateDB.sh
 
 	echo "psql -h pgis -U padre -e < ${file}" >> migrateDB/finishMigrateDB.sh
-done 
+done
 
 
 
@@ -76,7 +76,7 @@ echo "echo \"Copying SQL files to perform actual DB migration for geonetwork\" "
 echo "for sqlfile in geonetwork_migrate_sql/*.sql; do psql -h pgis -U padre -d geonetwork < \${sqlfile}; done;" >> migrateDB/finishMigrateDB.sh
 
 echo "#set project template as default view"
-echo "psql -h pgis -U padre -c \"UPDATE settings SET value='${PROJECT_ID}' WHERE name='system/ui/defaultView';\"" >> migrateDB/finishMigrateDB.sh
+echo "psql -h pgis -d geonetwork -U padre -c \"UPDATE settings SET value='${PROJECT_ID}' WHERE name='system/ui/defaultView';\"" >> migrateDB/finishMigrateDB.sh
 
 #remove superuser status from user padre
 echo "psql -h pgis -U postgres -c \"ALTER USER padre WITH NOSUPERUSER;\"" >> migrateDB/finishMigrateDB.sh

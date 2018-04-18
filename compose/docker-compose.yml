@@ -52,6 +52,7 @@ services:
     stdin_open: true
     volumes:
       - "/home/projects/${PROJECT_ID}/geodata:/padre/geodata"
+        - "/home/projects/${PROJECT_ID}/geoserver_data:/padre/geoserver_data"
     tty: true
     links:
       - postgis:pg
@@ -68,6 +69,11 @@ services:
     stdin_open: true
     volumes:
       - "/home/projects/${PROJECT_ID}/owncloud_data:/mnt/data"
+    labels:
+      fr.pigeo.container-type: owncloud
+      fr.pigeo.project: ${PROJECT_ID}
+      fr.pigeo.product: Padre v2
+      io.rancher.container.pull_image: always
   odkaggregate:
     image: pigeosolutions/padre-odkaggregate:latest
     environment:
@@ -79,13 +85,13 @@ services:
       DB_PORT: '5432'
       ODK_HOSTNAME: ${DOMAIN_URL}
       ODK_PORT: '80'
-      ODK_PORT_SECURE: '443' 
+      ODK_PORT_SECURE: '443'
       ODK_CHANNELTYPE: 'ANY_CHANNEL'
     stdin_open: true
     links:
       - postgis:pgis
     labels:
-      fr.pigeo.container-type: owncloud
+      fr.pigeo.container-type: odkaggregate
       fr.pigeo.project: ${PROJECT_ID}
       fr.pigeo.product: Padre v2
       io.rancher.container.pull_image: always

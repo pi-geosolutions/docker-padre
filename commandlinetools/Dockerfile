@@ -17,13 +17,15 @@ RUN apt-get update && \
               locate \
               openjdk-8-jre \
               openssh-server \
-              p7zip \
+              p7zip-full \
               rsync \
               supervisor \
               tar \
+              unzip \
               vim \
               wget \
-              xsltproc
+              xsltproc \
+              zip
 
 #install postgresql/postgis support, gdal, libgrib API
 # & python virtualenv that will be used by any user needing it to install its specific python libs :
