@@ -88,7 +88,7 @@ EXPOSE 22
 #add user files skeleton for useradd (needed for custom bash prompt
 ADD etc/skel/* /etc/skel/
 
-ADD supervisord.conf /etc/supervisor/conf.d/
+ADD supervisord.conf /etc/supervisor/
 RUN mkdir -p /var/log/supervisor
 
 ADD entry.sh /entry.sh
@@ -98,4 +98,4 @@ ENTRYPOINT ["/entry.sh"]
 
 #CMD ["/usr/sbin/sshd", "-D", "-f", "/etc/ssh/sshd_config"]
 
-CMD ["/usr/bin/supervisord"]
+CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/supervisord.conf"]
