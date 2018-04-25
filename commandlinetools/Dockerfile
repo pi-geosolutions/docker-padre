@@ -14,6 +14,7 @@ RUN apt-get update && \
               curl \
               dos2unix \
               git \
+              locales \
               locate \
               openjdk-8-jre \
               openssh-server \
@@ -38,7 +39,6 @@ RUN apt-get update && \
               libgdal20 \
               libgdal-dev \
               libgrib-api0 \
-              locales \
               postgis \
               postgresql-client \
               python \
