@@ -1,0 +1,1 @@
+02 01 * * * /root/backupPGSQL.sh # Performs a daily full backup of the PGSQL DBs, under /backups/

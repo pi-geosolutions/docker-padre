@@ -144,6 +144,7 @@ services:
     stdin_open: true
     volumes:
       - "/home/projects/${PROJECT_ID}/postgis_data:/var/lib/postgresql/data/pgdata"
+      - "/home/projects/${PROJECT_ID}/postgis_backups:/backups"
     tty: true
     labels:
       fr.pigeo.container-type: PostGis
