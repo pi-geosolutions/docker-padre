@@ -14,11 +14,9 @@ ENV LANG fr_FR.utf8
 ENV POSTGRES_USER postgres
 #ENV POSTGRES_DB geodata
 
-#Setup BD automatic backup (stored in /backup/)
+#Setup BD backup script (backups stored in /backups/)
 COPY ./backupPGSQL.sh /root/backupPGSQL.sh
 RUN chmod +x /root/backupPGSQL.sh
-#CRON backup task
-ADD ./etc/cron.d/* /etc/cron.d/
 
 #COPY ./pg_hba.conf $PGDATA/
 #RUN chmod 600 $PGDATA/pg_hba.conf

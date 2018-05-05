@@ -18,7 +18,7 @@ PSQL="$PSQL $DUMP_OPTIONS"
 #LOGFILE=backup.log
 
 # directory to save backups in, must be rwx by postgres user
-BASE_DIR="/backups/"
+BASE_DIR="/backups"
 YMD=$(date "+%Y-%m-%d")
 #DIR="$BASE_DIR/$YMD"
 DIR="$BASE_DIR"
@@ -76,4 +76,7 @@ for database in $DBS; do
 done
 
 echo "" >> $LOGFILE
+ls -la ${BASE_DIR} >> $LOGFILE
+echo "Total space used:"
+du -sh ${BASE_DIR} >> $LOGFILE
 echo "Backup terminated: "$(date) >> $LOGFILE
