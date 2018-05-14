@@ -2,7 +2,7 @@ FROM tomcat:8-jre8
 MAINTAINER Jean Pommier <jean.pommier@pi-geosolutions.fr>
 
 ENV BUILD_DEPS='curl zip' \
-    AGGREGATE_URL='http://depots.pigeosolution.fr/WARs/odkaggregate/ODKAggregate-1.5.0.war' \
+    AGGREGATE_URL='http://depots.pigeosolutions.fr/WARs/odkaggregate/ODKAggregate-1.5.0.war' \
     DBCONNECTOR_VERSION='42.0.0'
 
 RUN apt-get update \
