@@ -1,7 +1,7 @@
 version: '2'
 services:
   SSL-lb:
-    image: rancher/lb-service-haproxy:v0.7.5
+    image: rancher/lb-service-haproxy:v0.9.1
     labels:
       io.rancher.container.agent.role: environmentAdmin
       io.rancher.container.create_agent: 'true'
@@ -20,6 +20,7 @@ services:
     links:
       - postgis:pgis
     labels:
+      logspout: enable
       fr.pigeo.container-type: httpd
       fr.pigeo.project: ${PROJECT_ID}
       fr.pigeo.product: Padre v2
@@ -40,6 +41,7 @@ services:
     links:
       - postgis:pg
     labels:
+      logspout: enable
       fr.pigeo.container-type: Geonetwork
       fr.pigeo.project: ${PROJECT_ID}
       fr.pigeo.product: Padre v2
@@ -52,11 +54,12 @@ services:
     stdin_open: true
     volumes:
       - "/home/projects/${PROJECT_ID}/geodata:/padre/geodata"
-        - "/home/projects/${PROJECT_ID}/geoserver_data:/padre/geoserver_data"
+      - "/home/projects/${PROJECT_ID}/geoserver_data:/padre/geoserver_data"
     tty: true
     links:
       - postgis:pg
     labels:
+      logspout: enable
       fr.pigeo.container-type: Geodash
       fr.pigeo.project: ${PROJECT_ID}
       fr.pigeo.product: Padre v2
@@ -70,6 +73,7 @@ services:
     volumes:
       - "/home/projects/${PROJECT_ID}/owncloud_data:/mnt/data"
     labels:
+      logspout: enable
       fr.pigeo.container-type: owncloud
       fr.pigeo.project: ${PROJECT_ID}
       fr.pigeo.product: Padre v2
@@ -91,6 +95,7 @@ services:
     links:
       - postgis:pgis
     labels:
+      logspout: enable
       fr.pigeo.container-type: odkaggregate
       fr.pigeo.project: ${PROJECT_ID}
       fr.pigeo.product: Padre v2
@@ -99,6 +104,7 @@ services:
     image: pigeosolutions/padre-geoserver:latest
     environment:
       GEOSERVER_DATA_DIR: /padre/geoserver_data
+      GEOSERVER_FILEBROWSER_HIDEFS: true
     stdin_open: true
     volumes:
       - "/home/projects/${PROJECT_ID}/geodata:/padre/geodata"
@@ -107,6 +113,7 @@ services:
     links:
       - postgis:pgis
     labels:
+      logspout: enable
       fr.pigeo.container-type: GeoServer
       fr.pigeo.project: ${PROJECT_ID}
       fr.pigeo.product: Padre v2
@@ -132,6 +139,7 @@ services:
     links:
       - postgis:pgis
     labels:
+      logspout: enable
       fr.pigeo.container-type: SSHD
       fr.pigeo.project: ${PROJECT_ID}
       fr.pigeo.product: Padre v2
@@ -147,6 +155,7 @@ services:
       - "/home/projects/${PROJECT_ID}/postgis_backups:/backups"
     tty: true
     labels:
+      logspout: enable
       fr.pigeo.container-type: PostGis
       fr.pigeo.project: ${PROJECT_ID}
       fr.pigeo.product: Padre v2
