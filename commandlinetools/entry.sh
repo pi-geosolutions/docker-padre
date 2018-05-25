@@ -96,6 +96,15 @@ if [ -n "${SSH_USERS}" ]; then
                 if [ ! -e /home/${_NAME}/geoserver_data ]; then
                     ln -s /padre/geoserver_data/data/pays/${GEOSERVER_NS}/users/ /home/${_NAME}/geoserver_data
                 fi
+                # Set up ssh config : it will still be necessary to add the public key to authorized_keys
+                mkdir -p /home/${_NAME}/.ssh
+                chown ${_NAME}:${_GID} /home/${_NAME}/.ssh
+                chmod 700 /home/${_NAME}/.ssh
+                if [ ! -f /home/${_NAME}/.ssh/authorized_keys ]; then
+                    touch  /home/${_NAME}/.ssh/authorized_keys
+                    chown ${_NAME}:${_GID} /home/${_NAME}/.ssh/authorized_keys
+                    chmod 600 /home/${_NAME}/.ssh/authorized_keys
+                fi
             fi
         fi
     done
