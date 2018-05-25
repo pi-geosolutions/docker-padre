@@ -42,6 +42,13 @@ chmod 0600 /root/.pgpass
 #create pigeo user, that will be used mostly as a wildcard user for folders belonging to pigeo group (common to all users)
 groupadd --gid 2000 pigeo
 useradd --gid pigeo --create-home --shell '/bin/bash' --uid 2000 pigeo
+# also create pigeo-users group for the same reason, but intended for less priviledged users (national users)
+groupadd --gid 2001 pigeo-users
+# create geoserver_data subfolder for them
+mkdir -p /padre/geoserver_data/data/pays/${GEOSERVER_NS}/users/
+chown pigeo:pigeo-users /padre/geoserver_data/data/pays/${GEOSERVER_NS}/users/
+chmod 775 /padre/geoserver_data/data/pays/${GEOSERVER_NS}/users/
+chmod g+s /padre/geoserver_data/data/pays/${GEOSERVER_NS}/users/
 
 # Add users if SSH_USERS=user:uid:gid set
 echo "SSH_USER: ${SSH_USERS}"
@@ -63,18 +70,26 @@ if [ -n "${SSH_USERS}" ]; then
 
         if getent group ${_GID} | grep &>/dev/null "${_GID}"; then
 			    echo "Group ${_NAME} already exists. Skipping group creation"
-		    else
+		else
           groupadd --gid ${_GID} ${_NAME}
         fi
 
-		    if id "${_NAME}" > /dev/null 2>&1; then
-			    echo "User ${_NAME} already exists. Skipping user creation"
-		    else
+	    if id "${_NAME}" > /dev/null 2>&1; then
+		    echo "User ${_NAME} already exists. Skipping user creation"
+	    else
           #if gid is pigeo's then main group for user will be pigeo
           #else it won't belong to pigeo, and thus not have access to pigeo folders
-			    useradd --gid ${_GID} -G www-data --create-home --shell '/bin/bash' --uid ${_UID} ${_NAME}
-			    echo ">> group & user created"
-		    fi
+		    useradd --gid ${_GID} -G www-data --create-home --shell '/bin/bash' --uid ${_UID} ${_NAME}
+		    echo ">> group & user created"
+	    fi
+        # Always add user to pigeo-users
+        useradd -g pigeo-users ${_NAME}
+        # And if user's group is pigeo-users, we add a link to geoserver_data dir in their home folder
+        if [ "$_GID" -eq "2001" ]; then
+            if [ ! -e /home/${_NAME}/geoserver_data ]; then
+                ln -s /padre/geoserver_data/data/pays/${GEOSERVER_NS}/users/ /home/${_NAME}/geoserver_data
+            fi
+        fi
     done
 else
     # Warn if no authorized_keys
