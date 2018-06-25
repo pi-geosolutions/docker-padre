@@ -11,7 +11,7 @@ RUN cd /tmp && \
     rm -r /tmp/*
 
 ENV REPO https://build.geoserver.org/geoserver
-ENV GEOSERVER_VERSION 2.12
+ENV GEOSERVER_VERSION 2.13
 ENV GEOSERVER_VERSION_NAME ${GEOSERVER_VERSION}.x
 
 # Install geoserver
