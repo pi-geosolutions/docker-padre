@@ -58,8 +58,11 @@ RUN curl -L ${REPO}/${GEOSERVER_VERSION_NAME}/community-latest/geoserver-${GEOSE
     rm /tmp/*
 
 # Instal Marlin
-#RUN cd /usr/local/tomcat/lib && wget https://github.com/bourgesl/marlin-renderer/releases/download/v0.7.4_2/marlin-0.7.4-Unsafe.jar && \
-#    wget https://github.com/bourgesl/marlin-renderer/releases/download/v0.7.4_2/marlin-0.7.4-Unsafe-sun-java2d.jar
+#RUN cd /usr/local/tomcat/lib && wget https://github.com/bourgesl/marlin-renderer/releases/download/v0_9_2/marlin-0.9.2-Unsafe.jar && \
+#    wget https://github.com/bourgesl/marlin-renderer/releases/download/v0_9_2/marlin-0.9.2-Unsafe-sun-java2d.jar
 
-#ENV CATALINA_OPTS "-Xbootclasspath/a:/usr/local/tomcat/lib/marlin-0.7.4-Unsafe.jar -Xbootclasspath/p:/usr/local/tomcat/lib/marlin-0.7.4-Unsafe-sun-java2d.jar -Dsun.java2d.renderer=org.marlin.pisces.PiscesRenderingEngine -Duser.timezone=GMT -Dorg.geotools.shapefile.datetime=true"
-ENV CATALINA_OPTS "-Duser.timezone=GMT -Dorg.geotools.shapefile.datetime=true"
+ENV CATALINA_OPTS "-Xbootclasspath/a:/usr/local/tomcat/lib/marlin-0.9.2-Unsafe.jar -Xbootclasspath/p:/usr/local/tomcat/lib/marlin-0.9.2-Unsafe-sun-java2d.jar -Dsun.java2d.renderer=org.marlin.pisces.PiscesRenderingEngine -Duser.timezone=GMT -Dorg.geotools.shapefile.datetime=true"
+#ENV CATALINA_OPTS "-Duser.timezone=GMT -Dorg.geotools.shapefile.datetime=true"
+
+# Enable CORS in Tomcat
+RUN sed -i -E "s|<\!-- ==================== Built In Filter Mappings ====================== -->|<filter>\n  <filter-name>CorsFilter</filter-name>\n  <filter-class>org.apache.catalina.filters.CorsFilter</filter-class>\n</filter>\n<filter-mapping>\n  <filter-name>CorsFilter</filter-name>\n  <url-pattern>/*</url-pattern>\n</filter-mapping>\n  <\!-- ==================== Built In Filter Mappingsss ====================== -->|gm" /usr/local/tomcat/conf/web.xml
