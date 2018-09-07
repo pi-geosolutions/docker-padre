@@ -93,6 +93,8 @@ RUN mkdir -p /var/log/supervisor
 
 ADD entry.sh /entry.sh
 RUN chmod u+x /entry.sh
+ADD entry2.sh /entry2.sh
+RUN chmod u+x /entry2.sh
 
 ENTRYPOINT ["/entry.sh"]
 

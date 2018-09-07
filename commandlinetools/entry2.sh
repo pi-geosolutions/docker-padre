@@ -39,11 +39,13 @@ fi
 echo  "pgis:5432:*:padre:padre" > /root/.pgpass
 chmod 0600 /root/.pgpass
 
-set +e # accept error : seems sometimes pigeo group already exist (remains from previous run ?)
 #create pigeo user, that will be used mostly as a wildcard user for folders belonging to pigeo group (common to all users)
-groupadd --gid 2000 pigeo
+{
+    groupadd --gid 2000 pigeo
+} || {
+    echo 'group pigeo seems to already exist'
+}
 useradd --gid pigeo --create-home --shell '/bin/bash' --uid 2000 pigeo
-set -e # back to normal context : errors are fatal
 
 echo "users support status : $PIGEO_USERS_SUPPORT"
 if [ "$PIGEO_USERS_SUPPORT" = 'true' ]; then
