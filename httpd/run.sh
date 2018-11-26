@@ -7,8 +7,9 @@ touch /var/www/html/index.html
 cp -pr /var/www/phppgadmin-${PHPPGADMIN_VERSION} /var/www/html/
 mv /var/www/html/phppgadmin-${PHPPGADMIN_VERSION} /var/www/html/pgadmin
 chown -R www-data:www-data /var/www/html
-find /var/www -type d -exec chmod 775 {} \;
-find /var/www -type f -exec chmod 664 {} \;
+find /var/www/html -type d -exec chmod 775 {} \;
+find /var/www/html -type f -exec chmod 664 {} \;
+chmod -R g+ws /var/www/html
 
 
 #add 'padre' to list of users banned from phppgadmin
